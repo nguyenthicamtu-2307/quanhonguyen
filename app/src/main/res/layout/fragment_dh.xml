@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/vang">
@@ -16,7 +17,8 @@
             android:layout_width="84dp"
             android:layout_height="match_parent"
             android:rotation="90"
-            app:srcCompat="@drawable/ic_arrow_down" />
+            app:srcCompat="@drawable/ic_arrow_down"
+            tools:ignore="VectorDrawableCompat" />
 
         <TextView
             android:id="@+id/textView7"
@@ -28,7 +30,8 @@
             android:textAlignment="center"
             android:textColor="@color/gray"
             android:textSize="35sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:gravity="center_horizontal" />
     </LinearLayout>
 
     <LinearLayout
