@@ -1,4 +1,4 @@
-package com.example.giaodien.custom;
+package com.example.foodorder.custom;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -7,6 +7,8 @@ import android.util.AttributeSet;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatTextView;
+
+import com.example.custom.Utils;
 
 public class LobsterTwobold extends AppCompatTextView {
 
@@ -25,7 +27,7 @@ public class LobsterTwobold extends AppCompatTextView {
         setlobsterbold();
     }
     private void setlobsterbold(){
-        Typeface typeface=Utils.getLobsterTwoBoldTypeface(getContext());
+        Typeface typeface= Utils.getLobsterTwoBoldTypeface(getContext());
         setTypeface(typeface);
     }
 }

@@ -1,4 +1,4 @@
-package com.example.giaodien;
+package com.example.foodorder;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,12 +20,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.trangchu);
+        setContentView(R.layout.login);
         btndn=(Button) findViewById(R.id.button);
         btndn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,tcactivity.class);
+                Intent intent=new Intent(MainActivity.this, tcactivity.class);
                 startActivity(intent);
             }
         });
