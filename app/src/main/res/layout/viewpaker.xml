@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/menubar"
+       />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/menubar"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/pink"
+        app:itemIconTint="@color/color_bar"
+        app:itemTextColor="@color/color_bar"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_bar" />
+</RelativeLayout>
