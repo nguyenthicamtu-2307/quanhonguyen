@@ -2,13 +2,17 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@color/vang"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewper"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/menubar"
-       />
+        android:layout_above="@+id/menubar" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/menubar"
@@ -20,4 +24,17 @@
         app:itemTextColor="@color/color_bar"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/menu_bar" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/sline_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="70dp" />
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/cirle_view"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="300dp"
+        app:ci_drawable="@drawable/mutiline"
+        android:layout_height="40dp"/>
+
 </RelativeLayout>

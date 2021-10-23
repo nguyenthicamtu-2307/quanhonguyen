@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/vang">
@@ -17,8 +16,7 @@
             android:layout_width="84dp"
             android:layout_height="match_parent"
             android:rotation="90"
-            app:srcCompat="@drawable/ic_arrow_down"
-            tools:ignore="VectorDrawableCompat" />
+            app:srcCompat="@drawable/ic_arrow_down" />
 
         <TextView
             android:id="@+id/textView7"
@@ -30,8 +28,7 @@
             android:textAlignment="center"
             android:textColor="@color/gray"
             android:textSize="35sp"
-            android:textStyle="bold"
-            android:gravity="center_horizontal" />
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
@@ -254,73 +251,6 @@
         android:layout_width="match_parent"
         android:layout_height="103dp"
         android:layout_marginTop="500dp"
-        android:background="@color/node"
-        android:orientation="vertical">
-        a
-
-        <ImageView
-            android:id="@+id/imageView21"
-            android:layout_width="103dp"
-            android:layout_height="match_parent"
-            app:srcCompat="@drawable/esp" />
-
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="140dp"
-            android:layout_height="30dp"
-            android:textStyle="bold"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:layout_marginLeft="120dp"
-            android:layout_marginTop="-80dp"
-            android:text="Coffee Capuchino" />
-        <TextView
-            android:id="@+id/textView18"
-            android:layout_width="wrap_content"
-            android:layout_height="32dp"
-            android:layout_marginLeft="140dp"
-            android:layout_marginTop="-0dp"
-            android:text="30,000vnđ"
-            android:textColor="@color/gray"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-        <Button
-            android:id="@+id/button10"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="-62dp"
-            android:layout_marginLeft="350dp"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:textSize="10sp"
-            android:textColor="@color/black"
-            android:text="+" />
-
-        <Button
-            android:id="@+id/button11"
-            android:layout_marginTop="-40dp"
-            android:layout_marginLeft="270dp"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:textStyle="bold"
-            android:text="-" />
-
-        <TextView
-            android:id="@+id/price3"
-            android:layout_marginTop="-30dp"
-            android:layout_marginLeft="300dp"
-            android:layout_width="45dp"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:layout_height="40dp"
-            android:textSize="16sp"
-            android:text="2" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="103dp"
-        android:layout_marginTop="625dp"
         android:background="@color/pink"
         android:orientation="vertical">
 
@@ -329,9 +259,9 @@
             android:layout_width="162dp"
             android:layout_height="38dp"
             android:text="Tổng Sản Phẩm:    "
-            android:textSize="20sp"
             android:textColor="@color/red"
-            android:textStyle="bold"/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView20"
@@ -340,9 +270,9 @@
             android:layout_marginLeft="200dp"
             android:layout_marginTop="-35dp"
             android:text="80,000VNĐ"
-            android:textStyle="bold"
+            android:textColor="@color/black"
             android:textSize="22sp"
-            android:textColor="@color/black"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/button12"
@@ -351,8 +281,8 @@
             android:layout_marginLeft="100dp"
             android:background="@drawable/button"
             android:text="Đi đến giỏ hàng"
+            android:textColor="@color/white"
             android:textSize="14sp"
-            android:textStyle="bold"
-            android:textColor="@color/white"/>
+            android:textStyle="bold" />
     </LinearLayout>
 </RelativeLayout>
