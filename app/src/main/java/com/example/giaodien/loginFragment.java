@@ -12,6 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.foodorder.R;
+
 public class loginFragment extends AppCompatActivity {
     private Button btn;
     @Override
@@ -23,7 +25,7 @@ public class loginFragment extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(loginFragment.this,MainActivity.class);
+                Intent intent=new Intent(loginFragment.this, com.example.giaodien.MainActivity.class);
                 startActivity(intent);
             }
         });

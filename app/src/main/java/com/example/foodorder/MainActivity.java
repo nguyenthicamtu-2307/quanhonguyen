@@ -25,7 +25,11 @@ public class MainActivity extends AppCompatActivity {
         btndn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
                 Intent intent=new Intent(MainActivity.this, tcactivity.class);
+=======
+                Intent intent=new Intent(MainActivity.this, com.example.giaodien.tcactivity.class);
+>>>>>>> cc51fde1f13d50af87c57db9d2b9cbbcc863ea4d
                 startActivity(intent);
             }
         });
