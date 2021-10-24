@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ffbd59">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_pud"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffa87a"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <ImageButton
+
+            android:id="@+id/imgbt_qlai"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:background="#ffa87a"
+            android:scaleType="fitStart"
+            android:src="@drawable/quaylai"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="Phiếu ưu đãi"
+            android:textColor="#793825"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@id/toolbar_pud"
+        android:id="@+id/relativelayout_ud1"
+        android:layout_marginTop="25sp"
+        >
+
+        <ImageView
+            android:id="@+id/khung_gd1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/khungchunhat" />
+
+        <ImageView
+            android:id="@+id/sale1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/sale" />
+
+        <TextView
+            android:id="@+id/textview_pud1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:text="Giảm 10% cho đơn"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview_ud1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_pud1"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:text="HSD:30/04/2021"
+            android:textColor="#793825"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/button_ud1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_ud1"
+            android:layout_marginLeft="250dp"
+            android:backgroundTint="#f6e0bf"
+            android:minHeight="48dp"
+            android:text="Dùng ngay"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,DuplicateClickableBoundsCheck" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@id/relativelayout_ud1"
+        android:id="@+id/relativelayout_ud2"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/khung_gd2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/khungchunhat" />
+
+        <ImageView
+            android:id="@+id/sale2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/sale" />
+
+        <TextView
+            android:id="@+id/textview_pud2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:text="Giảm 10% cho đơn"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview_ud2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_pud2"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:text="HSD:30/04/2021"
+            android:textColor="#793825"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_ud2"
+            android:layout_below="@+id/textview_ud2"
+            android:layout_marginLeft="250dp"
+            android:backgroundTint="#f6e0bf"
+            android:minHeight="48dp"
+            android:text="Dùng ngay"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@id/relativelayout_ud2"
+        android:id="@+id/relativelayout_ud3"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/khung_gd3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/khungchunhat" />
+
+        <ImageView
+            android:id="@+id/sale3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/sale" />
+
+        <TextView
+            android:id="@+id/textview_pud3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:text="Giảm 10% cho đơn"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview_ud3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_pud3"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:text="HSD:30/04/2021"
+            android:textColor="#793825"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_ud3"
+            android:layout_below="@+id/textview_ud3"
+            android:layout_marginLeft="250dp"
+            android:backgroundTint="#f6e0bf"
+            android:minHeight="48dp"
+            android:text="Dùng ngay"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@id/relativelayout_ud3"
+        android:id="@+id/relativelayout_ud4"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/khung_gd4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/khungchunhat" />
+
+        <ImageView
+            android:id="@+id/sale4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/sale" />
+
+        <TextView
+            android:id="@+id/textview_pud4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:text="Giảm 10% cho đơn"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textview_ud4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_pud4"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:text="HSD:30/04/2021"
+            android:textColor="#793825"
+            android:textSize="18dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_ud4"
+            android:layout_below="@+id/textview_ud4"
+            android:layout_marginLeft="250dp"
+            android:backgroundTint="#f6e0bf"
+            android:minHeight="48dp"
+            android:text="Dùng ngay"
+            android:textColor="#000000"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+    <TableLayout
+        android:id="@+id/table_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/relativelayout_ud4"
+        android:layout_marginTop="20dp"
+        android:background="#ffa87a">
+
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButon1"
+                android:layout_width="102dp"
+                android:layout_height="67dp"
+                android:background="#ffa87a"
+                android:src="@drawable/home"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="102dp"
+                android:layout_height="67dp"
+                android:background="#ffa87a"
+                app:srcCompat="@drawable/donhang"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="102dp"
+                android:layout_height="67dp"
+                android:background="#ffa87a"
+                app:srcCompat="@drawable/tichdiem"
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="102dp"
+                android:layout_height="67dp"
+                android:background="#ffa87a"
+                app:srcCompat="@drawable/person"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:text="Trang chủ"
+                android:textColor="#a44f30"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:text="Đơn hàng"
+                android:textColor="#a44f30"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:text="Tích điểm"
+                android:textColor="#a44f30"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/textview_1"
+                android:text="Cá nhân"
+                android:textColor="#a44f30"
+                android:textSize="20sp"
+                android:textAlignment="center"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
