@@ -2,16 +2,13 @@ package com.example.foodorder;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.fragment.app.FragmentStatePagerAdapter;
-import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import com.example.giaodien.fragment.dhFragment;
-import com.example.giaodien.fragment.menuFragment;
-import com.example.giaodien.fragment.psFragment;
-import com.example.giaodien.fragment.tdFragment;
+import com.example.foodorder.fragment.dhFragment;
+import com.example.foodorder.fragment.menuFragment;
+import com.example.foodorder.fragment.psFragment;
+import com.example.foodorder.fragment.tdFragment;
 
 public class myadaptor extends FragmentStatePagerAdapter {
 

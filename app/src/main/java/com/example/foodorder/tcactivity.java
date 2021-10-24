@@ -1,27 +1,21 @@
 package com.example.foodorder;
 
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.view.MenuItem;
-import android.widget.Button;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
-import androidx.viewpager2.widget.ViewPager2;
 
-import com.example.giaodien.R;
-import com.example.giaodien.myadaptor;
+import com.example.foodorder.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.tabs.TabLayout;
-import com.google.android.material.tabs.TabLayoutMediator;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import me.relex.circleindicator.CircleIndicator;
-import me.relex.circleindicator.CircleIndicator3;
 
 public class tcactivity extends AppCompatActivity {
     private ViewPager mview;
@@ -29,7 +23,7 @@ public class tcactivity extends AppCompatActivity {
     private  ViewPager mv;
     private CircleIndicator mcr;
   private myadaptor adapdor;
-  private List<Photo> mlistphoto;
+  private List<ContactsContract.Contacts.Photo> mlistphoto;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

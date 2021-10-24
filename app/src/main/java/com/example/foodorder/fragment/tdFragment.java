@@ -1,4 +1,4 @@
-package com.example.giaodien.fragment;
+package com.example.foodorder.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
-import com.example.giaodien.R;
+import com.example.foodorder.R;
 
 
 public class tdFragment extends Fragment {

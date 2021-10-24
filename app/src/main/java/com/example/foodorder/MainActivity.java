@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.foodorder.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,16 +21,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.trangchu);
         btndn=(Button) findViewById(R.id.button);
         btndn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-<<<<<<< HEAD
-                Intent intent=new Intent(MainActivity.this, tcactivity.class);
-=======
-                Intent intent=new Intent(MainActivity.this, com.example.giaodien.tcactivity.class);
->>>>>>> cc51fde1f13d50af87c57db9d2b9cbbcc863ea4d
+                Intent intent=new Intent(MainActivity.this,tcactivity.class);
                 startActivity(intent);
             }
         });
