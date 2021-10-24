@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Giaodien</string>
+    <string name="btn"> >> Đi đến giỏ hàng</string>
+    <string name="ban">+100 đã bán | +50 Yêu thích</string>
+
+    <style name="line">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+
+    </style>
 </resources>

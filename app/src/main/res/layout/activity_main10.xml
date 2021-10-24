@@ -329,6 +329,183 @@
         android:background="@drawable/ic_baseline_add_circle_24"
         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck"
         />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/radius"
+        android:padding="90dp"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="513dp"
+        android:layout_marginEnd="310dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/radius_brown"
+        android:padding="65dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="516dp"
+        android:layout_marginEnd="314dp"
+        android:background="@drawable/cfsuadua"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,DuplicateClickableBoundsCheck,DuplicateClickableBoundsCheck" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginEnd="130dp"
+        android:fontFamily="@font/faustinasemibold"
+        android:gravity="left"
+        android:text="Cofee sữa dừa"
+        android:textColor="@color/maumon"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="540dp"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="@font/faustinasemibold"
+        android:gravity="left"
+        android:text="@string/ban"
+        android:textColor="@color/maumon"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginEnd="200dp"
+        android:fontFamily="@font/faustinasemibold"
+        android:gravity="left"
+        android:text="55,000Đ"
+        android:textColor="@color/tien"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="565dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/faustinasemibold"
+        android:gravity="center"
+        android:text="65,000Đ"
+        android:background="@drawable/line"
+        android:textColor="@color/maumon"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="355dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/ic_baseline_add_circle_24"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,DuplicateClickableBoundsCheck,DuplicateClickableBoundsCheck" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="600dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/radius"
+        android:padding="90dp"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="613dp"
+        android:layout_marginEnd="310dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/radius_brown"
+        android:padding="65dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="616dp"
+        android:layout_marginEnd="314dp"
+        android:background="@drawable/ts1"
+        tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="610dp"
+        android:layout_marginEnd="130dp"
+        android:fontFamily="@font/faustinasemibold"
+        android:gravity="left"
+        android:text="Trà sữa khoai môn"
+        android:textColor="@color/maumon"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="640dp"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="@font/faustinasemibold"
+        android:gravity="left"
+        android:text="@string/ban"
+        android:textColor="@color/maumon"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="660dp"
+        android:layout_marginEnd="200dp"
+        android:fontFamily="@font/faustinasemibold"
+        android:gravity="left"
+        android:text="55,000Đ"
+        android:textColor="@color/tien"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="665dp"
+        android:layout_marginEnd="140dp"
+        android:fontFamily="@font/faustinasemibold"
+        android:gravity="center"
+        android:text="65,000Đ"
+        android:background="@drawable/line"
+        android:textColor="@color/maumon"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        />
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -421,68 +598,75 @@
         android:background="@drawable/ic_baseline_add_circle_24"
         tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck"
         />
+
+
     <RelativeLayout
         android:layout_width="420dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="588dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="650dp"
         android:background="@color/menu" />
+
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="633dp"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="700dp"
         android:layout_marginEnd="10dp"
-        android:textStyle="normal"
-        android:fontFamily="@font/faustinasemibold">
+        android:fontFamily="@font/faustinasemibold"
+        android:textStyle="normal">
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            >
+            android:layout_marginTop="5dp">
+
             <TextView
+                android:layout_weight="1"
+                android:fontFamily="@font/faustinasemibold"
+                android:gravity="center"
                 android:text="Trang chủ"
-                android:textSize="15dp"
                 android:textColor="@color/mauchu"
-                android:fontFamily="@font/faustinasemibold"
-                android:layout_weight="1"
-                android:gravity="center">
+                android:textSize="15dp">
 
             </TextView>
+
             <TextView
+                android:layout_weight="1"
+                android:fontFamily="@font/faustinasemibold"
+                android:gravity="center"
                 android:text="Đơn hàng"
-                android:textSize="15dp"
                 android:textColor="@color/circle_noneboder"
-                android:fontFamily="@font/faustinasemibold"
-                android:layout_weight="1"
-                android:gravity="center">
+                android:textSize="15dp">
 
             </TextView>
+
             <TextView
+                android:layout_weight="1"
+                android:fontFamily="@font/faustinasemibold"
+                android:gravity="center"
                 android:text="Tích điểm"
-                android:textSize="15dp"
                 android:textColor="@color/mauchu"
-                android:fontFamily="@font/faustinasemibold"
-                android:layout_weight="1"
-                android:gravity="center">
+                android:textSize="15dp">
 
             </TextView>
+
             <TextView
-                android:text="Cá nhân"
-                android:textSize="15dp"
-                android:textColor="@color/mauchu"
-                android:fontFamily="@font/faustinasemibold"
                 android:layout_weight="1"
-                android:gravity="center">
+                android:fontFamily="@font/faustinasemibold"
+                android:gravity="center"
+                android:text="Cá nhân"
+                android:textColor="@color/mauchu"
+                android:textSize="15dp">
 
             </TextView>
         </TableRow>
     </TableLayout>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="588dp"
         android:layout_marginStart="10dp"
+        android:layout_marginTop="655dp"
         android:layout_marginEnd="10dp">
 
         <Button
@@ -495,6 +679,7 @@
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck">
 
         </Button>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -505,6 +690,7 @@
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck">
 
         </Button>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -515,6 +701,7 @@
             tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck">
 
         </Button>
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

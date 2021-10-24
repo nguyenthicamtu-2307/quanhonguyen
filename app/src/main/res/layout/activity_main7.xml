@@ -10,7 +10,7 @@
     <LinearLayout
         android:id="@+id/layout1"
         android:layout_width="411dp"
-        android:layout_height="550dp">
+        android:layout_height="560dp">
 
         <ImageButton
             android:id="@+id/btnBack"
@@ -438,7 +438,6 @@
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
 
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="180dp"
@@ -451,6 +450,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/layout1"
         android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="180dp"
         android:fontFamily="@font/faustinasemibold"
         android:text="Tổng sản phẩm"
@@ -462,7 +462,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/layout1"
         android:layout_marginStart="250dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
         android:fontFamily="@font/faustinasemibold"
         android:text="80.000đ"
@@ -473,17 +473,18 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_below="@+id/tvtong"
-        android:layout_marginTop="9dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="106dp"
         android:layout_marginStart="106dp"
         android:background="@drawable/radius_btn_gio"
         />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_below="@+id/tvtong"
         android:layout_marginStart="110dp"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="17dp"
         android:layout_marginEnd="110dp"
         android:layout_marginBottom="60dp"
         android:background="@drawable/btn_gio"
@@ -494,6 +495,7 @@
         android:textColor="@color/white"
         android:textSize="16dp"
         android:textStyle="bold"
-        tools:ignore="TouchTargetSizeCheck" />
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
 
 </RelativeLayout>
