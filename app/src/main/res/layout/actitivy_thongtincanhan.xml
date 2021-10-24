@@ -63,7 +63,7 @@
         android:layout_height="75dp"
         android:layout_below="@id/toolbar_cn"
         android:layout_marginLeft="300dp"
-        android:background="fdf4c0"
+        android:background="@color/vang"
         android:src="@drawable/setting"
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
     <RelativeLayout

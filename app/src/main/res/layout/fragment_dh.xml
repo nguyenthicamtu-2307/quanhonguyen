@@ -249,7 +249,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="103dp"
+        android:layout_height="150dp"
         android:layout_marginTop="500dp"
         android:background="@color/pink"
         android:orientation="vertical">
@@ -276,11 +276,12 @@
 
         <Button
             android:id="@+id/button12"
-            android:layout_width="154dp"
+            android:layout_width="174dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
             android:background="@drawable/button"
             android:text="Đi đến giỏ hàng"
+            android:layout_marginTop="30dp"
             android:textColor="@color/white"
             android:textSize="14sp"
             android:textStyle="bold" />

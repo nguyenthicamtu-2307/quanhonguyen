@@ -14,12 +14,13 @@ import android.widget.Button;
 
 import com.example.foodorder.R;
 
+
 public class loginFragment extends AppCompatActivity {
     private Button btn;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_bg);
         btn=(Button) findViewById(R.id.next);
 
         btn.setOnClickListener(new View.OnClickListener() {
