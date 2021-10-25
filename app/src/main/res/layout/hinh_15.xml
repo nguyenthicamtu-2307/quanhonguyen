@@ -199,6 +199,7 @@
                             android:layout_height="33dp"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="20dp"
+
                             android:background="@drawable/anh15" />
 
                         <TextView
@@ -232,6 +233,7 @@
                             android:layout_height="33dp"
                             android:layout_marginLeft="20dp"
                             android:layout_marginTop="20dp"
+
                             android:background="@drawable/anh15" />
 
                         <TextView

@@ -163,13 +163,14 @@
         android:textColor="#171414"
         android:textStyle="bold" />
 
-    <Button
-        android:id="@+id/next"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView5"
-        android:layout_marginLeft="290dp"
-        android:layout_marginTop="39dp"
-        android:background="@color/pink"
-        android:text="next" />
+ <Button
+     android:id="@+id/next"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@+id/textView5"
+
+     android:layout_marginLeft="290dp"
+     android:layout_marginTop="39dp"
+     android:background="@color/pink"
+     android:text="next" />
 </RelativeLayout>

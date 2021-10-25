@@ -279,7 +279,7 @@
             android:layout_width="174dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="100dp"
-            android:background="@drawable/button"
+            android:background="@drawable/botron_button"
             android:text="Đi đến giỏ hàng"
             android:layout_marginTop="30dp"
             android:textColor="@color/white"

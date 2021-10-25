@@ -85,7 +85,7 @@
                 android:id="@+id/button2"
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
-                android:background="@drawable/button"
+                android:background="@drawable/botron_button"
                 android:text="Đăng Ký"
                 android:textColor="@color/white"
                 android:textStyle="bold" />
