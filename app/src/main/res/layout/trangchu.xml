@@ -103,7 +103,7 @@
                 android:layout_height="40dp"
                 android:layout_marginLeft="70dp"
                 android:layout_marginTop="-40dp"
-                app:srcCompat="@drawable/gg" />
+                app:srcCompat="@drawable/logo" />
         </LinearLayout>
 
         <LinearLayout
@@ -118,7 +118,7 @@
                 android:layout_width="108dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="20dp"
-                android:background="@drawable/botron_button"
+                android:background="@drawable/button"
                 android:shadowRadius="15"
                 android:text="Đăng Nhập"
                 android:textColor="@color/white"
@@ -130,7 +130,7 @@
                 android:layout_height="50dp"
                 android:layout_marginLeft="150dp"
                 android:layout_marginTop="-50dp"
-                android:background="@drawable/botron_button"
+                android:background="@drawable/button"
                 android:text="Đăng Ký"
                 android:textColor="@color/white"
                 android:textStyle="bold" />

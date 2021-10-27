@@ -3,51 +3,44 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/DevPrograms/Android/Android Studio Project/quanhonguyen/app/src/main/res/layout/activity_main10.xml" value="0.13541666666666666" />
-        <entry key="..\:/DevPrograms/Android/Android Studio Project/quanhonguyen/app/src/main/res/layout/activity_main6.xml" value="0.13541666666666666" />
-        <entry key="..\:/DevPrograms/Android/Android Studio Project/quanhonguyen/app/src/main/res/layout/activity_main7.xml" value="0.13541666666666666" />
-        <entry key="..\:/DevPrograms/Android/Android Studio Project/quanhonguyen/app/src/main/res/layout/activity_main8.xml" value="0.4" />
-        <entry key="..\:/DevPrograms/Android/Android Studio Project/quanhonguyen/app/src/main/res/layout/activity_main9.xml" value="0.13541666666666666" />
-        <entry key="..\:/Giaodien/app/src/main/res/drawable/canhan.xml" value="0.2203125" />
-        <entry key="..\:/Giaodien/app/src/main/res/drawable/donhang.xml" value="0.2203125" />
-        <entry key="..\:/Giaodien/app/src/main/res/drawable/hinhtron.xml" value="0.2203125" />
-        <entry key="..\:/Giaodien/app/src/main/res/drawable/hinhvuong.xml" value="0.2203125" />
-        <entry key="..\:/Giaodien/app/src/main/res/drawable/home.xml" value="0.2203125" />
-        <entry key="..\:/Giaodien/app/src/main/res/drawable/khung_nd.xml" value="0.2203125" />
-        <entry key="..\:/Giaodien/app/src/main/res/drawable/khung_ten.xml" value="0.2203125" />
-        <entry key="..\:/Giaodien/app/src/main/res/drawable/khungavata.xml" value="0.2203125" />
-        <entry key="..\:/Giaodien/app/src/main/res/drawable/khungchunhat.xml" value="0.2203125" />
-        <entry key="..\:/Giaodien/app/src/main/res/drawable/khungvien.xml" value="0.2203125" />
-        <entry key="..\:/Giaodien/app/src/main/res/drawable/person.xml" value="0.2203125" />
-        <entry key="..\:/Giaodien/app/src/main/res/drawable/quaylai.xml" value="0.2203125" />
-        <entry key="..\:/Giaodien/app/src/main/res/drawable/tichdiem.xml" value="0.2203125" />
-        <entry key="..\:/Giaodien/app/src/main/res/layout/actitivy_thongtincanhan.xml" value="0.25" />
-        <entry key="..\:/Giaodien/app/src/main/res/layout/activity_hoso.xml" value="0.2" />
-        <entry key="..\:/Giaodien/app/src/main/res/layout/activity_lichsugd.xml" value="0.20416666666666666" />
-        <entry key="..\:/Giaodien/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
-        <entry key="..\:/Giaodien/app/src/main/res/layout/activity_phieuuudai.xml" value="0.22" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable/boder.xml" value="0.19583333333333333" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable/botron_button.xml" value="0.19583333333333333" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable/botron_sp.xml" value="0.19583333333333333" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable/button.xml" value="0.19583333333333333" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/actitivy_thongtincanhan.xml" value="0.1796875" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/activity_bg.xml" value="0.1796875" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/activity_hoso.xml" value="0.14666666666666667" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/activity_lichsugd.xml" value="0.1796875" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/activity_main.xml" value="0.1796875" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/activity_main6.xml" value="0.1796875" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/activity_phieuuudai.xml" value="0.1" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/contact.xml" value="0.1" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/fragment_dh.xml" value="0.1796875" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/hinh_11.xml" value="0.1" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/hinh_12.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/hinh_13.xml" value="0.1" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/hinh_14.xml" value="0.1" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/hinh_15.xml" value="0.22" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/login.xml" value="0.1" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/order.xml" value="0.1" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/register.xml" value="0.1" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/trangchu.xml" value="0.1796875" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/drawable/backrg.xml" value="0.19583333333333333" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/drawable/bg_img.xml" value="0.1" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/drawable/boder.xml" value="0.1" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/drawable/button.xml" value="0.1" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/drawable/ic_arrow_down.xml" value="0.19583333333333333" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/drawable/ic_cloudy.xml" value="0.1" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/drawable/icon.xml" value="0.1" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/drawable/khung_ten.xml" value="0.1" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/drawable/khungava.xml" value="0.19583333333333333" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/drawable/mutiline.xml" value="0.1" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/drawable/quaylai.xml" value="0.1" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/drawable/setting.xml" value="0.19583333333333333" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/drawable/tritangle.xml" value="0.1537037037037037" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/font/font.xml" value="0.1" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/layout/activity_main.xml" value="0.14666666666666667" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/layout/backgroud.xml" value="0.1381340579710145" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/layout/coffe.xml" value="0.1" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/layout/fragment_dh.xml" value="0.1546875" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/layout/fragment_login.xml" value="0.1" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/layout/fragment_menu.xml" value="0.22" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/layout/fragment_person.xml" value="0.1546875" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/layout/fragment_td.xml" value="0.1546875" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/layout/item_food.xml" value="0.165625" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/layout/item_photo.xml" value="0.165625" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/layout/item_user.xml" value="0.1796875" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/layout/login.xml" value="0.16666666666666666" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/layout/main.xml" value="0.22" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/layout/multilayout.xml" value="0.1" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/layout/munti.xml" value="0.1796875" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/layout/muntilayout.xml" value="0.1796875" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/layout/search_user.xml" value="0.165625" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/layout/testscroll.xml" value="0.1796875" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/layout/trangchu.xml" value="0.22" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/layout/viewpaker.xml" value="0.16666666666666666" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/menu/main_menu.xml" value="0.22" />
+        <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/menu/menu_bar.xml" value="0.1" />
       </map>
     </option>
   </component>
