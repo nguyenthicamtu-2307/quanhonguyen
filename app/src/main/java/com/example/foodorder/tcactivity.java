@@ -15,13 +15,10 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.List;
 
-import me.relex.circleindicator.CircleIndicator;
-
 public class tcactivity extends AppCompatActivity {
     private ViewPager mview;
     private BottomNavigationView btnview;
     private  ViewPager mv;
-    private CircleIndicator mcr;
   private myadaptor adapdor;
   private List<ContactsContract.Contacts.Photo> mlistphoto;
 
