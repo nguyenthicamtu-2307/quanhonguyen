@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/nen">
+    android:background="@color/vang">
 
     <LinearLayout
         android:id="@+id/layout1"
@@ -27,7 +27,7 @@
 
 
     <Button
-        android:id="@+id/trove"
+        android:id="@+id/back"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginStart="20dp"
@@ -546,7 +546,7 @@
         android:background="@drawable/btn_gio"
         android:fontFamily="@font/faustinasemibold"
         android:gravity="center"
-        android:text="@string/btn"
+        android:text="đi đến giỏ hàng"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="16dp"

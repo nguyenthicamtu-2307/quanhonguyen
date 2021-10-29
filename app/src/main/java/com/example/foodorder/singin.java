@@ -2,27 +2,23 @@ package com.example.foodorder;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.view.View;
-import android.widget.Button;
-
-import com.example.foodorder.R;
-
-public class loginFragment extends AppCompatActivity {
-    private Button btn;
+public class singin extends AppCompatActivity {
+    Button btn;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        btn=(Button) findViewById(R.id.next);
-
+        setContentView(R.layout.register);
+        btn=(Button) findViewById(R.id.button2);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(loginFragment.this,MainActivity.class);
+                Intent intent=new Intent(singin.this,tcactivity.class);
                 startActivity(intent);
             }
         });

@@ -7,280 +7,317 @@
     android:background="@android:color/holo_orange_light"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <ScrollView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="37dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="59dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/map" />
+
+            <TextView
+                android:id="@+id/diachi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="-30dp"
+                android:layout_marginRight="20dp"
+                android:text="abc,Đường thanh sơn,thanh bình,hải châu"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_marginLeft="370dp"
+                android:layout_marginTop="-30dp"
+                app:srcCompat="@drawable/ic_baseline_navigate_next_24" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="50dp"
             android:orientation="vertical">
 
 
-            <LinearLayout
+            <ImageView
+                android:id="@+id/imageView15"
                 android:layout_width="match_parent"
-                android:layout_height="37dp"
-                android:orientation="vertical">
+                android:layout_height="67dp"
+                android:layout_marginLeft="340dp"
 
-                <ImageView
-                    android:id="@+id/imageView6"
-                    android:layout_width="59dp"
-                    android:layout_height="match_parent"
-                    app:srcCompat="@drawable/map" />
-
-                <TextView
-                    android:id="@+id/diachi"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40dp"
-                    android:layout_marginTop="-30dp"
-                    android:layout_marginRight="20dp"
-                    android:text="abc,Đường thanh sơn,thanh bình,hải châu"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
-
-                <ImageView
-                    android:id="@+id/imageView10"
-                    android:layout_width="match_parent"
-                    android:layout_height="37dp"
-                    android:layout_marginLeft="370dp"
-                    android:layout_marginTop="-30dp"
-                    app:srcCompat="@drawable/ic_baseline_navigate_next_24" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="54dp"
-                android:layout_marginTop="50dp"
-                android:orientation="vertical">
-
-
-                <ImageView
-                    android:id="@+id/imageView15"
-                    android:layout_width="match_parent"
-                    android:layout_height="67dp"
-                    android:layout_marginLeft="340dp"
-
-                    android:background="@color/pink"
-                    app:srcCompat="@drawable/unnamed" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="98dp"
-                android:layout_marginTop="200dp"
-                android:orientation="vertical">
-
-                <FrameLayout
-                    android:id="@+id/a"
-                    android:layout_width="101dp"
-                    android:layout_height="88dp">
-
-                    <Button
-                        android:id="@+id/imageView16"
-                        android:layout_width="87dp"
-                        android:layout_height="60dp"
-                        android:background="@drawable/coffe" />
-
-                    <TextView
-                        android:id="@+id/coffe"
-                        android:layout_width="87dp"
-                        android:layout_height="30dp"
-                        android:text="Coffe"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="14sp"
-                        android:textStyle="bold" />
-                </FrameLayout>
-                <ImageView
-                    android:id="@+id/ts"
-                    android:layout_width="81dp"
-                    android:layout_height="59dp"
-                    android:layout_marginLeft="100dp"
-                    android:layout_marginTop="-90dp"
-                    app:srcCompat="@drawable/ts" />
-
-                <TextView
-                    android:id="@+id/editts"
-                    android:layout_width="81dp"
-
-                    android:layout_height="32dp"
-                    android:layout_marginLeft="100dp"
-                    android:text="Trà Sữa"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-                <ImageView
-                    android:id="@+id/banhmi"
-                    android:layout_width="79dp"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="210dp"
-                    android:layout_marginTop="-90dp"
-                    app:srcCompat="@drawable/bm" />
-
-                <TextView
-                    android:id="@+id/editbm"
-                    android:layout_width="81dp"
-                    android:layout_height="37dp"
-                    android:layout_marginLeft="210dp"
-                    android:text="Bánh Mì"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-                <ImageView
-                    android:id="@+id/bsn"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:layout_marginLeft="320dp"
-                    android:layout_marginTop="-100dp"
-                    app:srcCompat="@drawable/bsn" />
-
-                <TextView
-                    android:id="@+id/editbsn"
-                    android:layout_width="match_parent"
-                    android:layout_height="31dp"
-                    android:layout_marginLeft="320dp"
-                    android:text="Bánh sinh Nhật"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/top"
-                android:layout_width="wrap_content"
-
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Top Bán Chạy Nhất"
-                android:textColor="@color/black"
-                android:textSize="23sp"
-                android:textStyle="bold" />
-
-            <View
-                android:id="@+id/view"
-                android:layout_width="match_parent"
-                android:layout_height="7dp"
-                android:layout_marginTop="480dp"
-                android:background="@color/black" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="96dp"
-                android:layout_marginTop="-490dp"
-                android:orientation="vertical">
-
-                <FrameLayout
-                    android:layout_width="119dp"
-                    android:layout_height="113dp"
-
-                    android:layout_marginTop="-25dp"
-                    android:background="@color/node">
-
-                    <ImageView
-                        android:id="@+id/imageView22"
-                        android:layout_width="77dp"
-                        android:layout_height="61dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="33dp"
-                        app:srcCompat="@drawable/cake" />
-
-                    <TextView
-                        android:id="@+id/price"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginTop="90dp"
-                        android:text="50,000vnđ"
-                        android:textColor="@color/black"
-                        android:textSize="15sp" />
-                </FrameLayout>
-
-                <ImageView
-                    android:id="@+id/imageView23"
-                    android:layout_width="57dp"
-                    android:layout_height="49dp"
-                    android:layout_marginLeft="100dp"
-                    android:layout_marginTop="-90dp"
-                    app:srcCompat="@drawable/sale" />
-
-                <FrameLayout
-                    android:layout_width="102dp"
-                    android:layout_height="96dp"
-                    android:layout_marginLeft="170dp"
-                    android:layout_marginTop="-50dp"
-                    android:background="@color/node">
-
-                    <ImageView
-                        android:id="@+id/imageView24"
-                        android:layout_width="76dp"
-                        android:layout_height="63dp"
-                        android:layout_marginLeft="13dp"
-                        android:layout_marginTop="5dp"
-                        app:srcCompat="@drawable/mousse" />
-
-                    <TextView
-                        android:id="@+id/textView13"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="70dp"
-                        android:text="25,000vnd"
-                        android:textColor="@color/black"
-                        android:textStyle="bold" />
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="109dp"
-                    android:layout_height="100dp"
-                    android:layout_marginLeft="300dp"
-                    android:layout_marginTop="-100dp"
-                    android:background="@color/node">
-
-                    <ImageView
-                        android:id="@+id/imageView26"
-                        android:layout_width="78dp"
-                        android:layout_height="65dp"
-                        android:layout_marginLeft="20dp"
-                        android:layout_marginTop="10dp"
-                        app:srcCompat="@drawable/tras" />
-
-                    <TextView
-                        android:id="@+id/textView14"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="25dp"
-                        android:layout_marginTop="75dp"
-                        android:text="35,000vnd"
-                        android:textColor="@color/black"
-                        android:textStyle="bold" />
-                </FrameLayout>
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Đặt Gần Đây"
-                android:textColor="@color/black"
-                android:textSize="22sp"
-                android:textStyle="bold" />
-
-            <View
-                android:id="@+id/view2"
-                android:layout_width="match_parent"
-                android:layout_height="7dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/black" />
+                android:background="@color/pink"
+                app:srcCompat="@drawable/unnamed" />
 
         </LinearLayout>
-    </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:layout_marginTop="200dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/a"
+                android:layout_width="101dp"
+                android:layout_height="88dp">
+
+                <Button
+                    android:id="@+id/imageView16"
+                    android:layout_width="87dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/coffe" />
+
+                <TextView
+                    android:id="@+id/coffe"
+                    android:layout_width="87dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="60dp"
+                    android:text="Coffe"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/ts"
+                android:layout_width="81dp"
+                android:layout_height="59dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="-90dp"
+                app:srcCompat="@drawable/ts" />
+
+            <TextView
+                android:id="@+id/editts"
+                android:layout_width="81dp"
+
+                android:layout_height="32dp"
+                android:layout_marginLeft="100dp"
+                android:text="Trà Sữa"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/banhmi"
+                android:layout_width="79dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="-90dp"
+                app:srcCompat="@drawable/bm" />
+
+            <TextView
+                android:id="@+id/editbm"
+                android:layout_width="81dp"
+                android:layout_height="37dp"
+                android:layout_marginLeft="210dp"
+                android:text="Bánh Mì"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/bsn"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginLeft="320dp"
+                android:layout_marginTop="-95dp"
+                app:srcCompat="@drawable/bsn" />
+
+            <TextView
+                android:id="@+id/editbsn"
+                android:layout_width="match_parent"
+                android:layout_height="31dp"
+                android:layout_marginLeft="320dp"
+                android:text="Bánh sinh Nhật"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/top"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Top Bán Chạy Nhất"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_marginTop="480dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_marginTop="-490dp"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView23"
+                        android:layout_width="57dp"
+                        android:layout_height="49dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="-0dp"
+                        app:srcCompat="@drawable/sale" />
+
+                    <FrameLayout
+                        android:layout_width="102dp"
+                        android:layout_height="96dp"
+                        android:layout_marginLeft="-150dp"
+                        android:layout_marginTop="-2dp"
+                        android:background="@color/node">
+
+                        <ImageView
+                            android:id="@+id/imageView24"
+                            android:layout_width="76dp"
+                            android:layout_height="63dp"
+                            android:layout_marginLeft="13dp"
+                            android:layout_marginTop="5dp"
+                            app:srcCompat="@drawable/mousse" />
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="70dp"
+                            android:text="25,000vnd"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="109dp"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="-2dp"
+                        android:background="@color/node">
+
+                        <ImageView
+                            android:id="@+id/imageView26"
+                            android:layout_width="78dp"
+                            android:layout_height="65dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            app:srcCompat="@drawable/tras" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginTop="75dp"
+                            android:text="35,000vnd"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="-2dp"
+                        android:background="@color/node">
+
+                        <TextView
+                            android:id="@+id/price1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="70dp"
+                            android:text="50,000vnđ"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/imageView25"
+                            android:layout_width="77dp"
+                            android:layout_height="61dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="3dp"
+                            app:srcCompat="@drawable/cake" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="-2dp"
+                        android:background="@color/node">
+
+                        <ImageView
+                            android:id="@+id/imageView22"
+                            android:layout_width="77dp"
+                            android:layout_height="61dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="3dp"
+                            app:srcCompat="@drawable/cake" />
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="70dp"
+                            android:text="50,000vnđ"
+                            android:textColor="@color/black"
+                            android:textSize="15sp" />
+                    </FrameLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="187dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:text="Đặt Gần Đây"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="7dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black" />
+
+    </LinearLayout>
+
 </RelativeLayout>

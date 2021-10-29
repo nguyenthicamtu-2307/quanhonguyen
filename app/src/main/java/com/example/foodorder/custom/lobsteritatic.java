@@ -8,8 +8,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatTextView;
 
-import com.example.custom.Utils;
-
 public class lobsteritatic extends AppCompatTextView {
     public lobsteritatic(@NonNull Context context) {
         super(context);
@@ -26,7 +24,7 @@ public class lobsteritatic extends AppCompatTextView {
         setitatic();
     }
     private void setitatic(){
-        Typeface typeface= Utils.getLobsterTwoItalicTypeface(getContext());
+        Typeface typeface=Utils.getLobsterTwoItalicTypeface(getContext());
         setTypeface(typeface);
     }
 }

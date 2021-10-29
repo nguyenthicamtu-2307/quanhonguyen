@@ -12,4 +12,16 @@
     <color name="pink">#FFA87A</color>
     <color name="red">	#FF0000</color>
     <color name="node">#F6E0BF</color>
+    <color name="nen">#FFBD59</color>
+    <color name="mauchu">#793825</color>
+    <color name="mautrove">#FDF3BB</color>
+    <color name="afternau">#A44F30</color>
+    <color name="maumon">#525151</color>
+    <color name="tien">#BC1823</color>
+    <color name="btn">#FFA87A</color>
+    <color name="btngio">#793825</color>
+    <color name="retangle_boder1">#F8D29B</color>
+    <color name="circle_noneboder">#ECEDDA</color>
+    <color name="nenmenu">#FBBC05</color>
+    <color name="menu">#FFA87A</color>
 </resources>

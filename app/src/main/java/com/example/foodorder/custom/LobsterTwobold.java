@@ -8,8 +8,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatTextView;
 
-import com.example.custom.Utils;
-
 public class LobsterTwobold extends AppCompatTextView {
 
     public LobsterTwobold(@NonNull Context context) {
@@ -27,7 +25,7 @@ public class LobsterTwobold extends AppCompatTextView {
         setlobsterbold();
     }
     private void setlobsterbold(){
-        Typeface typeface= Utils.getLobsterTwoBoldTypeface(getContext());
+        Typeface typeface=Utils.getLobsterTwoBoldTypeface(getContext());
         setTypeface(typeface);
     }
 }

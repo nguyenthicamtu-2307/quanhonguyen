@@ -12,10 +12,10 @@ import com.example.foodorder.fragment.tdFragment;
 
 public class myadaptor extends FragmentStatePagerAdapter {
 
-
     public myadaptor(@NonNull FragmentManager fm, int behavior) {
         super(fm, behavior);
     }
+
 
     @NonNull
     @Override
@@ -39,3 +39,4 @@ public class myadaptor extends FragmentStatePagerAdapter {
         return 4;
     }
 }
+

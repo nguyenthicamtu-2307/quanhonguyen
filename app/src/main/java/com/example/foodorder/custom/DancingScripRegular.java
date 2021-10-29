@@ -3,13 +3,10 @@ package com.example.foodorder.custom;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.util.AttributeSet;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatTextView;
-
-import com.example.custom.Utils;
 
 public class DancingScripRegular extends AppCompatTextView {
     public DancingScripRegular(@NonNull Context context) {
@@ -27,7 +24,7 @@ public class DancingScripRegular extends AppCompatTextView {
         setdancingtextview();
     }
     private void setdancingtextview(){
-        Typeface typeface= Utils.getDancingScriptRegulaTypeface(getContext());
+        Typeface typeface=Utils.getDancingScriptRegulaTypeface(getContext());
         setTypeface(typeface);
     }
 }

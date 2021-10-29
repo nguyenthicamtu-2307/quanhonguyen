@@ -8,8 +8,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatTextView;
 
-import com.example.custom.Utils;
-
 public class blackjacktextview extends AppCompatTextView {
     public blackjacktextview(@NonNull Context context) {
         super(context);
@@ -26,7 +24,7 @@ public class blackjacktextview extends AppCompatTextView {
         setfonttextview();
     }
     private void setfonttextview(){
-        Typeface typeface= Utils.getBlackjackTypeface(getContext());
+        Typeface typeface=Utils.getBlackjackTypeface(getContext());
         setTypeface(typeface);
     }
 }
