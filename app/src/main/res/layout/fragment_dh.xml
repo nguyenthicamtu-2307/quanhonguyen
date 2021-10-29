@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/vang">
-
-
     <LinearLayout
+        android:id="@+id/hedder"
         android:layout_width="match_parent"
         android:layout_height="69dp"
         android:orientation="vertical">
 
-        <ImageView
+        <Button
             android:id="@+id/imageView17"
             android:layout_width="84dp"
             android:layout_height="match_parent"
             android:rotation="90"
-            app:srcCompat="@drawable/ic_arrow_down" />
+            app:srcCompat="@drawable/ic_arrow_down"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/textView7"
@@ -31,259 +32,548 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
+        android:id="@+id/sp"
         android:layout_width="match_parent"
-        android:layout_height="109dp"
-        android:layout_marginTop="100dp"
-        android:orientation="vertical">
+        android:layout_height="561dp"
+        android:layout_below="@+id/hedder">
 
-        <FrameLayout
+        <LinearLayout
+            android:id="@+id/fg"
             android:layout_width="match_parent"
-            android:background="@color/node"
-
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/imageView18"
-                android:layout_width="87dp"
-                android:layout_height="91dp"
-                android:layout_marginTop="10dp"
-                app:srcCompat="@drawable/cf1" />
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_marginLeft="130dp"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Coffee Trứng" />
-
-            <TextView
-                android:id="@+id/textView9"
-                android:layout_marginTop="50dp"
-                android:layout_marginLeft="130dp"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:textColor="@color/gray"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="30,000vnđ" />
-
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="50dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginLeft="350dp"
-                android:textAlignment="center"
-                android:textStyle="bold"
-                android:textSize="10sp"
-                android:textColor="@color/black"
-                android:text="+" />
-
-            <Button
-                android:id="@+id/button5"
-                android:layout_marginTop="32dp"
-                android:layout_marginLeft="270dp"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:textStyle="bold"
-                android:text="-" />
-
-            <TextView
-                android:id="@+id/price"
-                android:layout_marginTop="40dp"
-                android:layout_marginLeft="300dp"
-                android:layout_width="45dp"
-                android:textAlignment="center"
-                android:textStyle="bold"
-                android:layout_height="40dp"
-                android:textSize="16sp"
-                android:text="2" />
-        </FrameLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="109dp"
-        android:layout_marginTop="240dp"
-        android:orientation="vertical">
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:background="@color/node"
-
-            android:layout_height="match_parent">
-
-            <ImageView
-                android:id="@+id/imageView19"
-                android:layout_width="91dp"
-                android:layout_height="95dp"
-                app:srcCompat="@drawable/esp" />
-
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_marginLeft="110dp"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_marginTop="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Coffee Espresso" />
-
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_marginTop="60dp"
-                android:layout_marginLeft="120dp"
-                android:textStyle="bold"
-                android:textSize="20sp"
-                android:textColor="@color/gray"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="30,000vnđ" />
-
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="50dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="32dp"
-                android:layout_marginLeft="350dp"
-                android:textAlignment="center"
-                android:textStyle="bold"
-                android:textSize="10sp"
-                android:textColor="@color/black"
-                android:text="+" />
-
-            <Button
-                android:id="@+id/button7"
-                android:layout_marginTop="32dp"
-                android:layout_marginLeft="270dp"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:textStyle="bold"
-                android:text="-" />
-
-            <TextView
-                android:id="@+id/price1"
-                android:layout_marginTop="40dp"
-                android:layout_marginLeft="300dp"
-                android:layout_width="45dp"
-                android:textAlignment="center"
-                android:textStyle="bold"
-                android:layout_height="40dp"
-                android:textSize="16sp"
-                android:text="2" />
-        </FrameLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="109dp"
-        android:background="@color/node"
-        android:layout_marginTop="370dp"
-        android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/imageView20"
-            android:layout_width="96dp"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/cf1" />
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView15"
-            android:layout_width="140dp"
-            android:layout_height="30dp"
-            android:textStyle="bold"
-            android:textSize="16sp"
-            android:textColor="@color/black"
-            android:layout_marginLeft="120dp"
-            android:layout_marginTop="-80dp"
-            android:text="Coffee Capuchino" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView13"
-            android:layout_width="wrap_content"
-            android:layout_height="32dp"
-            android:layout_marginLeft="140dp"
-            android:layout_marginTop="-0dp"
-            android:text="30,000vnđ"
-            android:textColor="@color/gray"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="50dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="-62dp"
-            android:layout_marginLeft="350dp"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:textSize="10sp"
-            android:textColor="@color/black"
-            android:text="+" />
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
 
-        <Button
-            android:id="@+id/button9"
-            android:layout_marginTop="-40dp"
-            android:layout_marginLeft="270dp"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:textStyle="bold"
-            android:text="-" />
+                    android:background="@color/node">
 
-        <TextView
-            android:id="@+id/price2"
-            android:layout_marginTop="-30dp"
-            android:layout_marginLeft="300dp"
-            android:layout_width="45dp"
-            android:textAlignment="center"
-            android:textStyle="bold"
-            android:layout_height="40dp"
-            android:textSize="16sp"
-            android:text="2" />
-    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/imageView18"
+                        android:layout_width="87dp"
+                        android:layout_height="91dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/cf1" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="500dp"
-        android:background="@color/pink"
-        android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="130dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Coffee Trứng"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView19"
-            android:layout_width="162dp"
-            android:layout_height="38dp"
-            android:text="Tổng Sản Phẩm:    "
-            android:textColor="@color/red"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="130dp"
+                        android:layout_marginTop="50dp"
+                        android:text="30,000vnđ"
+                        android:textColor="@color/gray"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView20"
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="350dp"
+                        android:layout_marginTop="32dp"
+                        android:text="+"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="270dp"
+                        android:layout_marginTop="32dp"
+                        android:text="-"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/price"
+                        android:layout_width="45dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="300dp"
+                        android:layout_marginTop="40dp"
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:background="@color/node">
+
+                    <ImageView
+                        android:id="@+id/imageView19"
+                        android:layout_width="91dp"
+                        android:layout_height="95dp"
+                        app:srcCompat="@drawable/esp" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Coffee Espresso"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="120dp"
+                        android:layout_marginTop="60dp"
+                        android:text="30,000vnđ"
+                        android:textColor="@color/gray"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="350dp"
+                        android:layout_marginTop="32dp"
+                        android:text="+"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="270dp"
+                        android:layout_marginTop="32dp"
+                        android:text="-"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/price1"
+                        android:layout_width="45dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="300dp"
+                        android:layout_marginTop="40dp"
+                        android:text="2"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/node"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView20"
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/cf1" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="-80dp"
+                    android:text="Coffee Capuchino"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="-0dp"
+                    android:text="30,000vnđ"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button8"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="-62dp"
+                    android:text="+"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="-40dp"
+                    android:text="-"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/price2"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="-30dp"
+                    android:text="2"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/node"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView21"
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/cf1" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="-80dp"
+                    android:text="Coffee Capuchino"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="-0dp"
+                    android:text="30,000vnđ"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button13"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="-62dp"
+                    android:text="+"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button14"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="-40dp"
+                    android:text="-"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/price3"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="-30dp"
+                    android:text="2"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tong"
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/node"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView24"
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/cf1" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="-80dp"
+                    android:text="Coffee Capuchino"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="-0dp"
+                    android:text="30,000vnđ"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button23"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="-62dp"
+                    android:text="+"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button24"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="-40dp"
+                    android:text="-"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/price4"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="-30dp"
+                    android:text="2"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/node"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView26"
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/cf1" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="-80dp"
+                    android:text="Coffee Capuchino"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="-0dp"
+                    android:text="30,000vnđ"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="-62dp"
+                    android:text="+"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/button19"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="-40dp"
+                    android:text="-"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/price6"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="-30dp"
+                    android:text="2"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/node"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView29"
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/cf1" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="-80dp"
+                    android:text="Coffee Capuchino"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="140dp"
+                    android:layout_marginTop="-0dp"
+                    android:text="30,000vnđ"
+                    android:textColor="@color/gray"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn11"
+                    android:layout_width="50dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="-62dp"
+                    android:text="+"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn12"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="270dp"
+                    android:layout_marginTop="-40dp"
+                    android:text="-"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/price7"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="300dp"
+                    android:layout_marginTop="-30dp"
+                    android:text="2"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="42dp"
-            android:layout_marginLeft="200dp"
-            android:layout_marginTop="-35dp"
-            android:text="80,000VNĐ"
-            android:textColor="@color/black"
-            android:textSize="22sp"
-            android:textStyle="bold" />
+            android:layout_height="103dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/pink"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/button12"
-            android:layout_width="174dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:background="@drawable/botron_button"
-            android:text="Đi đến giỏ hàng"
-            android:layout_marginTop="30dp"
-            android:textColor="@color/white"
-            android:textSize="14sp"
-            android:textStyle="bold" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="162dp"
+                android:layout_height="38dp"
+                android:text="Tổng Sản Phẩm:    "
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-35dp"
+                android:text="80,000VNĐ"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:background="@drawable/button"
+                android:text="Đi đến giỏ hàng"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
 </RelativeLayout>
