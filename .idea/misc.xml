@@ -3,7 +3,34 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/a.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_hoso.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_lichsugd.xml" value="0.13768115942028986" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_main10.xml" value="0.12228260869565218" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_main6.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_main7.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_main8.xml" value="0.12228260869565218" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_main9.xml" value="0.12228260869565218" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/contact.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/fragment_dh.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/fragment_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/fragment_person.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/fragment_td.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/hinh_11.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/hinh_12.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/hinh_13.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/hinh_14.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/hinh_15.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/history.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/item_photo.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/order.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/register.xml" value="0.1" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/trangchu.xml" value="0.12228260869565218" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/viewpaker.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/menu/menu_bar.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1125" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2203125" />
         <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/drawable/backrg.xml" value="0.19583333333333333" />
         <entry key="..\:/HK121/androi/team_TDH_app_oder_do_an/giaodien/app/src/main/res/drawable/bg_img.xml" value="0.1" />
