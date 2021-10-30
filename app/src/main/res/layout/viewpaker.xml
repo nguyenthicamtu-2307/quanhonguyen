@@ -28,51 +28,30 @@
         app:menu="@menu/menu_bar" />
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/sline_view"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_marginTop="70dp"
-            tools:ignore="SpeakableTextPresentCheck" />
+            android:layout_height="match_parent">
 
-        <me.relex.circleindicator.CircleIndicator
-            android:id="@+id/cirle_view"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_marginTop="300dp"
-            app:ci_drawable="@drawable/mutiline" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="645dp"
-            android:orientation="vertical"
-            android:padding="30dp">
-
-            <androidx.appcompat.widget.SearchView
-                android:id="@+id/searchview"
-                android:layout_width="311dp"
-                android:layout_height="50dp"
-
-                android:background="@color/white"
-                android:iconifiedByDefault="false"
-                android:queryHint="Search here">
-
-            </androidx.appcompat.widget.SearchView>
-
-            <ListView
-                android:id="@+id/mylist"
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/sline_view"
                 android:layout_width="match_parent"
-                android:layout_height="92dp"
-                android:layout_marginTop="5dp"
-                android:background="@color/white">
+                android:layout_height="220dp"
+                android:layout_marginTop="80dp"
+                tools:ignore="SpeakableTextPresentCheck" />
 
-            </ListView>
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/cirle_view"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="300dp"
+                app:ci_drawable="@drawable/mutiline" />
 
-        </LinearLayout>
-    </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="645dp"
+                android:orientation="vertical"
+                android:padding="30dp"/>
+        </RelativeLayout>
 
 </RelativeLayout>

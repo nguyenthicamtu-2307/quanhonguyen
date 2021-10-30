@@ -10,6 +10,7 @@
     <LinearLayout
         android:id="@+id/layout1"
         android:layout_width="411dp"
+
         android:layout_height="560dp">
 
         <ImageButton
@@ -25,12 +26,11 @@
     </LinearLayout>
 
 
-
     <Button
         android:id="@+id/back"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="355dp"
         android:background="@drawable/ic_baseline_keyboard_arrow_left_24"
@@ -282,19 +282,19 @@
         android:text="Trà sữa Pudding đậu đỏ"
         android:textColor="@color/maumon"
         android:textSize="24dp" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="105dp"
+        android:layout_height="34dp"
         android:layout_below="@+id/ten3"
+        android:layout_marginStart="120dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="200dp"
-        android:layout_marginStart="120dp"
-        android:text="40,000đ"
-        android:textSize="24dp"
         android:fontFamily="arial"
-        android:textColor="@color/tien"
         android:padding="-20dp"
-        />
+        android:text="40,000đ"
+        android:textColor="@color/tien"
+        android:textSize="24dp" />
 
 
     <Button
@@ -498,60 +498,57 @@
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:layout_below="@+id/layout1"
-        android:background="@color/btn" />
+        android:layout_marginTop="100dp"
+        android:background="@color/btn"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tvtong"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/layout1"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="180dp"
-        android:fontFamily="@font/faustinasemibold"
-        android:text="Tổng sản phẩm"
-        android:textSize="30dp"
-        android:textStyle="normal" />
+        <TextView
+            android:id="@+id/tvtong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout1"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="180dp"
+            android:fontFamily="@font/faustinasemibold"
+            android:text="Tổng sản phẩm"
+            android:textSize="30dp"
+            android:textStyle="normal" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/layout1"
-        android:layout_marginStart="250dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="30dp"
-        android:fontFamily="@font/faustinasemibold"
-        android:text="80.000đ"
-        android:textColor="@color/tien"
-        android:textSize="30dp"
-        android:textStyle="bold" />
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_below="@+id/tvtong"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="106dp"
-        android:layout_marginStart="106dp"
-        android:background="@drawable/radius_btn_gio"
-        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout1"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="-35dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/faustinasemibold"
+            android:text="80.000đ"
+            android:textColor="@color/tien"
+            android:textSize="30dp"
+            android:textStyle="bold" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_below="@+id/tvtong"
-        android:layout_marginStart="110dp"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="110dp"
-        android:layout_marginBottom="60dp"
-        android:background="@drawable/btn_gio"
-        android:fontFamily="@font/faustinasemibold"
-        android:gravity="center"
-        android:text="đi đến giỏ hàng"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="16dp"
-        android:textStyle="bold"
-        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/tvtong"
+            android:layout_marginStart="106dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="106dp"
+            android:background="@drawable/radius_btn_gio">
 
-
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_gio"
+                android:fontFamily="@font/faustinasemibold"
+                android:gravity="center"
+                android:text="đi đến giỏ hàng"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+        </RelativeLayout>
+    </LinearLayout>
 </RelativeLayout>

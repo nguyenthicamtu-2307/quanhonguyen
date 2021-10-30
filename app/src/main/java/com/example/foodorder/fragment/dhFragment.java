@@ -25,15 +25,8 @@ public class dhFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view =inflater.inflate(R.layout.fragment_dh, container, false);
-        back=view.findViewById(R.id.imageView17);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(getActivity(), tcactivity.class);
-                startActivity(intent);
-            }
-        });
+        view =inflater.inflate(R.layout.activity_main9, container, false);
+
         return view;
     }
 }

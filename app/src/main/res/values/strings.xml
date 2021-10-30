@@ -1,16 +1,17 @@
 <resources>
-<string name="app_name">Ho Nguyen Food</string>
-<!-- TODO: Remove or change this placeholder text -->
-<string name="hello_blank_fragment">Hello blank fragment</string>
-<string name="action">Search</string>
-<string name="btn"> >> Đi đến giỏ hàng</string>
-<string name="ban">+100 đã bán | +50 Yêu thích</string>
+    <string name="app_name">giaodien</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="action">Search</string>
+    <string name="btn"> >> Đi đến giỏ hàng</string>
+    <string name="ban">+100 đã bán | +50 Yêu thích</string>
 
-<style name="line">
+    <style name="line">
 
-    <item name="android:layout_width">wrap_content</item>
-    <item name="android:layout_height">1dp</item>
-    <item name="android:background">?android:attr/listDivider</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
 
-</style>
+    </style>
+    <string name="fbappid">424334132637183</string>
 </resources>

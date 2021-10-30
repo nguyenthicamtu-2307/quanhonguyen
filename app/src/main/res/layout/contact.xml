@@ -21,7 +21,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Liên hệ"
+            android:text="Lịch sử đon hàng"
             android:layout_gravity="center"
             android:textAlignment="center" />
     </LinearLayout>

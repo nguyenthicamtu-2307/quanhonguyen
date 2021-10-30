@@ -87,30 +87,26 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginTop="380dp"
+            android:layout_marginTop="350dp"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="114dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="70dp"
-                app:srcCompat="@drawable/fb" />
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/fb"
+                android:layout_width="301dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="20sp" />
 
-            <ImageView
-                android:id="@+id/imageView9"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginLeft="70dp"
-                android:layout_marginTop="-40dp"
-                app:srcCompat="@drawable/logo" />
+
+
         </LinearLayout>
+
 
         <LinearLayout
             android:layout_width="298dp"
             android:layout_height="50dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="300dp"
+            android:layout_marginTop="280dp"
             android:orientation="vertical">
 
             <Button

@@ -13,7 +13,6 @@
         android:background="#ffa87a">
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/back"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_margin="10dp"

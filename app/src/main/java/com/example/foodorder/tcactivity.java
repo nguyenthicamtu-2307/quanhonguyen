@@ -1,5 +1,6 @@
 package com.example.foodorder;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -34,42 +35,15 @@ public class tcactivity extends AppCompatActivity {
     private myadaptor adapdor;
     private photoadaptor ptadap;
     private List<photo> mlistphoto;
-    SearchView sv;
-    ListView mylist;
-    String [] name={"cà phê","trà sữa","cupcake","bánh ngọt"};
-    ArrayAdapter<String> dapter;
+
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.viewpaker);
-        sv=(SearchView) findViewById(R.id.searchview);
-        mylist=(ListView) findViewById(R.id.mylist);
 
-        dapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1, android.R.id.text1,name);
-        mylist.setAdapter(dapter);
-        mylist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Toast.makeText(tcactivity.this,"you click"+parent.getItemAtPosition(position).toString(),Toast.LENGTH_LONG).show();
-            }
-        });
-
-        sv.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-                tcactivity.this.dapter.getFilter().filter(query);
-                return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                tcactivity.this.dapter.getFilter().filter(newText);
-                return false;
-            }
-        });
 
         mv =findViewById(R.id.sline_view);
         mcr=findViewById(R.id.cirle_view);
@@ -122,18 +96,17 @@ public class tcactivity extends AppCompatActivity {
                         btnview.setVisibility(View.VISIBLE);
                         mcr.setVisibility(View.VISIBLE);
                         mv.setVisibility(View.VISIBLE);
-                        mylist.setVisibility(View.GONE);
-                        sv.setVisibility(View.VISIBLE);
+
+
 
                         break;
                     case R.id.donhang:
                         mview.setCurrentItem(1);
                         mview.setVisibility(View.VISIBLE);
                         btnview.setVisibility(View.GONE);
-                        mcr.setVisibility(View.GONE);
+                        mcr.setVisibility(View.VISIBLE);
                         mv.setVisibility(View.GONE);
-                        sv.setVisibility(View.GONE);
-                        mylist.setVisibility(View.GONE);
+
                         break;
                     case R.id.tichdiem:
                         mview.setCurrentItem(2);
@@ -141,8 +114,7 @@ public class tcactivity extends AppCompatActivity {
                         btnview.setVisibility(View.VISIBLE);
                         mcr.setVisibility(View.GONE);
                         mv.setVisibility(View.GONE);
-                        sv.setVisibility(View.GONE);
-                        mylist.setVisibility(View.GONE);
+
                         break;
                     case R.id.person:
                         mview.setCurrentItem(3);
@@ -150,8 +122,7 @@ public class tcactivity extends AppCompatActivity {
                         btnview.setVisibility(View.VISIBLE);
                         mcr.setVisibility(View.GONE);
                         mv.setVisibility(View.GONE);
-                        sv.setVisibility(View.GONE);
-                        mylist.setVisibility(View.GONE);
+
                         break;
                 }
                 return true;

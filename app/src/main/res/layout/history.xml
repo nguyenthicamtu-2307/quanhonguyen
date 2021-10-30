@@ -17,8 +17,7 @@
             android:layout_height="30dp"
             android:layout_margin="10dp"
             android:backgroundTint="#F1E2B6"
-            android:src="@drawable/mt"
-            android:id="@+id/b"/>
+            android:src="@drawable/mt" />
 
         <TextView
             android:layout_width="match_parent"
@@ -29,7 +28,6 @@
     </LinearLayout>
 
     <RelativeLayout
-        android:id="@+id/historyItem1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -73,7 +71,6 @@
     </RelativeLayout>
 
     <RelativeLayout
-        android:id="@+id/historyItem2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
