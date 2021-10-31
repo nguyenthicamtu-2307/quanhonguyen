@@ -16,7 +16,7 @@
         <activity
             android:configChanges="orientation|screenSize|screenLayout|keyboard|keyboardHidden"
             android:label="@string/app_name"
-            android:name=".loginFragment"
+            android:name=".activity.loginFragment"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,22 +24,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".tcactivity" />
-        <activity android:name=".frgcooffe" />
-        <activity android:name=".singin" />
-        <activity android:name=".frgts" />
-        <activity android:name=".bread" />
-        <activity android:name=".bsn" />
-        <activity android:name=".ttcn" />
-        <activity android:name=".search" />
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.tcactivity" />
+        <activity android:name=".activity.frgcooffe" />
+        <activity android:name=".activity.singin" />
+        <activity android:name=".activity.frgts" />
+        <activity android:name=".activity.bread" />
+        <activity android:name=".activity.bsn" />
+        <activity android:name=".activity.ttcn" />
+        <activity android:name=".activity.search" />
         <activity
-            android:name=".timkiem"
+            android:name=".activity.timkiem"
             android:exported="false" />
-        <activity android:name=".lienhe"/>
-        <activity android:name=".Dieukhoan"/>
-        <activity android:name=".history"/>
-        <activity android:name=".sale"/>
+        <activity android:name=".activity.lienhe"/>
+        <activity android:name=".activity.Dieukhoan"/>
+        <activity android:name=".activity.history"/>
+        <activity android:name=".activity.sale"/>
+        <activity android:name=".activity.dexuat"/>
+
     </application>
 
 </manifest>

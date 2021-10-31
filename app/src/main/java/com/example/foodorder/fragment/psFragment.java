@@ -5,17 +5,15 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
 
 import com.example.foodorder.R;
-import com.example.foodorder.history;
-import com.example.foodorder.lienhe;
-import com.example.foodorder.sale;
-import com.example.foodorder.tcactivity;
-import com.example.foodorder.ttcn;
+import com.example.foodorder.activity.history;
+import com.example.foodorder.activity.lienhe;
+import com.example.foodorder.activity.sale;
+import com.example.foodorder.activity.ttcn;
 
 
 public class psFragment extends Fragment {

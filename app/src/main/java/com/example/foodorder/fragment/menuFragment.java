@@ -8,23 +8,16 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
-import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 
-import com.example.foodorder.MainActivity;
 import com.example.foodorder.R;
-import com.example.foodorder.bread;
-import com.example.foodorder.bsn;
-import com.example.foodorder.frgcooffe;
-import com.example.foodorder.frgts;
-import com.example.foodorder.search;
-import com.example.foodorder.singin;
-import com.example.foodorder.tcactivity;
-import com.example.foodorder.timkiem;
+import com.example.foodorder.activity.bread;
+import com.example.foodorder.activity.frgcooffe;
+import com.example.foodorder.activity.frgts;
+import com.example.foodorder.activity.search;
 
 
 public class menuFragment extends Fragment {

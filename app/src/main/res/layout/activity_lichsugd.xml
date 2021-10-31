@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".activity.MainActivity"
     android:background="#ffbd59">
 
     <androidx.appcompat.widget.Toolbar
@@ -206,89 +206,6 @@
             android:textColor="#000000" />
 
     </RelativeLayout>
-
-    <TableLayout
-        android:id="@+id/table_layout1"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_below="@id/relativelayout_gd3"
-        android:layout_marginTop="20dp"
-        android:background="#ffa87a">
-
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageButton
-                android:id="@+id/imageButon1"
-                android:layout_width="102dp"
-                android:layout_height="67dp"
-                android:background="#ffa87a"
-                android:src="@drawable/home"
-                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
-
-            <ImageButton
-                android:id="@+id/imageButton2"
-                android:layout_width="102dp"
-                android:layout_height="67dp"
-                android:background="#ffa87a"
-                app:srcCompat="@drawable/donhang"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-            <ImageButton
-                android:id="@+id/imageButton3"
-                android:layout_width="102dp"
-                android:layout_height="67dp"
-                android:background="#ffa87a"
-                app:srcCompat="@drawable/tichdiem"
-                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-
-            <ImageButton
-                android:id="@+id/imageButton4"
-                android:layout_width="102dp"
-                android:layout_height="67dp"
-                android:background="#ffa87a"
-                app:srcCompat="@drawable/person"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" >
-
-            <TextView
-                android:id="@+id/textView4"
-                android:text="Trang chủ"
-                android:textColor="#a44f30"
-                android:textSize="20sp"
-                android:textAlignment="center"/>
-
-            <TextView
-                android:id="@+id/textView3"
-                android:text="Đơn hàng"
-                android:textColor="#a44f30"
-                android:textSize="20sp"
-                android:textAlignment="center"/>
-
-            <TextView
-                android:id="@+id/textView2"
-                android:text="Tích điểm"
-                android:textColor="#a44f30"
-                android:textSize="20sp"
-                android:textAlignment="center"/>
-
-            <TextView
-                android:id="@+id/textview_1"
-                android:text="Cá nhân"
-                android:textColor="#a44f30"
-                android:textSize="20sp"
-                android:textAlignment="center"/>
-
-        </TableRow>
-
-    </TableLayout>
 
 
 </RelativeLayout>
