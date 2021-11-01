@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.MainActivity">
+    tools:context=".activity.MinhTuan.hinh11Activity">
 
     <LinearLayout
         android:id="@+id/heder12"
@@ -32,6 +32,7 @@
             android:textSize="25dp" />
 
         <Button
+            android:id="@+id/close"
             android:layout_width="45dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="95dp"

@@ -45,11 +45,10 @@
         app:srcCompat="@drawable/ic_arrow_down" />
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingHorizontal="15dp"
+        android:layout_width="392dp"
+        android:layout_height="match_parent"
         android:layout_centerVertical="true"
-        >
+        android:paddingHorizontal="15dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -119,11 +118,11 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:background="@color/pink"
+                        android:paddingHorizontal="30dp"
+                        android:paddingVertical="8dp"
                         android:text="next"
                         android:textSize="20dp"
-                        android:textStyle="bold"
-                        android:paddingHorizontal="30dp"
-                        android:paddingVertical="8dp"/>
+                        android:textStyle="bold" />
 
                 </LinearLayout>
             </RelativeLayout>
