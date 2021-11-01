@@ -248,6 +248,7 @@
         android:stretchColumns="*">
         <TableRow>
             <TextView
+                android:id="@+id/dexuat"
                 android:text="Đề xuất"
                 android:textAllCaps="false"
                 android:textSize="30dp"

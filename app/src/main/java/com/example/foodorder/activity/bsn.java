@@ -16,7 +16,7 @@ public class bsn extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main7);
-        back=findViewById(R.id.back);
+        back=(Button)findViewById(R.id.trove);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

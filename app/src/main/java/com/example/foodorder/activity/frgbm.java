@@ -17,7 +17,7 @@ public class frgbm extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main8);
-        coffe=findViewById(R.id.back);
+        coffe=(Button)findViewById(R.id.trove);
         coffe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -1,14 +1,18 @@
-package com.example.foodorder;
+package com.example.foodorder.activity;
 
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class sale extends AppCompatActivity {
+import com.example.foodorder.R;
+
+public class order extends AppCompatActivity {
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_phieuuudai);
+        setContentView(R.layout.order);
+
     }
 }
