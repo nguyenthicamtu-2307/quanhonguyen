@@ -49,7 +49,7 @@
         <activity android:name=".activity.MinhTuan.hinh15Activity" />
         <activity android:name=".activity.MinhTuan.Closehinh12"/>
         <activity android:name=".activity.MinhTuan.CaNhan"/>
-        <activity android:name=".activity.MinhTuan.PhieuUD"/>
+        <activity android:name=".activity.PhieuUD"/>
         <activity android:name=".activity.MinhTuan.TrangChu"/>
         <activity android:name=".activity.MinhTuan.LSGD"/>
         <activity android:name=".activity.MinhTuan.LSDQ"/>
