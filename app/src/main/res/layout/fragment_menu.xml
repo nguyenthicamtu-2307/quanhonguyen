@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
 
-    android:background="@android:color/holo_orange_light"
-    xmlns:tools="http://schemas.android.com/tools">
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light">
 
 
     <LinearLayout
@@ -79,564 +79,568 @@
                 app:srcCompat="@drawable/unnamed" />
 
         </LinearLayout>
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="250dp"
-            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="98dp"
-                android:layout_marginTop="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="250dp"
                 android:orientation="vertical">
 
-                <FrameLayout
-                    android:id="@+id/a"
-                    android:layout_width="101dp"
-                    android:layout_height="88dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="98dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
 
-                    <Button
-                        android:id="@+id/imageView16"
-                        android:layout_width="87dp"
-                        android:layout_height="60dp"
-                        android:background="@drawable/coffe" />
+                    <FrameLayout
+                        android:id="@+id/a"
+                        android:layout_width="101dp"
+                        android:layout_height="88dp">
+
+                        <Button
+                            android:id="@+id/imageView16"
+                            android:layout_width="87dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/coffe" />
+
+                        <TextView
+                            android:id="@+id/coffe"
+                            android:layout_width="87dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="60dp"
+                            android:text="Coffe"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/ts"
+                        android:layout_width="81dp"
+                        android:layout_height="59dp"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="-90dp"
+                        app:srcCompat="@drawable/ts" />
 
                     <TextView
-                        android:id="@+id/coffe"
-                        android:layout_width="87dp"
-                        android:layout_height="30dp"
-                        android:layout_marginTop="60dp"
-                        android:text="Coffe"
+                        android:id="@+id/editts"
+                        android:layout_width="81dp"
+
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="100dp"
+                        android:text="Trà Sữa"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="14sp"
                         android:textStyle="bold" />
-                </FrameLayout>
 
-                <ImageView
-                    android:id="@+id/ts"
-                    android:layout_width="81dp"
-                    android:layout_height="59dp"
-                    android:layout_marginLeft="100dp"
-                    android:layout_marginTop="-90dp"
-                    app:srcCompat="@drawable/ts" />
+                    <ImageView
+                        android:id="@+id/banhmi"
+                        android:layout_width="79dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="210dp"
+                        android:layout_marginTop="-90dp"
+                        app:srcCompat="@drawable/bm" />
 
-                <TextView
-                    android:id="@+id/editts"
-                    android:layout_width="81dp"
+                    <TextView
+                        android:id="@+id/editbm"
+                        android:layout_width="81dp"
+                        android:layout_height="37dp"
+                        android:layout_marginLeft="210dp"
+                        android:text="Bánh Mì"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
 
-                    android:layout_height="32dp"
-                    android:layout_marginLeft="100dp"
-                    android:text="Trà Sữa"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-                <ImageView
-                    android:id="@+id/banhmi"
-                    android:layout_width="79dp"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="210dp"
-                    android:layout_marginTop="-90dp"
-                    app:srcCompat="@drawable/bm" />
-
-                <TextView
-                    android:id="@+id/editbm"
-                    android:layout_width="81dp"
-                    android:layout_height="37dp"
-                    android:layout_marginLeft="210dp"
-                    android:text="Bánh Mì"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="14sp"
-                    android:textStyle="bold" />
-
-                <ImageView
-                    android:id="@+id/bsn"
-                    android:layout_width="match_parent"
-                    android:layout_height="62dp"
-                    android:layout_marginLeft="320dp"
-                    android:layout_marginTop="-95dp"
-                    app:srcCompat="@drawable/bsn" />
-
-                <TextView
-                    android:id="@+id/editbsn"
-                    android:layout_width="match_parent"
-                    android:layout_height="31dp"
-                    android:layout_marginLeft="320dp"
-                    android:text="Bánh sinh Nhật"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/top"
-                android:layout_width="wrap_content"
-
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="Top Bán Chạy Nhất"
-                android:textColor="@color/black"
-                android:textSize="23sp"
-                android:textStyle="bold" />
-
-            <View
-                android:id="@+id/view"
-                android:layout_width="match_parent"
-                android:layout_height="7dp"
-                android:layout_marginTop="480dp"
-                android:background="@color/black" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="96dp"
-                android:layout_marginTop="-490dp"
-                android:orientation="vertical">
-
-                <HorizontalScrollView
-                    android:layout_width="match_parent"
-
-                    android:layout_height="match_parent">
-
-                    <LinearLayout
+                    <ImageView
+                        android:id="@+id/bsn"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="62dp"
+                        android:layout_marginLeft="320dp"
+                        android:layout_marginTop="-95dp"
+                        app:srcCompat="@drawable/bsn" />
 
-                        <ImageView
-                            android:id="@+id/imageView23"
-                            android:layout_width="57dp"
-                            android:layout_height="49dp"
-                            android:layout_marginLeft="100dp"
-                            android:layout_marginTop="-0dp"
-                            app:srcCompat="@drawable/sale" />
+                    <TextView
+                        android:id="@+id/editbsn"
+                        android:layout_width="match_parent"
+                        android:layout_height="31dp"
+                        android:layout_marginLeft="320dp"
+                        android:text="Bánh sinh Nhật"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
 
-                        <FrameLayout
-                            android:layout_width="102dp"
-                            android:layout_height="96dp"
-                            android:layout_marginLeft="-150dp"
-                            android:layout_marginTop="-2dp"
-                            android:background="@color/node">
-
-                            <ImageView
-                                android:id="@+id/imageView24"
-                                android:layout_width="76dp"
-                                android:layout_height="63dp"
-                                android:layout_marginLeft="13dp"
-                                android:layout_marginTop="5dp"
-                                app:srcCompat="@drawable/mousse" />
-
-                            <TextView
-                                android:id="@+id/textView13"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginTop="70dp"
-                                android:text="25,000vnd"
-                                android:textColor="@color/black"
-                                android:textStyle="bold" />
-                        </FrameLayout>
-
-                        <FrameLayout
-                            android:layout_width="109dp"
-                            android:layout_height="100dp"
-                            android:layout_marginLeft="50dp"
-                            android:layout_marginTop="-2dp"
-                            android:background="@color/node">
-
-                            <ImageView
-                                android:id="@+id/imageView26"
-                                android:layout_width="78dp"
-                                android:layout_height="65dp"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginTop="10dp"
-                                app:srcCompat="@drawable/tras" />
-
-                            <TextView
-                                android:id="@+id/textView14"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="25dp"
-                                android:layout_marginTop="75dp"
-                                android:text="35,000vnd"
-                                android:textColor="@color/black"
-                                android:textStyle="bold" />
-
-                        </FrameLayout>
-
-                        <FrameLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="-2dp"
-                            android:background="@color/node">
-
-                            <TextView
-                                android:id="@+id/price10"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginTop="70dp"
-                                android:text="50,000vnđ"
-                                android:textColor="@color/black"
-                                android:textSize="15sp" />
-
-                            <ImageView
-                                android:id="@+id/imageView25"
-                                android:layout_width="77dp"
-                                android:layout_height="61dp"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginTop="3dp"
-                                app:srcCompat="@drawable/cake" />
-                        </FrameLayout>
-
-                        <FrameLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="20dp"
-                            android:layout_marginTop="-2dp"
-                            android:background="@color/node">
-
-                            <ImageView
-                                android:id="@+id/imageView22"
-                                android:layout_width="77dp"
-                                android:layout_height="61dp"
-                                android:layout_marginLeft="20dp"
-                                android:layout_marginTop="3dp"
-                                app:srcCompat="@drawable/cake" />
-
-                            <TextView
-                                android:id="@+id/price"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="15dp"
-                                android:layout_marginTop="70dp"
-                                android:text="50,000vnđ"
-                                android:textColor="@color/black"
-                                android:textSize="15sp" />
-                        </FrameLayout>
-                    </LinearLayout>
-                </HorizontalScrollView>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="166dp"
-                android:layout_marginTop="1dp"
-                android:orientation="vertical">
+                </LinearLayout>
 
                 <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="187dp"
-                    android:layout_height="36dp"
+                    android:id="@+id/top"
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Phổ Biến"
+                    android:text="Top Bán Chạy Nhất"
                     android:textColor="@color/black"
-                    android:textSize="22sp"
+                    android:textSize="23sp"
                     android:textStyle="bold" />
 
                 <View
-                    android:id="@+id/view2"
+                    android:id="@+id/view"
                     android:layout_width="match_parent"
                     android:layout_height="7dp"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="480dp"
                     android:background="@color/black" />
 
-                <FrameLayout
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="96dp"
+                    android:layout_marginTop="-490dp"
+                    android:orientation="vertical">
 
-                    android:background="@color/node">
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
 
-                    <ImageView
-                        android:id="@+id/mon"
-                        android:layout_width="91dp"
-                        android:layout_height="95dp"
-                        app:srcCompat="@drawable/esp" />
+                        android:layout_height="match_parent">
 
-                    <TextView
-                        android:id="@+id/ten"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="110dp"
-                        android:layout_marginTop="20dp"
-                        android:text="Coffee Espresso"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
 
-                    <TextView
-                        android:id="@+id/gia"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="120dp"
-                        android:layout_marginTop="60dp"
-                        android:text="30,000vnđ"
-                        android:textColor="@color/gray"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                            <ImageView
+                                android:id="@+id/imageView23"
+                                android:layout_width="57dp"
+                                android:layout_height="49dp"
+                                android:layout_marginLeft="100dp"
+                                android:layout_marginTop="-0dp"
+                                app:srcCompat="@drawable/sale" />
 
-                    <Button
-                        android:id="@+id/cong"
-                        android:layout_width="50dp"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="350dp"
-                        android:layout_marginTop="32dp"
-                        android:text="+"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="10sp"
-                        android:textStyle="bold" />
+                            <FrameLayout
+                                android:layout_width="102dp"
+                                android:layout_height="96dp"
+                                android:layout_marginLeft="-150dp"
+                                android:layout_marginTop="-2dp"
+                                android:background="@color/node">
 
-                    <Button
-                        android:id="@+id/tru"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="270dp"
-                        android:layout_marginTop="32dp"
-                        android:text="-"
-                        android:textStyle="bold" />
+                                <ImageView
+                                    android:id="@+id/imageView24"
+                                    android:layout_width="76dp"
+                                    android:layout_height="63dp"
+                                    android:layout_marginLeft="13dp"
+                                    android:layout_marginTop="5dp"
+                                    app:srcCompat="@drawable/mousse" />
 
-                    <TextView
-                        android:id="@+id/sl"
-                        android:layout_width="45dp"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="300dp"
-                        android:layout_marginTop="40dp"
-                        android:text="2"
-                        android:textAlignment="center"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </FrameLayout>
+                                <TextView
+                                    android:id="@+id/textView13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="70dp"
+                                    android:text="25,000vnd"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+                            </FrameLayout>
 
-            </LinearLayout>
+                            <FrameLayout
+                                android:layout_width="109dp"
+                                android:layout_height="100dp"
+                                android:layout_marginLeft="50dp"
+                                android:layout_marginTop="-2dp"
+                                android:background="@color/node">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="99dp"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical">
+                                <ImageView
+                                    android:id="@+id/imageView26"
+                                    android:layout_width="78dp"
+                                    android:layout_height="65dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="10dp"
+                                    app:srcCompat="@drawable/tras" />
 
-                <FrameLayout
+                                <TextView
+                                    android:id="@+id/textView14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_marginTop="75dp"
+                                    android:text="35,000vnd"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="-2dp"
+                                android:background="@color/node">
+
+                                <TextView
+                                    android:id="@+id/price10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="70dp"
+                                    android:text="50,000vnđ"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+
+                                <ImageView
+                                    android:id="@+id/imageView25"
+                                    android:layout_width="77dp"
+                                    android:layout_height="61dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="3dp"
+                                    app:srcCompat="@drawable/cake" />
+                            </FrameLayout>
+
+                            <FrameLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="-2dp"
+                                android:background="@color/node">
+
+                                <ImageView
+                                    android:id="@+id/imageView22"
+                                    android:layout_width="77dp"
+                                    android:layout_height="61dp"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="3dp"
+                                    app:srcCompat="@drawable/cake" />
+
+                                <TextView
+                                    android:id="@+id/price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginTop="70dp"
+                                    android:text="50,000vnđ"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp" />
+                            </FrameLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-
-                    android:background="@color/node">
-
-                    <ImageView
-                        android:id="@+id/imageView19"
-                        android:layout_width="91dp"
-                        android:layout_height="95dp"
-                        app:srcCompat="@drawable/esp" />
+                    android:layout_height="166dp"
+                    android:layout_marginTop="1dp"
+                    android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="110dp"
-                        android:layout_marginTop="20dp"
-                        android:text="Coffee Espresso"
+                        android:id="@+id/textView4"
+                        android:layout_width="187dp"
+                        android:layout_height="36dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Phổ Biến"
                         android:textColor="@color/black"
-                        android:textSize="20sp"
+                        android:textSize="22sp"
                         android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/textView12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="120dp"
-                        android:layout_marginTop="60dp"
-                        android:text="30,000vnđ"
-                        android:textColor="@color/gray"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                    <View
+                        android:id="@+id/view2"
+                        android:layout_width="match_parent"
+                        android:layout_height="7dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/black" />
 
-                    <Button
-                        android:id="@+id/button6"
-                        android:layout_width="50dp"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="350dp"
-                        android:layout_marginTop="32dp"
-                        android:text="+"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="10sp"
-                        android:textStyle="bold" />
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
 
-                    <Button
-                        android:id="@+id/button7"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="270dp"
-                        android:layout_marginTop="32dp"
-                        android:text="-"
-                        android:textStyle="bold" />
+                        android:background="@color/node">
 
-                    <TextView
-                        android:id="@+id/price1"
-                        android:layout_width="45dp"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="300dp"
-                        android:layout_marginTop="40dp"
-                        android:text="2"
-                        android:textAlignment="center"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </FrameLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="99dp"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical">
+                        <ImageView
+                            android:id="@+id/mon"
+                            android:layout_width="91dp"
+                            android:layout_height="95dp"
+                            app:srcCompat="@drawable/esp" />
 
-                <FrameLayout
+                        <TextView
+                            android:id="@+id/ten"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="110dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Coffee Espresso"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/gia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="120dp"
+                            android:layout_marginTop="60dp"
+                            android:text="30,000vnđ"
+                            android:textColor="@color/gray"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/cong"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="350dp"
+                            android:layout_marginTop="32dp"
+                            android:text="+"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/tru"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="270dp"
+                            android:layout_marginTop="32dp"
+                            android:text="-"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/sl"
+                            android:layout_width="45dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="300dp"
+                            android:layout_marginTop="40dp"
+                            android:text="2"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="99dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
 
-                    android:background="@color/node">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
 
-                    <ImageView
-                        android:id="@+id/mon1"
-                        android:layout_width="91dp"
-                        android:layout_height="95dp"
-                        app:srcCompat="@drawable/esp" />
+                        android:background="@color/node">
 
-                    <TextView
-                        android:id="@+id/gia1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="110dp"
-                        android:layout_marginTop="20dp"
-                        android:text="Coffee Espresso"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                        <ImageView
+                            android:id="@+id/imageView19"
+                            android:layout_width="91dp"
+                            android:layout_height="95dp"
+                            app:srcCompat="@drawable/esp" />
 
-                    <TextView
-                        android:id="@+id/ten1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="120dp"
-                        android:layout_marginTop="60dp"
-                        android:text="30,000vnđ"
-                        android:textColor="@color/gray"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="110dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Coffee Espresso"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
-                    <Button
-                        android:id="@+id/cong1"
-                        android:layout_width="50dp"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="350dp"
-                        android:layout_marginTop="32dp"
-                        android:text="+"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="10sp"
-                        android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="120dp"
+                            android:layout_marginTop="60dp"
+                            android:text="30,000vnđ"
+                            android:textColor="@color/gray"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
-                    <Button
-                        android:id="@+id/tru2"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="270dp"
-                        android:layout_marginTop="32dp"
-                        android:text="-"
-                        android:textStyle="bold" />
+                        <Button
+                            android:id="@+id/button6"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="350dp"
+                            android:layout_marginTop="32dp"
+                            android:text="+"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/sl2"
-                        android:layout_width="45dp"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="300dp"
-                        android:layout_marginTop="40dp"
-                        android:text="2"
-                        android:textAlignment="center"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </FrameLayout>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="99dp"
-                android:layout_marginTop="10dp"
-                android:orientation="vertical">
+                        <Button
+                            android:id="@+id/button7"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="270dp"
+                            android:layout_marginTop="32dp"
+                            android:text="-"
+                            android:textStyle="bold" />
 
-                <FrameLayout
+                        <TextView
+                            android:id="@+id/price1"
+                            android:layout_width="45dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="300dp"
+                            android:layout_marginTop="40dp"
+                            android:text="2"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="99dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
 
-                    android:background="@color/node">
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
 
-                    <ImageView
-                        android:id="@+id/mon3"
-                        android:layout_width="91dp"
-                        android:layout_height="95dp"
-                        app:srcCompat="@drawable/esp" />
+                        android:background="@color/node">
 
-                    <TextView
-                        android:id="@+id/ten3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="110dp"
-                        android:layout_marginTop="20dp"
-                        android:text="Coffee Espresso"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                        <ImageView
+                            android:id="@+id/mon1"
+                            android:layout_width="91dp"
+                            android:layout_height="95dp"
+                            app:srcCompat="@drawable/esp" />
 
-                    <TextView
-                        android:id="@+id/gia3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="120dp"
-                        android:layout_marginTop="60dp"
-                        android:text="30,000vnđ"
-                        android:textColor="@color/gray"
-                        android:textSize="20sp"
-                        android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/gia1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="110dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Coffee Espresso"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
-                    <Button
-                        android:id="@+id/cong3"
-                        android:layout_width="50dp"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="350dp"
-                        android:layout_marginTop="32dp"
-                        android:text="+"
-                        android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="10sp"
-                        android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/ten1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="120dp"
+                            android:layout_marginTop="60dp"
+                            android:text="30,000vnđ"
+                            android:textColor="@color/gray"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
-                    <Button
-                        android:id="@+id/tru3"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="270dp"
-                        android:layout_marginTop="32dp"
-                        android:text="-"
-                        android:textStyle="bold" />
+                        <Button
+                            android:id="@+id/cong1"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="350dp"
+                            android:layout_marginTop="32dp"
+                            android:text="+"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
 
-                    <TextView
-                        android:id="@+id/sl3"
-                        android:layout_width="45dp"
-                        android:layout_height="40dp"
-                        android:layout_marginLeft="300dp"
-                        android:layout_marginTop="40dp"
-                        android:text="2"
-                        android:textAlignment="center"
-                        android:textSize="16sp"
-                        android:textStyle="bold" />
-                </FrameLayout>
+                        <Button
+                            android:id="@+id/tru2"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="270dp"
+                            android:layout_marginTop="32dp"
+                            android:text="-"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/sl2"
+                            android:layout_width="45dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="300dp"
+                            android:layout_marginTop="40dp"
+                            android:text="2"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="99dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:background="@color/node">
+
+                        <ImageView
+                            android:id="@+id/mon3"
+                            android:layout_width="91dp"
+                            android:layout_height="95dp"
+                            app:srcCompat="@drawable/esp" />
+
+                        <TextView
+                            android:id="@+id/ten3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="110dp"
+                            android:layout_marginTop="20dp"
+                            android:text="Coffee Espresso"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/gia3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="120dp"
+                            android:layout_marginTop="60dp"
+                            android:text="30,000vnđ"
+                            android:textColor="@color/gray"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/cong3"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="350dp"
+                            android:layout_marginTop="32dp"
+                            android:text="+"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:id="@+id/tru3"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="270dp"
+                            android:layout_marginTop="32dp"
+                            android:text="-"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/sl3"
+                            android:layout_width="45dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="300dp"
+                            android:layout_marginTop="40dp"
+                            android:text="2"
+                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+                    </FrameLayout>
+                </LinearLayout>
             </LinearLayout>
-        </LinearLayout>
         </ScrollView>
     </LinearLayout>
 

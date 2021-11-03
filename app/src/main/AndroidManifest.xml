@@ -14,10 +14,10 @@
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/fbappid"
             />
-        <activity android:name=".activity.loginFragment"
+        <activity
             android:configChanges="orientation|screenSize|screenLayout|keyboard|keyboardHidden"
             android:label="@string/app_name"
-
+            android:name=".activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +25,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.MainActivity" />
         <activity android:name=".activity.tcactivity" />
         <activity android:name=".activity.frgcooffe" />
         <activity android:name=".activity.singin" />
@@ -46,14 +45,14 @@
         <activity android:name=".activity.MinhTuan.hinh12Activity" />
         <activity android:name=".activity.MinhTuan.hinh13Activity" />
         <activity android:name=".activity.MinhTuan.hinh14Activity" />
-
+        <activity android:name=".activity.MinhTuan.hinh15Activity" />
         <activity android:name=".activity.MinhTuan.Closehinh12"/>
         <activity android:name=".activity.MinhTuan.CaNhan"/>
-        <activity android:name=".activity.phieuud1"/>
+        <activity android:name=".activity.PhieuUD"/>
         <activity android:name=".activity.MinhTuan.TrangChu"/>
         <activity android:name=".activity.MinhTuan.LSGD"/>
         <activity android:name=".activity.MinhTuan.LSDQ"/>
-       <activity android:name=".activity.MinhTuan.hinh11Activity"/>
+
     </application>
 
 </manifest>
