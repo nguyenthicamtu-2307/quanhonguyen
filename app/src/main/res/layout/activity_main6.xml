@@ -3,15 +3,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/nen"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/nen"
+        android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/layout1"
-        android:layout_width="390dp"
-        android:layout_height="100dp">
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
 
         <ImageButton
             android:id="@+id/btnBack"
@@ -21,8 +24,7 @@
             android:layout_marginTop="22dp"
             android:layout_marginEnd="325dp"
             android:background="@drawable/circle"
-            android:padding="25dp"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            android:padding="25dp" />
 
         <Button
             android:id="@+id/trove"
@@ -35,8 +37,7 @@
             android:fontFamily="arial"
             android:textColor="@color/mauchu"
             android:textSize="30dp"
-            android:textStyle="bold"
-            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/txtTs"
@@ -53,80 +54,82 @@
             android:textSize="35dp"
             android:textStyle="bold" />
     </RelativeLayout>
-
-
-    <RelativeLayout
-        android:id="@+id/khung1"
-        android:layout_width="match_parent"
-        android:layout_height="115dp"
-        android:layout_below="@+id/layout1">
-
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="550dp">
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/radius" />
+            android:layout_height="570dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="288dp"
-            android:background="@drawable/radius_brown"
-            android:padding="76dp" />
+            <RelativeLayout
+                android:id="@+id/khung1"
+                android:layout_width="match_parent"
+                android:layout_height="115dp">
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="290dp"
-            android:background="@drawable/ts1"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/radius" />
 
-        <TextView
-            android:id="@+id/ten1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="60dp"
-            android:fontFamily="@font/faustinasemibold"
-            android:padding="-20dp"
-            android:text="Trà sữa khoai môn"
-            android:textColor="@color/maumon"
-            android:textSize="24dp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="288dp"
+                    android:background="@drawable/radius_brown"
+                    android:padding="76dp" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/ten1"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="150dp"
-            android:fontFamily="arial"
-            android:padding="-20dp"
-            android:text="25,000đ"
-            android:textColor="@color/tien"
-            android:textSize="24dp" />
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="290dp"
+                    android:background="@drawable/ts1" />
+
+                <TextView
+                    android:id="@+id/ten1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="60dp"
+                    android:fontFamily="@font/faustinasemibold"
+                    android:padding="-20dp"
+                    android:text="Trà sữa khoai môn"
+                    android:textColor="@color/maumon"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ten1"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="150dp"
+                    android:fontFamily="arial"
+                    android:padding="-20dp"
+                    android:text="25,000đ"
+                    android:textColor="@color/tien"
+                    android:textSize="24dp" />
 
 
-        <Button
-            android:id="@+id/cong1"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginStart="335dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginEnd="25dp"
-            android:background="@drawable/ic_baseline_add_24"
-            android:textColor="@color/mauchu"
-            android:textSize="30dp"
-            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-    </RelativeLayout>
+                <Button
+                    android:id="@+id/cong1"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="335dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/ic_baseline_add_24"
+                    android:textColor="@color/mauchu"
+                    android:textSize="30dp" />
+            </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/khung2"
@@ -158,7 +161,7 @@
             android:layout_marginTop="18dp"
             android:layout_marginEnd="290dp"
             android:background="@drawable/ts2"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+         />
 
         <TextView
             android:id="@+id/ten2"
@@ -197,7 +200,7 @@
             android:background="@drawable/ic_baseline_horizontal_rule_24"
             android:textColor="@color/mauchu"
             android:textSize="30dp"
-            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+             />
 
         <TextView
             android:id="@+id/tv2"
@@ -225,7 +228,7 @@
             android:background="@drawable/ic_baseline_add_24"
             android:textColor="@color/mauchu"
             android:textSize="30dp"
-            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            />
     </RelativeLayout>
 
     <RelativeLayout
@@ -258,7 +261,7 @@
             android:layout_marginTop="18dp"
             android:layout_marginEnd="290dp"
             android:background="@drawable/ts3"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+           />
 
         <TextView
             android:id="@+id/ten3"
@@ -282,7 +285,7 @@
             android:layout_marginEnd="150dp"
             android:fontFamily="arial"
             android:padding="-20dp"
-            android:text="40,000đ"
+            android:text="20,000đ"
             android:textColor="@color/tien"
             android:textSize="24dp" />
 
@@ -298,7 +301,7 @@
             android:background="@drawable/ic_baseline_add_24"
             android:textColor="@color/mauchu"
             android:textSize="30dp"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+            />
 
     </RelativeLayout>
 
@@ -333,7 +336,7 @@
             android:layout_marginTop="18dp"
             android:layout_marginEnd="290dp"
             android:background="@drawable/ts4"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            />
 
         <TextView
             android:id="@+id/ten4"
@@ -372,7 +375,7 @@
             android:background="@drawable/ic_baseline_horizontal_rule_24"
             android:textColor="@color/mauchu"
             android:textSize="30dp"
-            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            />
 
         <TextView
             android:id="@+id/tv4"
@@ -399,87 +402,223 @@
             android:background="@drawable/ic_baseline_add_24"
             android:textColor="@color/mauchu"
             android:textSize="30dp"
-            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            />
     </RelativeLayout>
 
+            <RelativeLayout
+                android:id="@+id/khung5"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_below="@+id/khung4">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/radius" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="288dp"
+                    android:background="@drawable/radius_brown"
+                    android:padding="76dp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="290dp"
+                    android:background="@drawable/ts5" />
+
+
+                <TextView
+                    android:id="@+id/ten5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="80dp"
+                    android:fontFamily="@font/faustinasemibold"
+                    android:padding="-20dp"
+                    android:text="Trà sữa Thái đỏ"
+                    android:textColor="@color/maumon"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ten5"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="150dp"
+                    android:fontFamily="arial"
+                    android:padding="-20dp"
+                    android:text="45,000đ"
+                    android:textColor="@color/tien"
+                    android:textSize="24dp" />
+
+                <Button
+                    android:id="@+id/cong5"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="335dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/ic_baseline_add_24"
+                    android:textColor="@color/mauchu"
+                    android:textSize="30dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/khung6"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_below="@+id/khung5">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/radius" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="288dp"
+                    android:background="@drawable/radius_brown"
+                    android:padding="76dp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="290dp"
+                    android:background="@drawable/ts" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="30dp"
+                    android:fontFamily="@font/faustinasemibold"
+                    android:padding="-20dp"
+                    android:text="Trà sữa trân châu đen"
+                    android:textColor="@color/maumon"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="150dp"
+                    android:fontFamily="arial"
+                    android:padding="-20dp"
+                    android:text="30,000đ"
+                    android:textColor="@color/tien"
+                    android:textSize="24dp" />
+
+                <Button
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="335dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/ic_baseline_add_24"
+                    android:textColor="@color/mauchu"
+                    android:textSize="30dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/khung7"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_below="@+id/khung6">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/radius" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="288dp"
+                    android:background="@drawable/radius_brown"
+                    android:padding="76dp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="290dp"
+                    android:background="@drawable/ts1" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="80dp"
+                    android:fontFamily="@font/faustinasemibold"
+                    android:padding="-20dp"
+                    android:text="Trà sữa khoai dẻo"
+                    android:textColor="@color/maumon"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="150dp"
+                    android:fontFamily="arial"
+                    android:padding="-20dp"
+                    android:text="15,000đ"
+                    android:textColor="@color/tien"
+                    android:textSize="24dp" />
+
+                <Button
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="335dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/ic_baseline_add_24"
+                    android:textColor="@color/mauchu"
+                    android:textSize="30dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+        </ScrollView>
     <RelativeLayout
-        android:id="@+id/khung5"
         android:layout_width="match_parent"
-        android:layout_height="115dp"
-        android:layout_below="@+id/khung4">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/radius" />
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="288dp"
-            android:background="@drawable/radius_brown"
-            android:padding="76dp" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="290dp"
-            android:background="@drawable/ts5"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-
-
-        <TextView
-            android:id="@+id/ten5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="80dp"
-            android:fontFamily="@font/faustinasemibold"
-            android:padding="-20dp"
-            android:text="Trà sữa Thái đỏ"
-            android:textColor="@color/maumon"
-            android:textSize="24dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/ten5"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="150dp"
-            android:fontFamily="arial"
-            android:padding="-20dp"
-            android:text="45,000đ"
-            android:textColor="@color/tien"
-            android:textSize="24dp" />
-
-        <Button
-            android:id="@+id/cong5"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginStart="335dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginEnd="25dp"
-            android:background="@drawable/ic_baseline_add_24"
-            android:textColor="@color/mauchu"
-            android:textSize="30dp"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_below="@+id/khung5"
-        android:layout_marginTop="10dp"
-        android:background="@color/btn">
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:background="@color/btn"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/tvtong"
@@ -529,8 +668,8 @@
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="16dp"
-            android:textStyle="bold"
-            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+            android:textStyle="bold" />
     </RelativeLayout>
-
+    </LinearLayout>
 </RelativeLayout>
+

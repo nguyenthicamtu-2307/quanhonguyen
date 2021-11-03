@@ -9,13 +9,13 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.foodorder.R;
-import com.example.foodorder.activity.PhieuUD;
+
 
 public class hinh15Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hinh_15);
-        ImageButton butonTC= (ImageButton) findViewById(R.id.btnHomeHinh15);
+        ImageButton butonTC= (ImageButton) findViewById(R.id.btnHomeHinh14);
         butonTC.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
@@ -23,7 +23,7 @@ public class hinh15Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        ImageButton butonDH= (ImageButton) findViewById(R.id.btnDHhinh15);
+        ImageButton butonDH= (ImageButton) findViewById(R.id.btnDHhinh14);
         butonDH.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
@@ -32,7 +32,7 @@ public class hinh15Activity extends AppCompatActivity {
             }
         });
 
-        ImageButton butonTD= (ImageButton) findViewById(R.id.btnTichDiemHinh15);
+        ImageButton butonTD= (ImageButton) findViewById(R.id.btnTichDiemHinh14);
         butonTD.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
@@ -40,7 +40,7 @@ public class hinh15Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        ImageButton butonCN= (ImageButton) findViewById(R.id.BtnCanhanH15);
+        ImageButton butonCN= (ImageButton) findViewById(R.id.BtnCanhanH14);
         butonCN.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 

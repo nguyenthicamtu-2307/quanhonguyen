@@ -3,63 +3,69 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/nen"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <RelativeLayout
-        android:id="@+id/layout1"
-        android:layout_width="390dp"
-        android:layout_height="100dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/nen"
+        android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/btnBack"
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="390dp"
+            android:layout_height="80dp">
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="325dp"
+                android:background="@drawable/circle"
+                android:padding="25dp" />
+
+            <Button
+                android:id="@+id/trove"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="330dp"
+                android:background="@drawable/ic_baseline_keyboard_arrow_left_24"
+                android:fontFamily="arial"
+                android:textColor="@color/mauchu"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="100dp"
+                android:background="@color/nen"
+                android:fontFamily="@font/faustinasemibold"
+                android:padding="5dp"
+                android:text="Bánh Mì"
+                android:textColor="@color/mauchu"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="325dp"
-            android:background="@drawable/circle"
-            android:padding="25dp"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-
-        <Button
-            android:id="@+id/trove"
+            android:layout_height="550dp">
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="330dp"
-            android:background="@drawable/ic_baseline_keyboard_arrow_left_24"
-            android:fontFamily="arial"
-            android:textColor="@color/mauchu"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
-
-        <TextView
-            android:id="@+id/txt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="140dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="100dp"
-            android:background="@color/nen"
-            android:fontFamily="@font/faustinasemibold"
-            android:padding="5dp"
-            android:text="Bánh Mì"
-            android:textColor="@color/mauchu"
-            android:textSize="35dp"
-            android:textStyle="bold" />
-    </RelativeLayout>
-
+            android:layout_height="570dp">
 
     <RelativeLayout
         android:id="@+id/khung1"
         android:layout_width="match_parent"
-        android:layout_height="115dp"
-        android:layout_below="@+id/layout1">
+        android:layout_height="115dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -85,7 +91,7 @@
             android:layout_marginTop="18dp"
             android:layout_marginEnd="290dp"
             android:background="@drawable/banhmi1"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+             />
 
         <TextView
             android:id="@+id/ten1"
@@ -125,7 +131,7 @@
             android:background="@drawable/ic_baseline_add_24"
             android:textColor="@color/mauchu"
             android:textSize="30dp"
-            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+             />
     </RelativeLayout>
 
     <RelativeLayout
@@ -157,7 +163,7 @@
             android:layout_marginTop="18dp"
             android:layout_marginEnd="290dp"
             android:background="@drawable/banhmi2"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+             />
 
         <TextView
             android:id="@+id/ten2"
@@ -196,7 +202,7 @@
             android:background="@drawable/ic_baseline_horizontal_rule_24"
             android:textColor="@color/mauchu"
             android:textSize="30dp"
-            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+             />
 
         <TextView
             android:id="@+id/tv2"
@@ -224,7 +230,7 @@
             android:background="@drawable/ic_baseline_add_24"
             android:textColor="@color/mauchu"
             android:textSize="30dp"
-            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            />
     </RelativeLayout>
 
     <RelativeLayout
@@ -258,7 +264,7 @@
             android:layout_marginTop="18dp"
             android:layout_marginEnd="290dp"
             android:background="@drawable/banhmi3"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            />
 
 
         <TextView
@@ -299,7 +305,7 @@
             android:background="@drawable/ic_baseline_add_24"
             android:textColor="@color/mauchu"
             android:textSize="30dp"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+           />
 
     </RelativeLayout>
 
@@ -334,7 +340,7 @@
             android:layout_marginTop="18dp"
             android:layout_marginEnd="290dp"
             android:background="@drawable/banhmi4"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+             />
 
         <TextView
             android:id="@+id/ten4"
@@ -373,7 +379,7 @@
             android:background="@drawable/ic_baseline_horizontal_rule_24"
             android:textColor="@color/mauchu"
             android:textSize="30dp"
-            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            />
 
         <TextView
             android:id="@+id/tv4"
@@ -400,7 +406,7 @@
             android:background="@drawable/ic_baseline_add_24"
             android:textColor="@color/mauchu"
             android:textSize="30dp"
-            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+             />
     </RelativeLayout>
 
     <RelativeLayout
@@ -432,8 +438,7 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="18dp"
             android:layout_marginEnd="290dp"
-            android:background="@drawable/banhmi5"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+            android:background="@drawable/banhmi5" />
 
 
         <TextView
@@ -472,16 +477,156 @@
             android:layout_marginEnd="25dp"
             android:background="@drawable/ic_baseline_add_24"
             android:textColor="@color/mauchu"
-            android:textSize="30dp"
-            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+            android:textSize="30dp" />
     </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/khung7"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_below="@+id/khung6">
 
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/radius" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="288dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/radius_brown"
+                    android:padding="76dp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="290dp"
+                    android:background="@drawable/banhmi4" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/faustinasemibold"
+                    android:padding="-20dp"
+                    android:text="Bánh buger"
+                    android:textColor="@color/maumon"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="150dp"
+                    android:fontFamily="arial"
+                    android:padding="-20dp"
+                    android:text="20,000đ"
+                    android:textColor="@color/tien"
+                    android:textSize="24dp" />
+
+                <Button
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="335dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/ic_baseline_add_24"
+                    android:textColor="@color/mauchu"
+                    android:textSize="30dp"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/khung6"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_below="@+id/khung5">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/radius" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="288dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/radius_brown"
+                    android:padding="76dp" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="290dp"
+                    android:background="@drawable/banhmiluamach" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/faustinasemibold"
+                    android:padding="-20dp"
+                    android:text="Bánh mì Sandwich mè"
+                    android:textColor="@color/maumon"
+                    android:textSize="24dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="150dp"
+                    android:fontFamily="arial"
+                    android:padding="-20dp"
+                    android:text="20,000đ"
+                    android:textColor="@color/tien"
+                    android:textSize="24dp" />
+
+                <Button
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="335dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/ic_baseline_add_24"
+                    android:textColor="@color/mauchu"
+                    android:textSize="30dp"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+        </ScrollView>
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="match_parent"
         android:layout_below="@+id/khung5"
-        android:layout_marginTop="10dp"
-        android:background="@color/btn">
+        android:layout_marginTop="0dp"
+        android:background="@color/btn"
+        android:orientation="horizontal">
 
         <TextView
             android:id="@+id/tvtong"
@@ -531,8 +676,7 @@
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="16dp"
-            android:textStyle="bold"
-            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+            android:textStyle="bold" />
     </RelativeLayout>
-
+    </LinearLayout>
 </RelativeLayout>
