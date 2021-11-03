@@ -9,7 +9,7 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.foodorder.R;
-import com.example.foodorder.activity.MainActivity;
+import com.example.foodorder.activity.PhieuUD;
 
 public class hinh15Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +52,7 @@ public class hinh15Activity extends AppCompatActivity {
         butonPUD.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                Intent intent=new Intent(hinh15Activity.this,PhieuUD.class);
+                Intent intent=new Intent(hinh15Activity.this, PhieuUD.class);
                 startActivity(intent);
             }
         });
