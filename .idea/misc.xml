@@ -8,21 +8,14 @@
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/drawable/ic_arrow_down.xml" value="0.20625" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/drawable/mt.xml" value="0.2203125" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/drawable/quaylai.xml" value="0.20625" />
-        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/actitivy_thongtincanhan.xml" value="0.1675213675213675" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_bg.xml" value="0.2" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_hoso.xml" value="0.1852355072463768" />
-        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_lsdq.xml" value="0.1675213675213675" />
-        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_main.xml" value="0.1675213675213675" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_main10.xml" value="0.12047101449275362" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_main6.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_main7.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_main8.xml" value="0.12047101449275362" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_main9.xml" value="0.14130434782608695" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/contact.xml" value="0.25" />
-        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/dieukhoan.xml" value="0.21" />
-        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/fragment_dh.xml" value="0.15217391304347827" />
-        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/fragment_menu.xml" value="0.15217391304347827" />
-        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/hinh_11.xml" value="0.1675213675213675" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/hinh_15.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/history.xml" value="0.25" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/item_photo.xml" value="0.19010416666666666" />
@@ -146,7 +139,7 @@
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/hinh_12.xml" value="0.1" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/hinh_13.xml" value="0.1" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/hinh_14.xml" value="0.1" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/hinh_15.xml" value="0.1" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/hinh_15.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/history.xml" value="0.1" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/login.xml" value="0.1" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/order.xml" value="0.1" />

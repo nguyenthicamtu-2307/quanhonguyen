@@ -10,6 +10,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.foodorder.R;
+import com.example.foodorder.activity.tcactivity;
 
 public class LSGD extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,7 +22,7 @@ public class LSGD extends AppCompatActivity {
         imgbt_quaylai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(LSGD.this, hinh15Activity.class);
+                Intent intent = new Intent(LSGD.this, hinh14Activity.class);
                 startActivity(intent);
             }
         });

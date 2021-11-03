@@ -33,13 +33,7 @@ public class hinh14Activity extends AppCompatActivity {
         });
 
         ImageButton butonTD= (ImageButton) findViewById(R.id.btnTichDiemHinh14);
-        butonTD.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
 
-                Intent intent=new Intent(hinh14Activity.this, hinh15Activity.class);
-                startActivity(intent);
-            }
-        });
         ImageButton butonCN= (ImageButton) findViewById(R.id.BtnCanhanH14);
         butonCN.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {

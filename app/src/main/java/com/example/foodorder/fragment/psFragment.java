@@ -10,7 +10,6 @@ import android.widget.ImageView;
 import androidx.fragment.app.Fragment;
 
 import com.example.foodorder.R;
-import com.example.foodorder.activity.Dieukhoan;
 import com.example.foodorder.activity.history;
 import com.example.foodorder.activity.lienhe;
 import com.example.foodorder.activity.sale;
@@ -39,19 +38,11 @@ public class psFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        lh=view.findViewById(R.id.lienhe);
-        lh.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(getActivity(), lienhe.class);
-                startActivity(intent);
-            }
-        });
-        dk=view.findViewById(R.id.dk);
+        dk=view.findViewById(R.id.lienhe);
         dk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getActivity(), Dieukhoan.class);
+                Intent intent=new Intent(getActivity(), lienhe.class);
                 startActivity(intent);
             }
         });
