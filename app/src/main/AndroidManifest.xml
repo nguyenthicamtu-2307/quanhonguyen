@@ -26,7 +26,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.tcactivity" />
+        <activity android:name=".activity.tcactivity"
+            tools:ignore="MissingClass" />
         <activity android:name=".activity.frgcooffe" />
         <activity android:name=".activity.singin" />
         <activity android:name=".activity.frgts" />
@@ -50,7 +51,7 @@
         <activity android:name=".activity.MinhTuan.Closehinh12"/>
         <activity android:name=".activity.MinhTuan.CaNhan"/>
         <activity android:name=".activity.PhieuUD"/>
-        <activity android:name=".activity.MinhTuan.TrangChu"/>
+        <activity android:name=".activity.MinhTuan.Trangchu"/>
         <activity android:name=".activity.MinhTuan.LSGD"/>
         <activity android:name=".activity.MinhTuan.LSDQ"/>
 
