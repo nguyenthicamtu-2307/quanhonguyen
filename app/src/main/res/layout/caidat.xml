@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/menu"
+        android:id="@+id/toolbar_cd">
+        <ImageButton
+
+            android:id="@+id/imgbt_qlai"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:background="#ffa87a"
+            android:scaleType="fitStart"
+            android:src="@drawable/quaylai"
+
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/caidat"
+            android:layout_marginLeft="80dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Cài đặt"
+            android:textStyle="bold"
+            android:textColor="@color/afternau"
+            android:textSize="30sp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/toolbar_cd"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/khung_ten">
+
+        <TextView
+            android:id="@+id/textview_tb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Thông báo âm thanh "
+            android:textSize="25sp" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/textview_tb" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/relativelayout_2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/relativelayout_1"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/khung_ten">
+
+        <TextView
+            android:id="@+id/textview_cn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Ẩn hiện hông tin cá nhân "
+            android:textSize="25sp" />
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/textview_cn" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/relativelayout_3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/relativelayout_2"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/khung_ten">
+        <TextView
+            android:id="@+id/textview_tt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Cài đặt món yêu thích"
+            android:textSize="25sp" />
+
+        <Switch
+            android:id="@+id/switch3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/textview_tt" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_4"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/relativelayout_3"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/khung_ten">
+        <TextView
+        android:id="@+id/textview_ht"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Chỉnh sửa thông tin cá nhân"
+        android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btn_tt"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="26dp"
+            android:layout_toRightOf="@id/textview_ht"
+            android:background="@drawable/ottttttt"
+
+            />
+
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/relativelayout_5"
+        android:layout_below="@id/relativelayout_4"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/khung_ten">
+        <TextView
+            android:id="@+id/textview_cc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Cập nhật phần mềm"
+            android:textSize="25sp" />
+
+        <Button
+
+            android:id="@+id/btn_cn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/textview_cc"
+            android:text="Cập nhật"
+            android:backgroundTint="@color/node"
+
+            />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+

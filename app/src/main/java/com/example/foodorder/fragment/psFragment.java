@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.foodorder.R;
 import com.example.foodorder.activity.Dieukhoan;
+import com.example.foodorder.activity.caidat;
 import com.example.foodorder.activity.history;
 import com.example.foodorder.activity.lienhe;
 import com.example.foodorder.activity.sale;
@@ -19,7 +20,7 @@ import com.example.foodorder.activity.ttcn;
 
 public class psFragment extends Fragment {
     ImageView btn;
-    ImageView dk,ls,lh,km;
+    ImageView dk,ls,lh,km,caidat;
 
     public psFragment() {
         // Required empty public constructor
@@ -68,6 +69,14 @@ public class psFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getActivity(), sale.class);
+                startActivity(intent);
+            }
+        });
+        caidat =view.findViewById(R.id.imageView7);
+        caidat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getActivity(), com.example.foodorder.activity.caidat.class);
                 startActivity(intent);
             }
         });
