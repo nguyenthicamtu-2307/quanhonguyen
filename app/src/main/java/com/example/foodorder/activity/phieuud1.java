@@ -10,9 +10,9 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.foodorder.R;
-import com.example.foodorder.activity.MinhTuan.hinh15Activity;
 
-public class PhieuUD extends AppCompatActivity {
+
+public class phieuud1 extends AppCompatActivity {
     ImageButton imgbt_quaylai;
     Button button_ud1, button_ud2, button_ud3, button_ud4;
 
@@ -29,7 +29,7 @@ public class PhieuUD extends AppCompatActivity {
         imgbt_quaylai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PhieuUD.this, hinh15Activity.class);
+                Intent intent = new Intent(phieuud1.this, tcactivity.class);
                 startActivity(intent);
             }
         });
@@ -37,8 +37,8 @@ public class PhieuUD extends AppCompatActivity {
         button_ud1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PhieuUD.this, "Bạn phải chọn món trước", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(PhieuUD.this, dexuat.class);
+                Toast.makeText(phieuud1.this, "Bạn phải chọn món trước", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(phieuud1.this, dexuat.class);
                 startActivity(intent);
 
             }
@@ -46,8 +46,8 @@ public class PhieuUD extends AppCompatActivity {
         button_ud2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PhieuUD.this, "Bạn phải chọn món trước", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(PhieuUD.this, dexuat.class);
+                Toast.makeText(phieuud1.this, "Bạn phải chọn món trước", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(phieuud1.this, dexuat.class);
                 startActivity(intent);
 
             }
@@ -55,8 +55,8 @@ public class PhieuUD extends AppCompatActivity {
         button_ud3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PhieuUD.this, "Bạn phải chọn món trước", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(PhieuUD.this, dexuat.class);
+                Toast.makeText(phieuud1.this, "Bạn phải chọn món trước", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(phieuud1.this, dexuat.class);
                 startActivity(intent);
 
             }
@@ -64,8 +64,8 @@ public class PhieuUD extends AppCompatActivity {
         button_ud4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PhieuUD.this, "Bạn phải chọn món trước", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(PhieuUD.this, dexuat.class);
+                Toast.makeText(phieuud1.this, "Bạn phải chọn món trước", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(phieuud1.this, dexuat.class);
                 startActivity(intent);
 
             }
@@ -73,8 +73,8 @@ public class PhieuUD extends AppCompatActivity {
         button_ud3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PhieuUD.this, "Bạn phải chọn món trước", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(PhieuUD.this, dexuat.class);
+                Toast.makeText(phieuud1.this, "Bạn phải chọn món trước", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(phieuud1.this, dexuat.class);
                 startActivity(intent);
 
             }

@@ -4,9 +4,14 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -54,19 +59,35 @@ import com.facebook.login.widget.LoginButton;
 public class MainActivity extends AppCompatActivity {
     Button btndn;
     Button btndk;
-    ImageView fb,gg;
+    EditText eduser, edpass;
+    ImageView fb, gg;
     LoginButton bth;
     CallbackManager callbackManager;
+    CheckBox remember;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.trangchu);
-        bth=findViewById(R.id.fb);
-        callbackManager= CallbackManager.Factory.create();
+
+        eduser = findViewById(R.id.user);
+        edpass = findViewById(R.id.password);
+        remember = (CheckBox) findViewById(R.id.check);
+        SharedPreferences preferences=getSharedPreferences("checkbox",MODE_PRIVATE);
+        String chek= preferences.getString("remember","");
+        if(chek.equals("true")){
+            Intent intent=new Intent(MainActivity.this,tcactivity.class);
+            startActivity(intent);
+
+        }else if(chek.equals("false")){
+            Toast.makeText(this,"please Sing In",Toast.LENGTH_LONG).show();
+        }
+        bth = findViewById(R.id.fb);
+        callbackManager = CallbackManager.Factory.create();
         bth.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
-                Toast.makeText(getApplicationContext(),"đăng nhập thành công",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "đăng nhập thành công", Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -76,17 +97,17 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onError(FacebookException error) {
-                Toast.makeText(getApplicationContext(),error.getMessage(),Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), error.getMessage(), Toast.LENGTH_LONG).show();
             }
 
         });
 
-        btndn=(Button) findViewById(R.id.button);
-        btndk=(Button)findViewById(R.id.button2) ;
+        btndn = (Button) findViewById(R.id.button);
+        btndk = (Button) findViewById(R.id.button2);
         btndk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this,singin.class);
+                Intent intent = new Intent(MainActivity.this, singin.class);
                 startActivity(intent);
             }
         });
@@ -95,12 +116,34 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(MainActivity.this,tcactivity.class);
                 startActivity(intent);
+
+            }
+        });
+        remember.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(buttonView.isChecked()){
+                    SharedPreferences preferences=getSharedPreferences("checkbox",MODE_PRIVATE);
+                    SharedPreferences.Editor editor=preferences.edit();
+                    editor.putString("remember","true");
+                    editor.apply();
+                    Toast.makeText(MainActivity.this,"Checked",Toast.LENGTH_LONG).show();
+                }else if(!buttonView.isChecked()){
+                    SharedPreferences preferences=getSharedPreferences("checkbox",MODE_PRIVATE);
+                    SharedPreferences.Editor editor=preferences.edit();
+                    editor.putString("remember","false");
+                    editor.apply();
+                    Toast.makeText(MainActivity.this,"UnChecked",Toast.LENGTH_LONG).show();
+                }
             }
         });
     }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        callbackManager.onActivityResult(requestCode,resultCode,data);
+        callbackManager.onActivityResult(requestCode, resultCode, data);
     }
+
+
 }

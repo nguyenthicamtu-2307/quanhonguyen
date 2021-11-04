@@ -1,6 +1,5 @@
 package com.example.foodorder.activity.MinhTuan;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -17,14 +16,6 @@ public class LSGD extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lichsugd);
         ImageButton imgbt_quaylai = (ImageButton) findViewById(R.id.imgbt_qlai);
-
-        imgbt_quaylai.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(LSGD.this, hinh15Activity.class);
-                startActivity(intent);
-            }
-        });
         btn_ct1= findViewById(R.id.btnchitiet1);
         btn_ct2= findViewById(R.id.btnchitiet2);
         btn_ct3 =findViewById(R.id.btnchitiet3);
