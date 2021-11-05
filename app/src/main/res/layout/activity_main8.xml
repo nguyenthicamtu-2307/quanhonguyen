@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -11,640 +9,229 @@
         android:background="@color/nen"
         android:orientation="vertical">
 
-
         <RelativeLayout
             android:id="@+id/layout1"
-            android:layout_width="390dp"
-            android:layout_height="80dp">
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#ffa87a">
 
             <ImageButton
-                android:id="@+id/btnBack"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="22dp"
-                android:layout_marginEnd="325dp"
-                android:background="@drawable/circle"
-                android:padding="25dp" />
-
-            <Button
                 android:id="@+id/trove"
-                android:layout_width="match_parent"
-                android:layout_height="45dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="330dp"
-                android:background="@drawable/ic_baseline_keyboard_arrow_left_24"
-                android:fontFamily="arial"
-                android:textColor="@color/mauchu"
-                android:textSize="30dp"
-                android:textStyle="bold" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="#ffa87a"
+                android:src="@drawable/quaylai" />
 
             <TextView
-                android:id="@+id/txt"
-                android:layout_width="match_parent"
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="140dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="100dp"
-                android:background="@color/nen"
-                android:fontFamily="@font/faustinasemibold"
-                android:padding="5dp"
+                android:layout_centerInParent="true"
                 android:text="Bánh Mì"
-                android:textColor="@color/mauchu"
-                android:textSize="35dp"
+                android:textSize="25dp"
                 android:textStyle="bold" />
         </RelativeLayout>
+
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="550dp">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="570dp">
-
-    <RelativeLayout
-        android:id="@+id/khung1"
-        android:layout_width="match_parent"
-        android:layout_height="115dp">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/radius" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="288dp"
-            android:background="@drawable/radius_brown"
-            android:padding="76dp" />
+            android:layout_marginTop="10dp">
 
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="290dp"
-            android:background="@drawable/banhmi1"
-             />
-
-        <TextView
-            android:id="@+id/ten1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="60dp"
-            android:fontFamily="@font/faustinasemibold"
-            android:padding="-20dp"
-            android:text="Baguette"
-            android:textColor="@color/maumon"
-            android:textSize="24dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/ten1"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="150dp"
-            android:fontFamily="arial"
-            android:padding="-20dp"
-            android:text="25,000đ"
-            android:textColor="@color/tien"
-            android:textSize="24dp" />
-
-
-        <Button
-            android:id="@+id/cong1"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginStart="335dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginEnd="25dp"
-            android:background="@drawable/ic_baseline_add_24"
-            android:textColor="@color/mauchu"
-            android:textSize="30dp"
-             />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/khung2"
-        android:layout_width="match_parent"
-        android:layout_height="115dp"
-        android:layout_below="@+id/khung1">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/radius" />
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="288dp"
-            android:background="@drawable/radius_brown"
-            android:padding="76dp" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="290dp"
-            android:background="@drawable/banhmi2"
-             />
-
-        <TextView
-            android:id="@+id/ten2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="40dp"
-            android:fontFamily="@font/faustinasemibold"
-            android:padding="-20dp"
-            android:text="Bánh mì nướng Kaya"
-            android:textColor="@color/maumon"
-            android:textSize="24dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/ten2"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="150dp"
-            android:fontFamily="arial"
-            android:padding="-20dp"
-            android:text="35,000đ"
-            android:textColor="@color/tien"
-            android:textSize="24dp" />
-
-        <Button
-            android:id="@+id/tru2"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_marginStart="290dp"
-            android:layout_marginTop="215dp"
-            android:layout_marginEnd="95dp"
-            android:background="@drawable/ic_baseline_horizontal_rule_24"
-            android:textColor="@color/mauchu"
-            android:textSize="30dp"
-             />
-
-        <TextView
-            android:id="@+id/tv2"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_marginStart="320dp"
-            android:layout_marginTop="210dp"
-            android:layout_marginEnd="60dp"
-            android:gravity="center"
-            android:text="1"
-            android:textColor="@color/mauchu"
-            android:textSize="30dp"
-
-
-            />
-
-        <Button
-            android:id="@+id/cong2"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginStart="335dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginEnd="25dp"
-            android:background="@drawable/ic_baseline_add_24"
-            android:textColor="@color/mauchu"
-            android:textSize="30dp"
-            />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/khung3"
-        android:layout_width="match_parent"
-        android:layout_height="115dp"
-        android:layout_below="@+id/khung2"
-        >
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/radius" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="288dp"
-            android:background="@drawable/radius_brown"
-            android:padding="76dp" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="290dp"
-            android:background="@drawable/banhmi3"
-            />
-
-
-        <TextView
-            android:id="@+id/ten3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="30dp"
-            android:fontFamily="@font/faustinasemibold"
-            android:padding="-20dp"
-            android:text="Bánh mì Mitrailette"
-            android:textColor="@color/maumon"
-            android:textSize="24dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/ten3"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="150dp"
-            android:fontFamily="arial"
-            android:padding="-20dp"
-            android:text="40,000đ"
-            android:textColor="@color/tien"
-            android:textSize="24dp" />
-
-
-        <Button
-            android:id="@+id/cong3"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_marginStart="335dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginEnd="25dp"
-            android:background="@drawable/ic_baseline_add_24"
-            android:textColor="@color/mauchu"
-            android:textSize="30dp"
-           />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/khung4"
-        android:layout_width="match_parent"
-        android:layout_height="115dp"
-        android:layout_below="@+id/khung3"
-       >
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/radius" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="288dp"
-            android:background="@drawable/radius_brown"
-            android:padding="76dp" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="290dp"
-            android:background="@drawable/banhmi4"
-             />
-
-        <TextView
-            android:id="@+id/ten4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="80dp"
-            android:fontFamily="@font/faustinasemibold"
-            android:padding="-20dp"
-            android:text="Bauru"
-            android:textColor="@color/maumon"
-            android:textSize="24dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/ten4"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="150dp"
-            android:fontFamily="arial"
-            android:padding="-20dp"
-            android:text="25,000đ"
-            android:textColor="@color/tien"
-            android:textSize="24dp" />
-
-        <Button
-            android:id="@+id/tru4"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_marginStart="290dp"
-            android:layout_marginTop="160dp"
-            android:layout_marginEnd="95dp"
-            android:background="@drawable/ic_baseline_horizontal_rule_24"
-            android:textColor="@color/mauchu"
-            android:textSize="30dp"
-            />
-
-        <TextView
-            android:id="@+id/tv4"
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:layout_marginStart="320dp"
-            android:layout_marginTop="160dp"
-            android:layout_marginEnd="60dp"
-            android:gravity="center"
-            android:text="1"
-            android:textColor="@color/mauchu"
-            android:textSize="30dp"
-
-            />
-
-        <Button
-            android:id="@+id/cong4"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginStart="335dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginEnd="25dp"
-            android:background="@drawable/ic_baseline_add_24"
-            android:textColor="@color/mauchu"
-            android:textSize="30dp"
-             />
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/khung5"
-        android:layout_width="match_parent"
-        android:layout_height="115dp"
-        android:layout_below="@+id/khung4">
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="110dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/radius" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="18dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="288dp"
-            android:background="@drawable/radius_brown"
-            android:padding="76dp" />
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="70dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="18dp"
-            android:layout_marginEnd="290dp"
-            android:background="@drawable/banhmi5" />
-
-
-        <TextView
-            android:id="@+id/ten5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="80dp"
-            android:fontFamily="@font/faustinasemibold"
-            android:padding="-20dp"
-            android:text="Francesinha"
-            android:textColor="@color/maumon"
-            android:textSize="24dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/ten5"
-            android:layout_marginStart="120dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="150dp"
-            android:fontFamily="arial"
-            android:padding="-20dp"
-            android:text="35,000đ"
-            android:textColor="@color/tien"
-            android:textSize="24dp" />
-
-        <Button
-            android:id="@+id/cong5"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginStart="335dp"
-            android:layout_marginTop="60dp"
-            android:layout_marginEnd="25dp"
-            android:background="@drawable/ic_baseline_add_24"
-            android:textColor="@color/mauchu"
-            android:textSize="30dp" />
-    </RelativeLayout>
-            <RelativeLayout
-                android:id="@+id/khung7"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="115dp"
-                android:layout_below="@+id/khung6">
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="10dp">
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="110dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/radius" />
-
-                <RelativeLayout
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginTop="18dp"
-                    android:layout_marginEnd="288dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/radius_brown"
-                    android:padding="76dp" />
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp">
 
-                <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="290dp"
-                    android:background="@drawable/banhmi4" />
+                    <ImageButton
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/ts1" />
 
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
 
-                <TextView
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/faustinasemibold"
+                            android:gravity="left"
+                            android:text="Trà sữa khoai môn"
+                            android:textColor="@color/maumon"
+                            android:textSize="23dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ten1"
+                            android:fontFamily="arial"
+                            android:text="25,000đ"
+                            android:textColor="@color/tien"
+                            android:textSize="24dp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/cong1"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_baseline_add_circle_24" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="120dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:fontFamily="@font/faustinasemibold"
-                    android:padding="-20dp"
-                    android:text="Bánh buger"
-                    android:textColor="@color/maumon"
-                    android:textSize="24dp" />
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp">
 
-                <TextView
+                    <ImageButton
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/ts1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/faustinasemibold"
+                            android:gravity="left"
+                            android:text="Trà sữa khoai môn"
+                            android:textColor="@color/maumon"
+                            android:textSize="23dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ten1"
+                            android:fontFamily="arial"
+                            android:text="25,000đ"
+                            android:textColor="@color/tien"
+                            android:textSize="24dp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/cong2"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_baseline_add_circle_24" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="120dp"
-                    android:layout_marginTop="60dp"
-                    android:layout_marginEnd="150dp"
-                    android:fontFamily="arial"
-                    android:padding="-20dp"
-                    android:text="20,000đ"
-                    android:textColor="@color/tien"
-                    android:textSize="24dp" />
+                    android:orientation="horizontal"
+                    android:background="@color/white"
+                    android:paddingHorizontal="15dp"
+                    android:paddingVertical="15dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp">
 
-                <Button
-                    style="?android:attr/borderlessButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="335dp"
-                    android:layout_marginTop="60dp"
-                    android:layout_marginEnd="25dp"
-                    android:background="@drawable/ic_baseline_add_24"
-                    android:textColor="@color/mauchu"
-                    android:textSize="30dp"
-                    />
-            </RelativeLayout>
-            <RelativeLayout
-                android:id="@+id/khung6"
-                android:layout_width="match_parent"
-                android:layout_height="115dp"
-                android:layout_below="@+id/khung5">
+                    <ImageButton
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/ts1" />
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="110dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/radius" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
 
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginTop="18dp"
-                    android:layout_marginEnd="288dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/radius_brown"
-                    android:padding="76dp" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/faustinasemibold"
+                            android:gravity="left"
+                            android:text="Trà sữa khoai môn"
+                            android:textColor="@color/maumon"
+                            android:textSize="23dp"
+                            android:textStyle="bold" />
 
-                <ImageButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="290dp"
-                    android:background="@drawable/banhmiluamach" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/ten1"
+                            android:fontFamily="arial"
+                            android:text="25,000đ"
+                            android:textColor="@color/tien"
+                            android:textSize="24dp" />
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <Button
+                            android:id="@+id/cong3"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/ic_baseline_add_circle_24" />
+                    </RelativeLayout>
+                </LinearLayout>
 
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="120dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:fontFamily="@font/faustinasemibold"
-                    android:padding="-20dp"
-                    android:text="Bánh mì Sandwich mè"
-                    android:textColor="@color/maumon"
-                    android:textSize="24dp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="120dp"
-                    android:layout_marginTop="60dp"
-                    android:layout_marginEnd="150dp"
-                    android:fontFamily="arial"
-                    android:padding="-20dp"
-                    android:text="20,000đ"
-                    android:textColor="@color/tien"
-                    android:textSize="24dp" />
-
-                <Button
-                    style="?android:attr/borderlessButtonStyle"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="335dp"
-                    android:layout_marginTop="60dp"
-                    android:layout_marginEnd="25dp"
-                    android:background="@drawable/ic_baseline_add_24"
-                    android:textColor="@color/mauchu"
-                    android:textSize="30dp"
-                    />
-            </RelativeLayout>
-
-        </RelativeLayout>
+            </LinearLayout>
         </ScrollView>
+
+
+    </LinearLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/khung5"
-        android:layout_marginTop="0dp"
-        android:background="@color/btn"
-        android:orientation="horizontal">
-
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginStart="106dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="86dp"
-            android:background="@drawable/radius_btn_gio" />
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/btn">
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-
-            android:layout_marginStart="110dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="90dp"
-            android:layout_marginBottom="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
             android:background="@drawable/btn_gio"
             android:fontFamily="@font/faustinasemibold"
             android:gravity="center"
@@ -652,7 +239,9 @@
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="16dp"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="20dp"
             android:textStyle="bold" />
     </RelativeLayout>
-    </LinearLayout>
 </RelativeLayout>
+

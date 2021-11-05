@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.MainActivity"
-    android:background="#ffbd59">
+    android:background="#ffbd59"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_cn"
@@ -48,17 +49,6 @@
             android:textSize="30sp"
             android:textStyle="bold" />
 
-        <ImageView
-
-            android:id="@+id/img_trasua"
-            android:layout_width="50dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="5dp"
-            android:adjustViewBounds="true"
-            android:background="#ffa87a"
-            android:scaleType="fitStart"
-            android:src="@drawable/trasua"
-            tools:ignore="SpeakableTextPresentCheck" />
     </androidx.appcompat.widget.Toolbar>
 
     <TextView
@@ -74,256 +64,273 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
-    <RelativeLayout
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textview_td1"
-        android:id="@+id/relativelayout_td1">
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/lsdh"
-            android:layout_width="180dp"
-            android:layout_height="90dp"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/khung_nd" />
-
-        <ImageView
-            android:id="@+id/imageView1"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            app:srcCompat="@drawable/lichsu" />
-
-        <TextView
-            android:layout_width="70dp"
+        <RelativeLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="25dp"
-            android:text="Lịch sử đơn hàng"
+            android:layout_marginRight="10dp">
 
-            android:textAlignment="center"
-            android:textSize="15sp" />
+            <ImageView
+                android:id="@+id/lsdh"
+                android:layout_width="180dp"
+                android:layout_height="90dp"
+                android:src="@drawable/khung_nd" />
 
-        <ImageView
-            android:id="@+id/dk"
-            android:layout_width="180dp"
-            android:layout_height="90dp"
-            android:layout_marginLeft="210dp"
-            android:src="@drawable/khung_nd" />
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/lichsu" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="220dp"
-            android:layout_marginTop="20dp"
-            app:srcCompat="@drawable/dieukhoan" />
-        <TextView
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:text="Điều khoản"
-            android:textSize="15sp"
-            android:layout_marginTop="30dp"
-            android:layout_marginLeft="280dp"
-            android:textAlignment="center"/>
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="25dp"
+                android:text="Lịch sử đơn hàng"
+
+                android:textAlignment="center"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/dk"
+                android:layout_width="180dp"
+                android:layout_height="90dp"
+                android:src="@drawable/khung_nd" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                app:srcCompat="@drawable/dieukhoan" />
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imageView2"
+                android:text="Điều khoản"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
 
 
-    </RelativeLayout>
+    </LinearLayout>
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/relativelayout_td1"
-        android:id="@+id/relativelayout_td2"
-        android:layout_marginTop="10dp">
+        android:gravity="center"
+        android:orientation="horizontal">
 
-        <ImageView
-            android:id="@+id/km"
-            android:layout_width="180dp"
-            android:layout_height="90dp"
-            android:layout_marginLeft="10dp"
-            android:src="@drawable/khung_nd" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            app:srcCompat="@drawable/khuyenmai" />
-
-        <TextView
-            android:layout_width="100dp"
+        <RelativeLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="25dp"
-            android:text="Khuyến mãi"
-            android:textSize="15sp"
-            android:textAlignment="center" />
+            android:layout_marginRight="10dp">
 
-        <ImageView
-            android:id="@+id/lienhe"
-            android:layout_width="180dp"
-            android:layout_height="90dp"
-            android:layout_marginLeft="210dp"
-            android:src="@drawable/khung_nd" />
+            <ImageView
+                android:id="@+id/km"
+                android:layout_width="180dp"
+                android:layout_height="90dp"
+                android:src="@drawable/khung_nd" />
 
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="220dp"
-            android:layout_marginTop="20dp"
-            app:srcCompat="@drawable/lienhe" />
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/khuyenmai" />
 
-        <TextView
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="290dp"
-            android:layout_marginTop="30dp"
-            android:text="Liên hệ và góp ý"
-            android:textSize="15sp"
-            android:textAlignment="center" />
-    </RelativeLayout>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="25dp"
+                android:text="Khuyến mãi"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/lienhe"
+                android:layout_width="180dp"
+                android:layout_height="90dp"
+                android:src="@drawable/khung_nd" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                app:srcCompat="@drawable/lienhe" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/imageView4"
+                android:text="Liên hệ và góp ý"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/textview_td2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/relativelayout_td2"
         android:layout_marginStart="10dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="5dp"
+        android:text="Tài khoản"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:text="Tài khoản" />
+        android:textStyle="bold" />
 
-    <RelativeLayout
-        android:id="@+id/relativelayout_td3"
-        android:layout_width="match_parent"
-        android:layout_height="62dp"
-        android:layout_below="@id/textview_td2"
-        android:layout_marginTop="0dp">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/khung_ten" />
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/canhan" />
-
-        <TextView
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="25dp"
-            android:text="Thông tin cá nhân"
-            android:textAlignment="center"
-            android:textSize="20sp" />
-    </RelativeLayout>
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/relativelayout_td3"
-        android:id="@+id/relativelayout_td4"
-        android:layout_marginTop="10dp">
+        android:orientation="vertical"
+        android:paddingHorizontal="10dp">
 
-        <ImageView
+        <RelativeLayout
+            android:id="@+id/relativelayout_td3"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/khung_ten" />
+            android:layout_height="70dp">
 
-        <ImageView
-            android:id="@+id/imageView6"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="7dp"
-            app:srcCompat="@drawable/kmai" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:src="@drawable/khung_ten" />
 
-        <TextView
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="25dp"
-            android:textSize="20sp"
-            android:text="Địa chỉ đã lưu"
-            android:textAlignment="center" />
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/relativelayout_td4"
-        android:id="@+id/relativelayout_td5"
-        android:layout_marginTop="10dp">
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="20dp"
+                app:srcCompat="@drawable/canhan" />
 
-        <ImageView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Thông tin cá nhân"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_td4"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/khung_ten" />
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp">
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="7dp"
-            app:srcCompat="@drawable/caidat" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:src="@drawable/khung_ten" />
 
-        <TextView
-            android:layout_width="170dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="25dp"
-            android:text="Cài đặt"
-            android:textSize="20sp"
-            android:textAlignment="center" />
-    </RelativeLayout>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/relativelayout_td5"
-        android:id="@+id/relativelayout_td6"
-        android:layout_marginTop="10dp">
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                app:srcCompat="@drawable/kmai" />
 
-        <ImageView
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Địa chỉ đã lưu"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout_td5"
             android:layout_width="match_parent"
-            android:layout_height="62dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:src="@drawable/khung_ten" />
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp">
 
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="7dp"
-            app:srcCompat="@drawable/logout" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:src="@drawable/khung_ten" />
 
-        <TextView
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="80dp"
-            android:layout_marginTop="25dp"
-            android:text="Đăng xuất"
-            android:textSize="20sp"
-            android:textAlignment="center" />
-    </RelativeLayout>
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                app:srcCompat="@drawable/caidat" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Cài đặt"
+                android:textSize="20sp" />
+        </RelativeLayout>
 
-</RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relativelayout_td6"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:src="@drawable/khung_ten" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                app:srcCompat="@drawable/logout" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Đăng xuất"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
