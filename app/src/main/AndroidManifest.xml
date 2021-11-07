@@ -1,60 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.foodorder">
-    <uses-permission android:name="android.permission.INTERNET"/>
+    package="com.example.foodorderapp">
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.giaodien">
-        <meta-data
-            android:name="com.facebook.sdk.ApplicationId"
-            android:value="@string/fbappid"
-            />
+        android:theme="@style/Theme.FoodOrderApp">
         <activity
-            android:configChanges="orientation|screenSize|screenLayout|keyboard|keyboardHidden"
-            android:label="@string/app_name"
-            android:name=".activity.MainActivity"
-            android:exported="true"
-            tools:ignore="MissingClass">
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.tcactivity"
-            tools:ignore="MissingClass" />
-        <activity android:name=".activity.frgcooffe" />
-        <activity android:name=".activity.singin" />
-        <activity android:name=".activity.frgts" />
-        <activity android:name=".activity.bread" />
-        <activity android:name=".activity.bsn" />
-        <activity android:name=".activity.ttcn" />
-        <activity android:name=".activity.search" />
-        <activity
-            android:name=".activity.timkiem"
-            android:exported="false" />
-        <activity android:name=".activity.lienhe"/>
-        <activity android:name=".activity.Dieukhoan"/>
-        <activity android:name=".activity.history"/>
-        <activity android:name=".activity.sale"/>
-        <activity android:name=".activity.dexuat"/>
-        <activity android:name=".activity.order"/>
-        <activity android:name=".activity.MinhTuan.hinh12Activity" />
-        <activity android:name=".activity.MinhTuan.hinh13Activity" />
-        <activity android:name=".activity.MinhTuan.hinh14Activity" />
-        <activity android:name=".activity.MinhTuan.hinh15Activity" />
-        <activity android:name=".activity.MinhTuan.Closehinh12"/>
-        <activity android:name=".activity.MinhTuan.CaNhan"/>
-        <activity android:name=".activity.PhieuUD"/>
-        <activity android:name=".activity.MinhTuan.Trangchu"/>
-        <activity android:name=".activity.MinhTuan.LSGD"/>
-        <activity android:name=".activity.MinhTuan.LSDQ"/>
-
     </application>
 
 </manifest>
