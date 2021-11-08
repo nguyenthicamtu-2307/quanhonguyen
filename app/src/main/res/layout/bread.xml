@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:src="@drawable/banh2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/im"/>
+    <TextView
+        android:padding="10dp"
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bánh Mì Bơ Tỏi"
+        android:textSize="22sp"
+        android:layout_toRightOf="@+id/im"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/price1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/im"
+        android:padding="10dp"
+        android:text="25,000đ"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</RelativeLayout>

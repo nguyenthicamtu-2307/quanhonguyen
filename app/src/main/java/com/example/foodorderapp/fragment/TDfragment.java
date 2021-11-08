@@ -11,7 +11,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.foodorderapp.R;
 
-public class homefragment extends Fragment {
+public class TDfragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
