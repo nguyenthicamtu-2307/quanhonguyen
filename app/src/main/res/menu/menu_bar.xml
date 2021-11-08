@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/main" android:title="Trang CHủ" android:icon="@drawable/ic_home"/>
+    <item android:id="@+id/donhang" android:title="Đơn Hàng" android:icon="@drawable/ic_shopping_cart"/>
+
+    <item android:id="@+id/tichdiem" android:title="Tích Điểm" android:icon="@drawable/ic_bank"/>
+    <item android:id="@+id/person" android:title="Cá Nhân" android:icon="@drawable/ic_person"/>
 
 </menu>
