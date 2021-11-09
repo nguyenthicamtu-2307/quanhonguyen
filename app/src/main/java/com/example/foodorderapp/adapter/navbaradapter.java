@@ -1,58 +1,69 @@
 package com.example.foodorderapp.adapter;
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.foodorderapp.R;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.foodorderapp.R;
 import com.example.foodorderapp.model.listmenu;
 import com.example.foodorderapp.model.listrasua;
 
-import java.util.ArrayList;
 import java.util.List;
-public class navbaradapter extends BaseAdapter {
-    private Context context;
-    private int layout;
-    private ArrayList<listrasua> mlist;
 
+public class navbaradapter extends RecyclerView.Adapter<navbaradapter.navbarviewhoder> {
+   private Context mcontext;
+   private List<listrasua> mlists;
 
-    public navbaradapter(Context context, int layout, ArrayList<listrasua> mlist) {
-        this.context = context;
-        this.layout = layout;
-        this.mlist = mlist;
+    public navbaradapter(Context mcontext) {
+        this.mcontext = mcontext;
+    }
+    public void setdata(List<listrasua> list){
+        this.mlists=list;
+        notifyDataSetChanged();
+    }
+
+    @NonNull
+    @Override
+    public navbarviewhoder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.milktea,parent,false);
+        return new navbarviewhoder(view);
     }
 
     @Override
-    public int getCount() {
-        return mlist.size();
+    public void onBindViewHolder(@NonNull navbarviewhoder holder, int position) {
+        listrasua menu=mlists.get(position);
+        if(menu==null){
+            return;
+        }
+        holder.ten.setText(menu.getName());
+        holder.gia.setText(menu.getMota());
+        holder.hinhanh.setImageResource(menu.getImage());
     }
+
+
 
     @Override
-    public Object getItem(int position) {
-        return null;
+    public int getItemCount() {
+        return mlists.size();
     }
 
-    @Override
-    public long getItemId(int position) {
-        return 0;
+    public class navbarviewhoder extends RecyclerView.ViewHolder {
+        TextView ten, gia;
+        ImageView hinhanh;
+        public navbarviewhoder(@NonNull View itemView) {
+            super(itemView);
+            ten=itemView.findViewById(R.id.namefood);
+            gia=itemView.findViewById(R.id.price);
+            hinhanh=itemView.findViewById(R.id.imv);
+
+        }
     }
 
-    @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
-        LayoutInflater inflater= (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        convertView =inflater.inflate(layout,null);
-        listrasua milktea=mlist.get(position);
-        TextView tenmon=convertView.findViewById(R.id.namefood);
-        TextView gia=convertView.findViewById(R.id.price);
-        ImageView hinhanh=convertView.findViewById(R.id.imv);
 
-        tenmon.setText(milktea.getName());
-        gia.setText(milktea.getMota());
-        hinhanh.setImageResource(milktea.getImage());
-        return convertView;
-    }
 }
