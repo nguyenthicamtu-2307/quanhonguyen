@@ -3,6 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/drawable/caidat.xml" value="0.2203125" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/drawable/canhan.xml" value="0.2203125" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/drawable/khung_nd.xml" value="0.2203125" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/drawable/khung_ten.xml" value="0.2203125" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/drawable/quaylai.xml" value="0.2203125" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_hoso.xml" value="0.25" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/bread.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/contact.xml" value="0.25" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/dieukhoan.xml" value="0.22" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/history.xml" value="0.25" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/home.xml" value="0.10552536231884058" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/milktea.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/navbar.xml" value="0.16847826086956522" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/row_lichsudonhang.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable/ic_bank.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable/ic_home.xml" value="0.19583333333333333" />

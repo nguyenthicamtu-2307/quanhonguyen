@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vang">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:background="#ffa87a">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="#ffa87a"
+            android:src="@drawable/quaylai" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Điều khoản"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Người sử dụng không được phép"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a. Vi phạm pháp luật, quyền lợi hoặc chính sách cấm, hạn chế của App \nb. Thực hiện bất kỳ hành động nào làm sai lệch hệ thống đánh giá hoặc tiếp nhận phản hồi của App.
+\nc. Khai thác hoặc thu thập bất kỳ thông tin nào liên quan đến Tài khoản của Người sử dụng khác, bao gồm bất kỳ thông tin hoặc dữ liệu cá nhân nào.
+\nd. Thực hiện bất kỳ hành động hoặc hành vi nào có thể trực tiếp  hoặc gián tiếp phá hủy, vô hiệu hóa, làm quá tải, hoặc làm suy yếu Dịch vụ hoặc máy chủ hoặc hệ thống liên kết với Dịch Vụ.
+\ne. Cố gắng chuyển đổi mã chương trình, đảo ngược kỹ thuật, tháo gỡ hoặc xâm nhập (hack) Dịch Vụ, phá bỏ hoặc vượt qua bất kỳ công nghệ mã hóa hoặc biện pháp bả mật nào được App áp dụng."
+                android:textSize="23dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Quy định sử dụng"
+                android:textSize="25dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a. Vi phạm pháp luật, quyền lợi hoặc chính sách cấm, hạn chế của App \nb. Thực hiện bất kỳ hành động nào làm sai lệch hệ thống đánh giá hoặc tiếp nhận phản hồi của App.
+\nc. Khai thác hoặc thu thập bất kỳ thông tin nào liên quan đến Tài khoản của Người sử dụng khác, bao gồm bất kỳ thông tin hoặc dữ liệu cá nhân nào.
+\nd. Thực hiện bất kỳ hành động hoặc hành vi nào có thể trực tiếp  hoặc gián tiếp phá hủy, vô hiệu hóa, làm quá tải, hoặc làm suy yếu Dịch vụ hoặc máy chủ hoặc hệ thống liên kết với Dịch Vụ.
+\ne. Cố gắng chuyển đổi mã chương trình, đảo ngược kỹ thuật, tháo gỡ hoặc xâm nhập (hack) Dịch Vụ, phá bỏ hoặc vượt qua bất kỳ công nghệ mã hóa hoặc biện pháp bả mật nào được App áp dụng."
+                android:textSize="23dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
