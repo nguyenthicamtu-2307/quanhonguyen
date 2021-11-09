@@ -28,6 +28,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.Loginactivity"/>
+        <activity android:name=".activity.SInginActivity"/>
         <activity android:name=".activity.main"/>
     </application>
 
