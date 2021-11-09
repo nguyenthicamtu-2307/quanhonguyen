@@ -8,8 +8,11 @@
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/drawable/khung_nd.xml" value="0.2203125" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/drawable/khung_ten.xml" value="0.2203125" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/drawable/quaylai.xml" value="0.2203125" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/actitivy_thongtincanhan.xml" value="0.15760869565217392" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_hoso.xml" value="0.25" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_phieuuudai.xml" value="0.15760869565217392" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/bread.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/caidat.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/cartfragment.xml" value="0.16666666666666666" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/contact.xml" value="0.25" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/dieukhoan.xml" value="0.22" />
@@ -22,6 +25,7 @@
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/row_lichsudonhang.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/tdfragment.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/trasua.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/wishlist.xml" value="0.115625" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2203125" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable/caidat.xml" value="0.19583333333333333" />
