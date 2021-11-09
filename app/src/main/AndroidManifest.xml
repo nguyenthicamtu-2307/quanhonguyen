@@ -10,9 +10,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FoodOrderApp" >
         <activity
-            android:name=".activity.HosoActivity"
-            android:exported="true" />
-        <activity
             android:name=".activity.MainActivity"
             android:exported="true" >
             <intent-filter>
