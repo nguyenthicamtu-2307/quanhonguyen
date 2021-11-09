@@ -2,22 +2,23 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_marginTop="10dp"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imv"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:src="@drawable/ts4" />
+
     <TextView
-        android:padding="10dp"
         android:id="@+id/namefood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Trà Sữa Khoai Môn"
-        android:textSize="22sp"
         android:layout_toRightOf="@+id/imv"
-        android:textColor="@color/black"/>
+        android:padding="10dp"
+        android:text="Trà Sữa Khoai Môn"
+        android:textColor="@color/black"
+        android:textSize="22sp" />
 
     <TextView
         android:id="@+id/price"
