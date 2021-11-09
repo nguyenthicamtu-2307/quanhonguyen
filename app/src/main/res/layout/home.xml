@@ -85,14 +85,15 @@
 
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="895dp"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/search"
             android:scrollbars="none">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="250dp"
+                android:layout_marginTop="200dp"
+                android:layout_below="@+id/layout"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -219,12 +220,12 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="96dp"
-
+                    android:id="@+id/layout"
                     android:orientation="vertical">
 
                     <HorizontalScrollView
                         android:layout_width="match_parent"
-
+                        android:id="@+id/id1"
                         android:layout_height="wrap_content">
 
                         <LinearLayout
@@ -348,10 +349,14 @@
 
 
                 </LinearLayout>
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/rev"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"/>
+
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rev"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
             </LinearLayout>
 
         </androidx.core.widget.NestedScrollView>

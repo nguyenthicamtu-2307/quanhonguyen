@@ -23,7 +23,6 @@ public class menuadapter extends  RecyclerView.Adapter<menuadapter.menuadapterho
     public menuadapter(Context mcontext) {
         this.mcontext = mcontext;
     }
-
     public void setdata(List<listmenu> list){
         this.mlist=list;
         notifyDataSetChanged();
