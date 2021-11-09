@@ -11,6 +11,7 @@
         android:theme="@style/Theme.FoodOrderApp" >
         <activity
 
+
             android:name=".activity.MainActivity"
             android:exported="true" >
 
