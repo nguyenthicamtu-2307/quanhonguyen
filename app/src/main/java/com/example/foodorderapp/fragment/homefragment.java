@@ -1,9 +1,12 @@
 package com.example.foodorderapp.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,6 +15,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodorderapp.R;
+import com.example.foodorderapp.activity.BanhMiActivity;
+import com.example.foodorderapp.activity.BanhsinhNhatActivity;
+import com.example.foodorderapp.activity.CoffeActivity;
+import com.example.foodorderapp.activity.LichSuDonHangActivity;
+import com.example.foodorderapp.activity.TraSuaActivity;
 import com.example.foodorderapp.adapter.menuadapter;
 import com.example.foodorderapp.model.listmenu;
 
@@ -33,6 +41,42 @@ public class homefragment extends Fragment {
         listvm.setLayoutManager(linearLayoutManager);
         adapter.setdata(getlist());
         listvm.setAdapter(adapter);
+
+        LinearLayout cf = view.findViewById(R.id.coffee);
+        cf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), CoffeActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout ts = view.findViewById(R.id.trasua);
+        ts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), TraSuaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout bm = view.findViewById(R.id.banhmi);
+        bm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), BanhMiActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout bsn = view.findViewById(R.id.banhsn);
+        bsn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), BanhsinhNhatActivity.class);
+                startActivity(intent);
+            }
+        });
 
         return view;
     }
