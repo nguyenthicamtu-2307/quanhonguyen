@@ -25,6 +25,7 @@ public class MonGHAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
+
         return MonList.size();
     }
 

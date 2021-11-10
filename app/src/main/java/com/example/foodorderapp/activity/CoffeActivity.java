@@ -20,7 +20,7 @@ public class CoffeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.banhmi);
+        setContentView(R.layout.coffe);
         Button buton11= (Button) findViewById(R.id.btnGioHang);
         Anhxa();
         monAdapter = new MonAdapter(this,R.layout.dongmon,arraymon);
