@@ -88,8 +88,12 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/search"
             android:scrollbars="none">
-
+            <com.smarteist.autoimageslider.SliderView
+                android:layout_width="match_parent"
+                android:layout_above="@+id/tc"
+                android:layout_height="wrap_content"/>
             <LinearLayout
+                android:id="@+id/tc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="200dp"
@@ -113,7 +117,7 @@
                         android:orientation="vertical">
 
                         <Button
-                            android:id="@+id/imageView16"
+                            android:id="@+id/cafe"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
                             android:background="@drawable/ic_baseline_coffee_24" />

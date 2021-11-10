@@ -1,9 +1,12 @@
 package com.example.foodorderapp.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,6 +15,10 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodorderapp.R;
+import com.example.foodorderapp.activity.BanhMiActivity;
+import com.example.foodorderapp.activity.BanhsinhNhatActivity;
+import com.example.foodorderapp.activity.CoffeActivity;
+import com.example.foodorderapp.activity.TraSuaActivity;
 import com.example.foodorderapp.adapter.menuadapter;
 import com.example.foodorderapp.model.listmenu;
 
@@ -20,7 +27,8 @@ import java.util.List;
 
 public class homefragment extends Fragment {
     RecyclerView listvm;
-
+    ImageView ts,bm,bsn;
+    Button cf;
     menuadapter adapter;
     @Nullable
     @Override
@@ -33,6 +41,39 @@ public class homefragment extends Fragment {
         listvm.setLayoutManager(linearLayoutManager);
         adapter.setdata(getlist());
         listvm.setAdapter(adapter);
+        cf=view.findViewById(R.id.cafe);
+        cf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), CoffeActivity.class);
+                startActivity(intent);
+            }
+        });
+        ts=view.findViewById(R.id.ts);
+        ts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), TraSuaActivity.class);
+                startActivity(intent);
+            }
+        });
+        bm=view.findViewById(R.id.banhmi);
+        bm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), BanhMiActivity.class);
+                startActivity(intent);
+            }
+        });
+        bsn=view.findViewById(R.id.bsn);
+        bsn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), BanhsinhNhatActivity.class);
+                startActivity(intent);
+            }
+        });
+
 
         return view;
     }
@@ -49,4 +90,5 @@ public class homefragment extends Fragment {
         listmenus.add(new listmenu("Bánh Mì Thịt","15,000đ",R.drawable.banhmithit));
         return listmenus;
     }
+
 }

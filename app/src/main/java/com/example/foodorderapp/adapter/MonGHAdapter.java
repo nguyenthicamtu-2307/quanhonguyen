@@ -1,4 +1,4 @@
-package com.example.foodorderapp.activity.ListviewMon;
+package com.example.foodorderapp.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,15 +9,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.foodorderapp.R;
+import com.example.foodorderapp.model.MonGH;
 
 import java.util.List;
 
-public class MonAdapter extends BaseAdapter {
+public class MonGHAdapter extends BaseAdapter {
     private Context context;
     private int layout;
-    private List<Mon> MonList;
+    private List<MonGH> MonList;
 
-    public MonAdapter(Context context, int layout, List<Mon> MonList) {
+    public MonGHAdapter(Context context, int layout, List<MonGH> MonList) {
         this.context = context;
         this.layout = layout;
         this.MonList = MonList;
@@ -42,15 +43,17 @@ public class MonAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
         LayoutInflater inflater= (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         view = inflater.inflate(layout,null);
-        // ánh xạ view
+
         TextView txttenmon=(TextView) view.findViewById(R.id.tenmon);
         TextView txtgia=(TextView) view.findViewById(R.id.gia);
+        TextView txtslg=(TextView) view.findViewById(R.id.slg);
         ImageView Imhinh=(ImageView) view.findViewById(R.id.hinh);
 
         // Gán Giá trị
-        Mon mon= MonList.get(i);
+        MonGH mon= MonList.get(i);
         txttenmon.setText(mon.getTenmon());
         txtgia.setText(mon.getGia());
+        txtslg.setText(mon.getSlg());
         Imhinh.setImageResource(mon.getHinh());
 
         return view;

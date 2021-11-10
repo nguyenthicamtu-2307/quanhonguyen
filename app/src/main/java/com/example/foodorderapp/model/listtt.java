@@ -1,13 +1,15 @@
-package com.example.foodorderapp.activity.ListviewMon;
+package com.example.foodorderapp.model;
 
-public class Mon {
+public class listtt {
     private String tenmon;
     private String gia;
+    private String slg;
     private int hinh;
 
-    public Mon(String tenmon, String gia, int hinh) {
+    public listtt(String tenmon, String gia, String slg, int hinh) {
         this.tenmon = tenmon;
         this.gia = gia;
+        this.slg = slg;
         this.hinh = hinh;
     }
 
@@ -25,6 +27,14 @@ public class Mon {
 
     public void setGia(String gia) {
         this.gia = gia;
+    }
+
+    public String getSlg() {
+        return slg;
+    }
+
+    public void setSlg(String slg) {
+        this.slg = slg;
     }
 
     public int getHinh() {

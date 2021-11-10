@@ -4,7 +4,6 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -12,15 +11,16 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodorderapp.R;
-import com.example.foodorderapp.fragment.homefragment;
 import com.example.foodorderapp.model.listmenu;
 
 import java.util.List;
+
 public class menuadapter extends  RecyclerView.Adapter<menuadapter.menuadapterhoder> {
     private Context mcontext;
     private  List<listmenu> mlist;
 
     public menuadapter(Context mcontext) {
+
         this.mcontext = mcontext;
     }
     public void setdata(List<listmenu> list){

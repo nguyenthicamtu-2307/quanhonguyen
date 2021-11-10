@@ -8,8 +8,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 import com.example.foodorderapp.R;
-import com.example.foodorderapp.activity.ListviewMon.Mon;
-import com.example.foodorderapp.activity.ListviewMon.MonAdapter;
+import com.example.foodorderapp.model.Mon;
+import com.example.foodorderapp.adapter.MonAdapter;
 
 import java.util.ArrayList;
 

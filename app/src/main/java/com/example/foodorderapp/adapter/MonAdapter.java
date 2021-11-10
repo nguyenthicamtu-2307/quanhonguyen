@@ -1,4 +1,4 @@
-package com.example.foodorderapp.activity.ListViewGiohang;
+package com.example.foodorderapp.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,15 +9,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.foodorderapp.R;
+import com.example.foodorderapp.model.Mon;
 
 import java.util.List;
 
-public class MonGHAdapter extends BaseAdapter {
+public class MonAdapter extends BaseAdapter {
     private Context context;
     private int layout;
-    private List<MonGH> MonList;
+    private List<Mon> MonList;
 
-    public MonGHAdapter(Context context, int layout, List<MonGH> MonList) {
+    public MonAdapter(Context context, int layout, List<Mon> MonList) {
         this.context = context;
         this.layout = layout;
         this.MonList = MonList;
@@ -45,14 +46,12 @@ public class MonGHAdapter extends BaseAdapter {
         // ánh xạ view
         TextView txttenmon=(TextView) view.findViewById(R.id.tenmon);
         TextView txtgia=(TextView) view.findViewById(R.id.gia);
-        TextView txtslg=(TextView) view.findViewById(R.id.slg);
         ImageView Imhinh=(ImageView) view.findViewById(R.id.hinh);
 
         // Gán Giá trị
-        MonGH mon= MonList.get(i);
+        Mon mon= MonList.get(i);
         txttenmon.setText(mon.getTenmon());
         txtgia.setText(mon.getGia());
-        txtslg.setText(mon.getSlg());
         Imhinh.setImageResource(mon.getHinh());
 
         return view;

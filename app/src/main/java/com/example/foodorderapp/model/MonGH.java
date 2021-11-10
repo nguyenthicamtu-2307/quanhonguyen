@@ -1,4 +1,4 @@
-package com.example.foodorderapp.activity.ListViewGiohang;
+package com.example.foodorderapp.model;
 
 public class MonGH {
     private String tenmon;

@@ -8,10 +8,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 import com.example.foodorderapp.R;
-import com.example.foodorderapp.activity.ListViewGiohang.MonGH;
-import com.example.foodorderapp.activity.ListViewGiohang.MonGHAdapter;
-import com.example.foodorderapp.activity.ListviewMon.Mon;
-import com.example.foodorderapp.activity.ListviewMon.MonAdapter;
+import com.example.foodorderapp.model.MonGH;
+import com.example.foodorderapp.adapter.MonGHAdapter;
 
 import java.util.ArrayList;
 
