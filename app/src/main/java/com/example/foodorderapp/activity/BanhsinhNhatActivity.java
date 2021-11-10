@@ -20,7 +20,7 @@ public class BanhsinhNhatActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.banhsinhnhat);
+        setContentView(R.layout.banhmi);
         Button buton11= (Button) findViewById(R.id.btnGioHang);
         Anhxa();
         monAdapter = new MonAdapter(this,R.layout.dongmon,arraymon);

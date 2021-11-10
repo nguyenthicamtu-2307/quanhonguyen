@@ -9,24 +9,24 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.foodorderapp.R;
+import com.example.foodorderapp.activity.ListviewMon.Mon;
 
 import java.util.List;
 
 public class PhieuAdapter extends BaseAdapter {
     private Context context;
     private int layout;
-    private List<Phieu> PhieuList;
+    private List<Phieu> phieus;
 
-    public PhieuAdapter(Context context, int layout, List<Phieu> PhieuList) {
+    public PhieuAdapter(Context context, int layout, List<Phieu> phieus) {
         this.context = context;
         this.layout = layout;
-        this.PhieuList = PhieuList;
+        this.phieus = phieus;
     }
-
 
     @Override
     public int getCount() {
-        return PhieuList.size();
+        return phieus.size();
     }
 
     @Override
@@ -44,14 +44,14 @@ public class PhieuAdapter extends BaseAdapter {
         LayoutInflater inflater= (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         view = inflater.inflate(layout,null);
         // ánh xạ view
-        TextView txtud=(TextView) view.findViewById(R.id.Uudai);
-        TextView txthansd=(TextView) view.findViewById(R.id.hanSD);
+        TextView txtUudai=(TextView) view.findViewById(R.id.Uudai);
+        TextView txthanSD=(TextView) view.findViewById(R.id.hanSD);
         ImageView Imhinh=(ImageView) view.findViewById(R.id.hinh);
 
         // Gán Giá trị
-        Phieu phieu= PhieuList.get(i);
-        txtud.setText(phieu.getUudai());
-        txthansd.setText(phieu.getHanSD());
+        Phieu phieu= phieus.get(i);
+        txtUudai.setText(phieu.getUudai());
+        txthanSD.setText(phieu.getHanSD());
         Imhinh.setImageResource(phieu.getHinh());
 
         return view;

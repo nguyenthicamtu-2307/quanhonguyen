@@ -23,6 +23,7 @@ public class GioHangActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.giohang);
+        Button buton11= (Button) findViewById(R.id.btnDathang_Giohang);
         Anhxa();
         monGHAdapter = new MonGHAdapter(this,R.layout.dongmon_giohang,arraymonGH);
         lvmonGH.setAdapter(monGHAdapter);
