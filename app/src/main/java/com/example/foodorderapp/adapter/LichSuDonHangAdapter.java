@@ -46,7 +46,7 @@ public class LichSuDonHangAdapter extends ArrayAdapter<LichSuDonHang> {
         LichSuDonHang lichSuDonHang = arrLS.get(position);
         viewHolder.name.setText(lichSuDonHang.getName());
         viewHolder.price.setText(String.valueOf(lichSuDonHang.getPrice()));
-//        viewHolder.image.setText(lichSuDonHang.);
+        viewHolder.image.setImageResource(lichSuDonHang.getImage());
         return convertView;
     }
 
