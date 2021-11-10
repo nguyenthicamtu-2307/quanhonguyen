@@ -9,8 +9,8 @@
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="5dp"
+        android:orientation="horizontal"
         android:background="@drawable/botron_sp">
-
         <RelativeLayout
             android:id="@+id/hinhanh"
             android:layout_width="70dp"
@@ -18,15 +18,16 @@
 
             <ImageView
                 android:id="@+id/hinh"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
                 android:background="@drawable/ts1" />
         </RelativeLayout>
+
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
             android:layout_toRightOf="@+id/hinhanh"
             android:orientation="vertical">
 
@@ -34,42 +35,61 @@
                 android:id="@+id/tenmon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/faustinasemibold"
-                android:gravity="left"
-                android:text="Trà sữa khoai môn"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
                 android:layout_marginBottom="5dp"
+                android:fontFamily="@font/faustinasemibold"
+                android:text="Trà sữa khoai môn"
                 android:textColor="@color/maumon"
                 android:textSize="23dp"
                 android:textStyle="bold" />
 
-
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
                 <TextView
                     android:id="@+id/gia"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_below="@+id/ten1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
                     android:fontFamily="arial"
                     android:text="25,000đ"
                     android:textColor="@color/tien"
                     android:textSize="24dp" />
 
 
+            </LinearLayout>
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="35dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/slg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="1"
+
+                android:textSize="30dp"
+                android:textStyle="bold" />
 
 
 
         </LinearLayout>
-
-        <Button
-            android:id="@+id/cong1"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:layout_alignParentRight="true"
-            android:layout_gravity="center"
-            android:layout_marginTop="35dp"
-            android:layout_marginRight="10dp"
-
-            android:background="@drawable/ic_baseline_add_circle_24" />
 
     </RelativeLayout>
 </LinearLayout>
