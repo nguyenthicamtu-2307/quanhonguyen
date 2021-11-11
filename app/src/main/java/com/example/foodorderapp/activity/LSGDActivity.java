@@ -1,3 +1,4 @@
+
 package com.example.foodorderapp.activity;
 
 import android.os.Bundle;
@@ -33,3 +34,4 @@ public class LSGDActivity extends AppCompatActivity {
         monLSGDS.add(new MonLSGD("Bánh Kem đặc biệt","02/05/2021", R.drawable.banh5));
     }
 }
+

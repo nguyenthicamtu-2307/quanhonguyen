@@ -1,14 +1,13 @@
+package com.example.foodorderapp.model;
 
-package com.example.foodorderapp.activity.ListviewLSGD;
-
-public class MonLSGD {
+public class modeltt {
     private String tenmon;
-    private String ngay;
+    private String gia;
     private int hinh;
 
-    public MonLSGD(String tenmon, String ngay, int hinh) {
+    public modeltt(String tenmon, String gia, int hinh) {
         this.tenmon = tenmon;
-        this.ngay = ngay;
+        this.gia = gia;
         this.hinh = hinh;
     }
 
@@ -20,12 +19,12 @@ public class MonLSGD {
         this.tenmon = tenmon;
     }
 
-    public String getNgay() {
-        return ngay;
+    public String getGia() {
+        return gia;
     }
 
-    public void setNgay(String ngay) {
-        this.ngay = ngay;
+    public void setGia(String gia) {
+        this.gia = gia;
     }
 
     public int getHinh() {
@@ -35,5 +34,4 @@ public class MonLSGD {
     public void setHinh(int hinh) {
         this.hinh = hinh;
     }
-
 }

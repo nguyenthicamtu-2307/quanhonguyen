@@ -55,4 +55,5 @@ public class LSGDAdapter extends BaseAdapter {
 
         return view;
     }
+
 }

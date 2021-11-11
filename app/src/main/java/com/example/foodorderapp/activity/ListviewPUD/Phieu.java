@@ -1,3 +1,4 @@
+
 package com.example.foodorderapp.activity.ListviewPUD;
 
 public class Phieu {
@@ -34,4 +35,5 @@ public class Phieu {
     public void setHinh(int hinh) {
         this.hinh = hinh;
     }
+
 }
