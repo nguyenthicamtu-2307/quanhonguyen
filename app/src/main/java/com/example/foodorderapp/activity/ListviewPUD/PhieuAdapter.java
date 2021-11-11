@@ -9,24 +9,29 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.foodorderapp.R;
+
 import com.example.foodorderapp.activity.ListviewMon.Mon;
+
 
 import java.util.List;
 
 public class PhieuAdapter extends BaseAdapter {
     private Context context;
     private int layout;
-    private List<Phieu> phieus;
 
-    public PhieuAdapter(Context context, int layout, List<Phieu> phieus) {
+    private List<Phieu> PhieuList;
+
+    public PhieuAdapter(Context context, int layout, List<Phieu> PhieuList) {
         this.context = context;
         this.layout = layout;
-        this.phieus = phieus;
+        this.PhieuList = PhieuList;
     }
+
 
     @Override
     public int getCount() {
-        return phieus.size();
+        return PhieuList.size();
+
     }
 
     @Override
@@ -44,6 +49,7 @@ public class PhieuAdapter extends BaseAdapter {
         LayoutInflater inflater= (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         view = inflater.inflate(layout,null);
         // ánh xạ view
+
         TextView txtUudai=(TextView) view.findViewById(R.id.Uudai);
         TextView txthanSD=(TextView) view.findViewById(R.id.hanSD);
         ImageView Imhinh=(ImageView) view.findViewById(R.id.hinh);
@@ -52,6 +58,7 @@ public class PhieuAdapter extends BaseAdapter {
         Phieu phieu= phieus.get(i);
         txtUudai.setText(phieu.getUudai());
         txthanSD.setText(phieu.getHanSD());
+
         Imhinh.setImageResource(phieu.getHinh());
 
         return view;

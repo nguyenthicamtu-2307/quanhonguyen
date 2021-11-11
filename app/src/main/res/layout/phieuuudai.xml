@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,7 +8,7 @@
     android:background="#ffbd59">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_lsdq"
+        android:id="@+id/toolbar_pud"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="#ffa87a"
@@ -33,12 +32,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
-            android:text="Lịch sử giao dịch"
+            android:text="Phiếu ưu đãi"
             android:textColor="#793825"
             android:textSize="30sp"
             android:textStyle="bold" />
     </androidx.appcompat.widget.Toolbar>
-
 
     <ScrollView
         android:layout_width="match_parent"
@@ -47,11 +45,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <ListView
-                android:id="@+id/LvLSGD"
+                android:id="@+id/LvPUD"
                 android:layout_width="match_parent"
                 android:layout_height="650dp"/>
         </LinearLayout>
     </ScrollView>
-
 
 </LinearLayout>
