@@ -51,6 +51,7 @@
         <activity android:name=".activity.ThongTinActivity"/>
         <activity android:name=".activity.LSDQ"/>
         <activity android:name=".activity.PhieuUDActvity"/>
+        <activity android:name=".activity.XacNhanDonHangActivity"/>
     </application>
 
 </manifest>
