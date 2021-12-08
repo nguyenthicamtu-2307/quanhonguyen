@@ -1,11 +1,20 @@
 package com.example.foodorderapp.activity.ListviewMon;
 
-public class Mon {
-    private String tenmon;
-    private String gia;
-    private int hinh;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
-    public Mon(String tenmon, String gia, int hinh) {
+public class Mon {
+    @SerializedName("tensp")//trường tên sản phẩm có trong json
+
+    private String tenmon;//đặt lại tên truoeng sản phẩm
+    @SerializedName("giasp")
+
+    private String gia;
+    @SerializedName("hinhanh")
+
+    private String hinh;
+
+    public Mon(String tenmon, String gia, String hinh) {
         this.tenmon = tenmon;
         this.gia = gia;
         this.hinh = hinh;
@@ -27,11 +36,12 @@ public class Mon {
         this.gia = gia;
     }
 
-    public int getHinh() {
+    public String getHinh() {
         return hinh;
     }
 
-    public void setHinh(int hinh) {
+    public String setHinh(String hinh) {
         this.hinh = hinh;
+        return hinh;
     }
 }

@@ -1,9 +1,15 @@
 package com.example.foodorderapp.fragment;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.text.method.MovementMethod;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
+import android.widget.TableLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,46 +18,70 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodorderapp.R;
+import com.example.foodorderapp.activity.DexuatActivity;
+import com.example.foodorderapp.activity.ListviewMon.Mon;
+import com.example.foodorderapp.activity.ListviewMon.Sanphamadapter;
 import com.example.foodorderapp.adapter.navbaradapter;
 import com.example.foodorderapp.model.listrasua;
+import com.example.foodorderapp.service.APIService;
+import com.example.foodorderapp.service.Client;
+import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
 public class WishlistFragment extends Fragment {
-    RecyclerView listitem;
-    ArrayList<listrasua> list;
-    navbaradapter adapter;
+    ListView listitem;
+    List<Mon> lvmon=new ArrayList<>();
+    APIService apiService;
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.wishlist, container, false);
         listitem= view.findViewById(R.id.lv1);
-        adapter=new navbaradapter(getActivity());
+
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(getActivity(),RecyclerView.VERTICAL,false){
             @Override
             public boolean canScrollVertically() {
                 return false;
             }
         };
-        listitem.setLayoutManager(linearLayoutManager);
-        adapter.setdata(getadapter());
-        listitem.setAdapter(adapter);
+        TextView dx=(TextView) view.findViewById(R.id.dex);
+        dx.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), DexuatActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        apiService= Client.getAPIService();
+        listar();
+
 
         return view;
     }
 
-    private List<listrasua> getadapter() {
-        list =new ArrayList<>();
-        list.add(new listrasua("Trà Sữa Khoai Môn","35,000đ",R.drawable.tras));
-        list.add(new listrasua("Trà Sữa Socola","30,000đ",R.drawable.ts1));
-        list.add(new listrasua("Trà Sữa Matcha","20,000đ",R.drawable.ts4));
+    public void listar(){
+        Call<List<Mon>> call=apiService.dexuat();
+        call.enqueue(new Callback<List<Mon>>() {
+            @Override
+            public void onResponse(Call<List<Mon>> call, Response<List<Mon>> response) {
+                if(response.isSuccessful()){
+                    lvmon=response.body();
+                    if(getActivity()!=null){
+                        listitem.setAdapter(new Sanphamadapter(getActivity(),R.layout.bm1,lvmon));
+                    }
 
-
-        list.add(new listrasua("Bánh Mì Bơ Tỏi","35,000đ",R.drawable.banhmibotoi));
-        list.add(new listrasua("Bánh kem Pudding","55,000đ",R.drawable.banh5));
-        list.add(new listrasua("Bánh Mì Thịt","15,000đ",R.drawable.banhmithit));
-        return list;
-
-    }
-}
+                }
+            }
+            @Override
+            public void onFailure(Call<List<Mon>> call, Throwable t) {
+                Log.e("Error",t.getMessage());
+            }
+        });
+}}

@@ -151,6 +151,7 @@
                     <TableRow>
 
                         <LinearLayout
+                            android:id="@+id/lsdq"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="20dp"

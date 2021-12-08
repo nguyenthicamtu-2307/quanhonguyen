@@ -1,6 +1,7 @@
 package com.example.foodorderapp.activity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -10,32 +11,50 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.foodorderapp.R;
 import com.example.foodorderapp.activity.ListviewMon.Mon;
 import com.example.foodorderapp.activity.ListviewMon.MonAdapter;
+import com.example.foodorderapp.activity.ListviewMon.Sanphamadapter;
+import com.example.foodorderapp.service.APIService;
+import com.example.foodorderapp.service.Client;
 
 import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class BanhsinhNhatActivity extends AppCompatActivity {
     ListView lvmonts;
     ArrayList<Mon> arraymon;
+    APIService apiService;
+    List<Mon> monslist=new ArrayList<Mon>();
     MonAdapter monAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.banhmi);
+        setContentView(R.layout.banhsinhnhat);
         Button buton11= (Button) findViewById(R.id.btnGioHang);
-        Anhxa();
-        monAdapter = new MonAdapter(this,R.layout.dongmon,arraymon);
-        lvmonts.setAdapter(monAdapter);
 
+
+        lvmonts=(ListView) findViewById(R.id.Lvbsn);
+        apiService= Client.getAPIService();
+        listar();
 
 
     }
-    private void Anhxa (){
-        lvmonts =(ListView) findViewById(R.id.LvTraSua);
-        arraymon = new ArrayList<>();
-        arraymon.add(new Mon("Bánh Kem SoCoLa","25000", R.drawable.banhkemscola));
-        arraymon.add(new Mon("Bánh Kem trái Cây","25000", R.drawable.banhkemtraicay));
-        arraymon.add(new Mon("Bánh Kem Panta","25000", R.drawable.banhpanta));
-        arraymon.add(new Mon("Bánh Kem đặc biệt","25000", R.drawable.banh5));
-
+    public void listar(){
+        Call<List<Mon>> call=apiService.getcake();
+        call.enqueue(new Callback<List<Mon>>() {
+            @Override
+            public void onResponse(Call<List<Mon>> call, Response<List<Mon>> response) {
+                if(response.isSuccessful()){
+                    monslist=response.body();
+                    lvmonts.setAdapter(new Sanphamadapter(BanhsinhNhatActivity.this,R.layout.bm1,monslist));
+                }
+            }
+            @Override
+            public void onFailure(Call<List<Mon>> call, Throwable t) {
+                Log.e("Error",t.getMessage());
+            }
+        });
     }
 }

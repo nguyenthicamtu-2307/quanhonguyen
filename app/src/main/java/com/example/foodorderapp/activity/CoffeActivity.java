@@ -1,6 +1,7 @@
 package com.example.foodorderapp.activity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -10,33 +11,48 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.foodorderapp.R;
 import com.example.foodorderapp.activity.ListviewMon.Mon;
 import com.example.foodorderapp.activity.ListviewMon.MonAdapter;
+import com.example.foodorderapp.activity.ListviewMon.Sanphamadapter;
+import com.example.foodorderapp.service.APIService;
+import com.example.foodorderapp.service.Client;
 
 import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class CoffeActivity extends AppCompatActivity {
     ListView lvmonts;
     ArrayList<Mon> arraymon;
     MonAdapter monAdapter;
+    List<Mon> monslist=new ArrayList<Mon>();
+    APIService apiService;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.banhmi);
+        setContentView(R.layout.coffe);
         Button buton11= (Button) findViewById(R.id.btnGioHang);
-        Anhxa();
-        monAdapter = new MonAdapter(this,R.layout.dongmon,arraymon);
-        lvmonts.setAdapter(monAdapter);
 
+        lvmonts=(ListView) findViewById(R.id.LvTraSua);
+        apiService= Client.getAPIService();
+        listar();
 
 
     }
-    private void Anhxa (){
-        lvmonts =(ListView) findViewById(R.id.LvTraSua);
-        arraymon = new ArrayList<>();
-        arraymon.add(new Mon("Cafe đen","25000", R.drawable.cafeden));
-        arraymon.add(new Mon("Cafe Cuppucino","25000", R.drawable.cafe_cappuccino));
-        arraymon.add(new Mon("Cafe sữa đá","25000", R.drawable.cafesuada));
-        arraymon.add(new Mon("Cafe Latte","25000", R.drawable.latte));
-        arraymon.add(new Mon("Cafe Lattemacchiato","25000", R.drawable.lattemacchiato));
-
-    }
-}
+    public void listar(){//call api các món thuộc danh mục coffe
+        Call<List<Mon>> call=apiService.getcoffe();
+        call.enqueue(new Callback<List<Mon>>() {
+            @Override
+            public void onResponse(Call<List<Mon>> call, Response<List<Mon>> response) {
+                if(response.isSuccessful()){
+                    monslist=response.body();
+                    lvmonts.setAdapter(new Sanphamadapter(CoffeActivity.this,R.layout.bm1,monslist));
+                }
+            }
+            @Override
+            public void onFailure(Call<List<Mon>> call, Throwable t) {
+                Log.e("Error",t.getMessage());
+            }
+        });
+}}
