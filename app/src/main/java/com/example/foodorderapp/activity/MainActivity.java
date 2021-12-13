@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         mtime.schedule(new TimerTask() {
             @Override
             public void run() {
-                Intent intent=new Intent(MainActivity.this,main.class);
+                Intent intent=new Intent(MainActivity.this,Loginactivity.class);
                 startActivity(intent);
                 finish();
             }

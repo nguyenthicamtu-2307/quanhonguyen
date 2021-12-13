@@ -17,11 +17,11 @@
             android:layout_height="70dp">
 
             <ImageView
-                android:id="@+id/hinh"
+                android:id="@+id/hinhud"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/ts1" />
+                android:background="@drawable/ts" />
         </RelativeLayout>
 
 

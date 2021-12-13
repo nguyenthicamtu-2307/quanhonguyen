@@ -104,10 +104,10 @@
 
         <RelativeLayout
             android:layout_width="wrap_content"
+            android:id="@+id/dk"
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/dk"
                 android:layout_width="180dp"
                 android:layout_height="90dp"
                 android:src="@drawable/khung_nd" />
@@ -143,10 +143,10 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:id="@+id/km"
             android:layout_marginRight="10dp">
 
             <ImageView
-                android:id="@+id/km"
                 android:layout_width="180dp"
                 android:layout_height="90dp"
                 android:src="@drawable/khung_nd" />
@@ -172,6 +172,7 @@
 
         <RelativeLayout
             android:layout_width="wrap_content"
+            android:id="@+id/lh"
             android:layout_height="wrap_content">
 
             <ImageView
@@ -222,7 +223,7 @@
         android:paddingHorizontal="10dp">
 
         <RelativeLayout
-            android:id="@+id/relativelayout_td3"
+            android:id="@+id/ttcn"
             android:layout_width="match_parent"
             android:layout_height="70dp">
 
@@ -248,31 +249,7 @@
                 android:textSize="20sp" />
         </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginTop="10dp">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="65dp"
-                android:src="@drawable/khung_ten" />
-
-            <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="20dp"
-                app:srcCompat="@drawable/caidat"
-                tools:ignore="VectorDrawableCompat" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="Cài đặt"
-                android:textSize="20sp" />
-        </RelativeLayout>
 
         <RelativeLayout
             android:layout_width="match_parent"

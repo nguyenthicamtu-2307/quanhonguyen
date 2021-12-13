@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/vang"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/foodter"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/appmenu" >
+        <TextView
+            android:layout_width="331dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="2dp"
+            android:gravity="center"
+            android:text="Thông Tin Chi Tiết"
+            android:textAlignment="center"
+            android:textColor="@color/red"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+  <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/foodter"
+        android:layout_above="@+id/tt"
+        android:layout_height="wrap_content"
+        tools:ignore="NotSibling">
+        <LinearLayout
+            android:id="@+id/main1"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/foodter">
+
+
+            <LinearLayout
+                android:id="@+id/tt"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/tt"
+                android:orientation="vertical"
+                android:padding="10dp"
+                tools:ignore="NotSibling">
+
+                <TextView
+                    android:layout_width="253dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Họ Tên:Nguyễn Văn A"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="323dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Số Điện Thoại:012345678"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="101dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Địa Chỉ:"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="62dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Map"
+                        android:textColor="@color/black"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/map" />
+                </LinearLayout>
+
+                <EditText
+                    android:layout_width="323dp"
+                    android:layout_height="71dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Enter your Address"
+                    android:background="@drawable/boder" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="257dp"
+                android:layout_below="@+id/tt"
+                tools:ignore="NotSibling">
+
+                <TextView
+                    android:layout_width="370dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/chitiet"
+                    android:text="Chi Tiết Đơn Hàng"
+                    android:textColor="@color/red"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="370dp"
+                    android:layout_height="3dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@android:color/black" />
+
+
+                <ListView
+                    android:id="@+id/ttgh"
+                    android:layout_width="match_parent"
+                    android:layout_height="207dp"
+                    android:layout_below="@+id/line1" />
+
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/xacnhan"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/gray"
+                android:fontFamily="@font/faustinasemibold"
+                android:text="Đặt Hàng"
+                android:textColor="@color/white"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

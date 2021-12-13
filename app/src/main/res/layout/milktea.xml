@@ -2,13 +2,14 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_marginTop="10dp"
+    android:background="@color/white"
     android:layout_height="wrap_content">
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/imv"
         android:layout_width="70dp"
         android:layout_height="70dp"
-        android:src="@drawable/ts4" />
+        android:src="@drawable/ts" />
 
     <TextView
         android:id="@+id/namefood"
@@ -31,4 +32,17 @@
         android:textColor="@color/red"
         android:textSize="18sp"
         android:textStyle="bold" />
+    <Button
+        android:id="@+id/them"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="10dp"
+
+        android:background="@drawable/ic_baseline_add_circle_24" />
+
+
+
 </RelativeLayout>
