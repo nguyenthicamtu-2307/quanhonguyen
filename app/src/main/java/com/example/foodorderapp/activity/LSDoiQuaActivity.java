@@ -21,6 +21,7 @@ public class LSDoiQuaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.phieudoiqua);
 
+
         monAdapter = new MonAdapter(this,R.layout.rowdoiqua,arraymon);
         lvmonPQ.setAdapter(monAdapter);
         monAdapter1 = new MonAdapter(this,R.layout.rowdoiqua,arraymon);

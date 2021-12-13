@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.foodorderapp.R;
@@ -30,13 +31,15 @@ public class PhieuUDActvity extends AppCompatActivity {
         phieuAdapter = new PhieuAdapter(this,R.layout.row_phieuudai,phieus);
         Listphieu.setAdapter(phieuAdapter);
 
+
     }
     private void Anhxa (){
         Listphieu =(ListView) findViewById(R.id.LvPUD);
         phieus = new ArrayList<>();
-       ;
+
         phieus.add(new Phieu("Giảm 40% cho đơn","HSD: 02/05/2021", R.drawable.ts));
         phieus.add(new Phieu("Giảm 30% cho đơn","HSD: 02/05/2021", R.drawable.banhpanta));
+
 
     }
 }

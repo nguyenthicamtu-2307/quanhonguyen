@@ -47,6 +47,7 @@ public class TDfragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getActivity(), LSGDActivity.class);
+
                 startActivity(intent);
             }
         });
