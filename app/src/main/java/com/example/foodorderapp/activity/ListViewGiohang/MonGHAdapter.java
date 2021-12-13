@@ -46,7 +46,7 @@ public class MonGHAdapter extends BaseAdapter {
         TextView txttenmon=(TextView) view.findViewById(R.id.tenmon);
         TextView txtgia=(TextView) view.findViewById(R.id.gia);
         TextView txtslg=(TextView) view.findViewById(R.id.slg);
-        ImageView Imhinh=(ImageView) view.findViewById(R.id.hinh);
+        ImageView Imhinh=(ImageView) view.findViewById(R.id.hinhud);
 
         // Gán Giá trị
         MonGH mon= MonList.get(i);

@@ -45,13 +45,13 @@ public class MonAdapter extends BaseAdapter {
         // ánh xạ view
         TextView txttenmon=(TextView) view.findViewById(R.id.tenmon);
         TextView txtgia=(TextView) view.findViewById(R.id.gia);
-        ImageView Imhinh=(ImageView) view.findViewById(R.id.hinh);
+
 
         // Gán Giá trị
         Mon mon= MonList.get(i);
         txttenmon.setText(mon.getTenmon());
-        txtgia.setText(mon.getGia());
-        Imhinh.setImageResource(mon.getHinh());
+        txtgia.setText(String.valueOf(mon.getGia()));
+
 
         return view;
     }

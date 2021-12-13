@@ -8,22 +8,39 @@
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/drawable/khung_nd.xml" value="0.2203125" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/drawable/khung_ten.xml" value="0.2203125" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/drawable/quaylai.xml" value="0.2203125" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/actitivy_thongtincanhan.xml" value="0.15760869565217392" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_hoso.xml" value="0.25" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/activity_phieuuudai.xml" value="0.15760869565217392" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/banhmi.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/banhsinhnhat.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/bread.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/caidat.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/cartfragment.xml" value="0.16666666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/coffe.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/contact.xml" value="0.25" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/dieukhoan.xml" value="0.22" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/dongmon_giohang.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/giohang.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/history.xml" value="0.25" />
-        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/home.xml" value="0.10552536231884058" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/home.xml" value="0.21" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/milktea.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/navbar.xml" value="0.16847826086956522" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/personfragment.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/row_lichsudonhang.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/tdfragment.xml" value="0.20416666666666666" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/trasua.xml" value="0.20416666666666666" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/wishlist.xml" value="0.115625" />
+        <entry key="..\:/Android/quanhonguyen/app/src/main/res/layout/xacnhandonhang.xml" value="0.22" />
         <entry key="..\:/Android/quanhonguyen/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2203125" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable-v24/hinhtron.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable-v24/hinhvuong.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable-v24/khungvien.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable-v24/tt.xml" value="0.14351851851851852" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable/bg_img.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable/boder.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable/botron_button.xml" value="0.19583333333333333" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable/button.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable/caidat.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable/canhan.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable/ic_arrow_down.xml" value="0.1" />
@@ -38,17 +55,45 @@
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable/radius.xml" value="0.1" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable/retangle_boder.xml" value="0.11851851851851852" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable/retangle_menu.xml" value="0.11851851851851852" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/drawable/tritangle.xml" value="0.19583333333333333" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/font/font.xml" value="0.1" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/actitivy_thongtincanhan.xml" value="0.1" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/activity_phieuuudai.xml" value="0.1" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/banhmi.xml" value="0.1" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/banhsinhnhat.xml" value="0.1" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/bread.xml" value="0.1" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/cartfragment.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/home.xml" value="0.12" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/coffe.xml" value="0.1" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/contact.xml" value="0.1" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/dieukhoan.xml" value="0.1" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/dongmon.xml" value="0.12952898550724637" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/dongmon_giohang.xml" value="0.15942028985507245" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/giohang.xml" value="0.1" />
+
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/history.xml" value="0.1" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/home.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/khung_nd.xml" value="0.1796875" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/lichsu_giaodich.xml" value="0.1" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/login.xml" value="0.1796875" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/lsdq.xml" value="0.15625" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/mainlayout.xml" value="0.1" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/milktea.xml" value="0.1796875" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/mon_doimon.xml" value="0.22" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/mon_thongtin.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/navbar.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/personfragment.xml" value="0.1" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/phieudoiqua.xml" value="0.1" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/phieuuudai.xml" value="0.1" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/row_lichsudonhang.xml" value="0.15625" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/row_lsgd.xml" value="0.1" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/row_phieuudai.xml" value="0.1" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/signin.xml" value="0.1" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/slide.xml" value="0.15625" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/tdfragment.xml" value="0.1" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/thongtin.xml" value="0.15942028985507245" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/wishlist.xml" value="0.1" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/xacnhan.xml" value="0.1" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/menu/menu_bar.xml" value="0.1796875" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
@@ -83,9 +128,16 @@
         <entry key="..\:/Users/tranl/App ban hang/dapxaylai/quanhonguyen/app/src/main/res/layout/hinh_13.xml" value="0.1638888888888889" />
         <entry key="..\:/Users/tranl/App ban hang/dapxaylai/quanhonguyen/app/src/main/res/layout/home.xml" value="0.16944444444444445" />
         <entry key="..\:/Users/tranl/App ban hang/dapxaylai/quanhonguyen/app/src/main/res/layout/item_photo.xml" value="0.1638888888888889" />
+        <entry key="..\:/Users/tranl/App ban hang/dapxaylai/quanhonguyen/app/src/main/res/layout/lichsu_giaodich.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/tranl/App ban hang/dapxaylai/quanhonguyen/app/src/main/res/layout/milktea.xml" value="0.15092592592592594" />
         <entry key="..\:/Users/tranl/App ban hang/dapxaylai/quanhonguyen/app/src/main/res/layout/navbar.xml" value="0.16944444444444445" />
+        <entry key="..\:/Users/tranl/App ban hang/dapxaylai/quanhonguyen/app/src/main/res/layout/phieudoiqua.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/tranl/App ban hang/dapxaylai/quanhonguyen/app/src/main/res/layout/phieuuudai.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/tranl/App ban hang/dapxaylai/quanhonguyen/app/src/main/res/layout/register.xml" value="0.1638888888888889" />
+        <entry key="..\:/Users/tranl/App ban hang/dapxaylai/quanhonguyen/app/src/main/res/layout/row_lichsudonhang.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/tranl/App ban hang/dapxaylai/quanhonguyen/app/src/main/res/layout/row_lsgd.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/tranl/App ban hang/dapxaylai/quanhonguyen/app/src/main/res/layout/row_phieuudai.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/tranl/App ban hang/dapxaylai/quanhonguyen/app/src/main/res/layout/rowdoiqua.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/tranl/App ban hang/dapxaylai/quanhonguyen/app/src/main/res/layout/timkiem.xml" value="0.1638888888888889" />
         <entry key="..\:/Users/tranl/App ban hang/dapxaylai/quanhonguyen/app/src/main/res/layout/trasua.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/tranl/App ban hang/dapxaylai/quanhonguyen/app/src/main/res/layout/viewpaker.xml" value="0.1638888888888889" />

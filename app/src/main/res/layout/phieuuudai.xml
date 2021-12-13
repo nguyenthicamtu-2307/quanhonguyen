@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity"
+    android:orientation="vertical"
+    android:background="#ffbd59">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_pud"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffa87a"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
+
+        <ImageButton
+
+            android:id="@+id/imgbt_qlai"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:background="#ffa87a"
+            android:scaleType="fitStart"
+            android:src="@drawable/quaylai"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="Phiếu ưu đãi"
+            android:textColor="#793825"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/LvPUD"
+                android:layout_width="match_parent"
+                android:layout_height="650dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
