@@ -12,9 +12,9 @@ public class KhachHang {
     private String gioitinh;
     private String hinhanhkh;
     private String tendn;
-    private int mk;
+    private String matkhau;
 
-    public KhachHang(String idkh, String tenkh, int sdt, String diachi, String ngaysinh, String gioitinh, String hinhanhkh, String tendn, int mk) {
+    public KhachHang(String idkh, String tenkh, int sdt, String diachi, String ngaysinh, String gioitinh, String hinhanhkh, String tendn, String matkhau) {
         this.idkh = idkh;
         this.tenkh = tenkh;
         this.sdt = sdt;
@@ -23,7 +23,11 @@ public class KhachHang {
         this.gioitinh = gioitinh;
         this.hinhanhkh = hinhanhkh;
         this.tendn = tendn;
-        this.mk = mk;
+        this.matkhau = matkhau;
+    }
+
+    public KhachHang() {
+
     }
 
     public String getIdkh() {
@@ -90,11 +94,12 @@ public class KhachHang {
         this.tendn = tendn;
     }
 
-    public int getMk() {
-        return mk;
+    public String getMatkhau() {
+        return matkhau;
     }
 
-    public void setMk(int mk) {
-        this.mk = mk;
+    public void setMatkhau(String matkhau) {
+        this.matkhau = matkhau;
     }
 }
+

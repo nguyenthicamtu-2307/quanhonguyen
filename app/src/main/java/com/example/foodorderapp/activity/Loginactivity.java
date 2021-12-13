@@ -1,8 +1,11 @@
 package com.example.foodorderapp.activity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -14,15 +17,28 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 
 import com.example.foodorderapp.R;
+import com.example.foodorderapp.model.KhachHang;
+import com.example.foodorderapp.model.Loginrequired;
+import com.example.foodorderapp.service.APIService;
+import com.example.foodorderapp.service.Client;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 
 public class Loginactivity extends AppCompatActivity {
@@ -32,19 +48,26 @@ public class Loginactivity extends AppCompatActivity {
     ImageView fb, gg;
     LoginButton bth;
     View view;
+    private List<KhachHang> khachHangs;
     float v=0;
+    KhachHang kh;
     TextView u,p,forg;
     LinearLayout ln1,ln2,ln3;
     CallbackManager callbackManager;
     CheckBox remember;
+    APIService apiService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
+        apiService=Client.getAPIService();
+        login();
         ln1=findViewById(R.id.checkid1);
         eduser = findViewById(R.id.user);
         edpass = findViewById(R.id.password);
+        String tendn= eduser.getText().toString();
+        String matkhau=edpass.getText().toString();
         u=findViewById(R.id.edituser);
         p=findViewById(R.id.editpass);
         forg=findViewById(R.id.forgot);
@@ -93,8 +116,15 @@ public class Loginactivity extends AppCompatActivity {
         btndn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Loginactivity.this,main.class);
-                startActivity(intent);
+
+                //check tt dang nhap
+                if(TextUtils.isEmpty(eduser.getText().toString())||
+                        TextUtils.isEmpty(edpass.getText().toString())){
+                    Toast.makeText(Loginactivity.this,
+                            "Username/password in required",Toast.LENGTH_LONG).show();
+                }else {
+                    checklogin();
+                }
 
             }
         });
@@ -142,4 +172,64 @@ public class Loginactivity extends AppCompatActivity {
         view.setAlpha(v);
         view.animate().translationX(0).alpha(1).setDuration(800).setStartDelay(delay).start();
     }
-}
+    public void login() {
+
+
+        Call<List<KhachHang>> call = apiService.khachhang();
+        call.enqueue(new Callback<List<KhachHang>>() {
+            @Override
+            public void onResponse(Call<List<KhachHang>> call, Response<List<KhachHang>> response) {
+                khachHangs=response.body();
+            }
+
+            @Override
+            public void onFailure(Call<List<KhachHang>> call, Throwable t) {
+
+            }
+        });
+    }
+    public void checklogin(){
+        String strUsername=eduser.getText().toString().trim();
+        String strPassword=edpass.getText().toString().trim();
+        AlertDialog.Builder alert = new AlertDialog.Builder(Loginactivity.this);
+        alert.setTitle("Nhập Thiếu Thông Tin");
+        alert.setMessage("Bạn nhập thiếu thông tin. Vui lòng nhập lại");
+        alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                alert.setCancelable(true);
+            }
+        });
+        if(strUsername.isEmpty()||strPassword.isEmpty()){
+            alert.show();
+        }
+        else {
+            if(khachHangs == null || khachHangs.isEmpty()){
+                return;
+            }
+            boolean isHasUser = false;
+            for(KhachHang khachHang: khachHangs){
+                if(strUsername.equals(khachHang.getTendn()) && strPassword.equals(khachHang.getMatkhau())){
+                    isHasUser = true;
+                    kh = khachHang;
+                    break;
+                }
+            }
+            if (isHasUser){
+                Intent intent = new Intent(getApplicationContext(), main.class);
+                startActivity(intent);
+                finish();
+            }else {
+                alert.setTitle("Đăng nhập thất bại");
+                alert.setMessage("Bạn nhập sai tên đăng nhập hoặc mật khẩu! Vui lòng kiểm tra lại!");
+                alert.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        alert.setCancelable(true);
+                    }
+                });
+                alert.show();
+            }
+        }
+    }
+    }

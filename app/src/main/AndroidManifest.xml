@@ -28,7 +28,7 @@
             android:configChanges="orientation|screenSize|screenLayout|keyboard|keyboardHidden"
             android:label="@string/app_name"
 
-            android:name=".activity.main"
+            android:name=".activity.MainActivity"
 
             android:exported="true">
 
@@ -42,7 +42,7 @@
 
         <activity android:name=".activity.Loginactivity"/>
         <activity android:name=".activity.SInginActivity"/>
-        <activity android:name=".activity.MainActivity"/>
+        <activity android:name=".activity.main"/>
         <activity android:name=".activity.LichSuDonHangActivity" />
         <activity android:name=".activity.DieuKhoanActivity" />
         <activity android:name=".activity.ContactActivity" />
