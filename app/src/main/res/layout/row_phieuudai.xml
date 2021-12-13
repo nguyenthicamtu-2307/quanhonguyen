@@ -14,7 +14,8 @@
         android:padding="10dp">
 
         <ImageView
-            android:id="@+id/hinh"
+            android:id="@+id/hinhud"
+
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:padding="10dp"
@@ -44,7 +45,8 @@
                 android:textSize="18dp" />
 
             <Button
-                android:id="@+id/button_ud3"
+                android:id="@+id/button_ud4"
+
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#f6e0bf"

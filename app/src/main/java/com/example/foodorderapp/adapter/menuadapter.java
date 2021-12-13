@@ -11,19 +11,23 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.example.foodorderapp.R;
+import com.example.foodorderapp.activity.ListviewMon.Mon;
 import com.example.foodorderapp.fragment.homefragment;
 import com.example.foodorderapp.model.listmenu;
 
+import java.util.ArrayList;
 import java.util.List;
 public class menuadapter extends  RecyclerView.Adapter<menuadapter.menuadapterhoder> {
     private Context mcontext;
-    private  List<listmenu> mlist;
+    private  List<Mon> mlist;
 
-    public menuadapter(Context mcontext) {
+    public menuadapter(Context mcontext, List<Mon> list) {
         this.mcontext = mcontext;
+        this.mlist=list;
     }
-    public void setdata(List<listmenu> list){
+    public void setdata(List<Mon> list){
         this.mlist=list;
         notifyDataSetChanged();
     }
@@ -36,13 +40,10 @@ public class menuadapter extends  RecyclerView.Adapter<menuadapter.menuadapterho
 
     @Override
     public void onBindViewHolder(@NonNull menuadapterhoder holder, int position) {
-        listmenu menu=mlist.get(position);
-        if(menu==null){
-            return;
-        }
-        holder.name.setText(menu.getName());
-        holder.gia.setText(menu.getMota());
-        holder.imguser.setImageResource(menu.getImage());
+
+        holder.name.setText(mlist.get(position).getTenmon());
+        holder.gia.setText(mlist.get(position).getGia());
+        Glide.with(mcontext).load(mlist.get(position).getHinh()).into(holder.imguser);
     }
 
     @Override
@@ -61,5 +62,9 @@ public class menuadapter extends  RecyclerView.Adapter<menuadapter.menuadapterho
             gia = itemView.findViewById(R.id.price);
             imguser = itemView.findViewById(R.id.imv);
         }
+    }
+    public void filterList(ArrayList<Mon> filteredList){
+        mlist = filteredList;
+        notifyDataSetChanged();
     }
 }

@@ -24,47 +24,48 @@ package com.example.foodorderapp.activity;
 public class main extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.navbar);
 
-        MeowBottomNavigation bottomNavigation=findViewById(R.id.navbar);
-        bottomNavigation.add(new MeowBottomNavigation.Model(1,R.drawable.ic_home));
-        bottomNavigation.add(new MeowBottomNavigation.Model(2,R.drawable.ic_baseline_star_24));
-        bottomNavigation.add(new MeowBottomNavigation.Model(3,R.drawable.ic_shopping_cart));
-        bottomNavigation.add(new MeowBottomNavigation.Model(4,R.drawable.ic_bank));
-        bottomNavigation.add(new MeowBottomNavigation.Model(5,R.drawable.ic_person));
+        MeowBottomNavigation bottomNavigation = findViewById(R.id.navbar);
+        bottomNavigation.add(new MeowBottomNavigation.Model(1, R.drawable.ic_home));
+        bottomNavigation.add(new MeowBottomNavigation.Model(2, R.drawable.ic_baseline_star_24));
+        bottomNavigation.add(new MeowBottomNavigation.Model(3, R.drawable.ic_shopping_cart));
+        bottomNavigation.add(new MeowBottomNavigation.Model(4, R.drawable.ic_bank));
+        bottomNavigation.add(new MeowBottomNavigation.Model(5, R.drawable.ic_person));
 
         bottomNavigation.setOnShowListener(new MeowBottomNavigation.ShowListener() {
             @Override
             public void onShowItem(MeowBottomNavigation.Model item) {
-                Fragment fragment=null;
-                switch (item.getId()){
+                Fragment fragment = null;
+                switch (item.getId()) {
                     case 1:
-                        fragment= new homefragment();
+                        fragment = new homefragment();
                         break;
                     case 2:
-                        fragment= new WishlistFragment();
+                        fragment = new WishlistFragment();
                         break;
                     case 3:
-                        fragment= new Cartfragment();
+                        fragment = new Cartfragment();
                         break;
                     case 4:
-                        fragment= new TDfragment();
+                        fragment = new TDfragment();
                         break;
                     case 5:
-                        fragment= new personfragment();
+                        fragment = new personfragment();
                         break;
                 }
                 loadFragment(fragment);
             }
         });
 
-        bottomNavigation.setCount(2,"10");
-        bottomNavigation.show(1,true);
+        bottomNavigation.setCount(2, "10");
+        bottomNavigation.show(1, true);
         bottomNavigation.setOnClickMenuListener(new MeowBottomNavigation.ClickListener() {
             @Override
             public void onClickItem(MeowBottomNavigation.Model item) {
-                Toast.makeText(getApplicationContext(),"youclick"+ item.getId(),Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "youclick" + item.getId(), Toast.LENGTH_LONG).show();
             }
         });
 

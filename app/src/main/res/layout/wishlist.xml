@@ -74,11 +74,12 @@
 
             </LinearLayout>
         </LinearLayout>
-        <androidx.core.widget.NestedScrollView
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_below="@+id/search1"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
             <LinearLayout
+                android:layout_below="@+id/search1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
@@ -126,7 +127,7 @@
                             android:id="@+id/anh2"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:background="@drawable/ts4" />
+                            android:background="@drawable/ts" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -165,6 +166,7 @@
                 </LinearLayout>
 
                 <TableLayout
+                    android:id="@+id/dexuat1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -293,7 +295,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="360dp"
                     android:layout_below="@+id/layout3"
                     android:orientation="vertical">
 
@@ -306,13 +308,13 @@
                         android:textSize="25dp"
                         android:textStyle="bold" />
 
-                    <androidx.recyclerview.widget.RecyclerView
+                    <ListView
                         android:id="@+id/lv1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
                 </LinearLayout>
             </LinearLayout>
-        </androidx.core.widget.NestedScrollView>
+        </ScrollView>
     </LinearLayout>
 </RelativeLayout>

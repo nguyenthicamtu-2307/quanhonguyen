@@ -11,7 +11,7 @@ android {
         targetSdk 31
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -44,6 +44,14 @@ dependencies {
     annotationProcessor 'android.arch.persistence.room:compiler:1.1.1'
     implementation 'com.nex3z:notification-badge:1.0.2'
     implementation 'me.relex:circleindicator:2.1.6'
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-v4:23.1.1'
 
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    implementation "androidx.multidex:multidex:2.0.1"
 
 }

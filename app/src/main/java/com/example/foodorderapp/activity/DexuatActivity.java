@@ -2,13 +2,13 @@ package com.example.foodorderapp.activity;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.widget.Button;
 import android.widget.ListView;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-
 import com.example.foodorderapp.R;
+import com.example.foodorderapp.activity.ListviewLSGD.MonLSGD;
 import com.example.foodorderapp.activity.ListviewMon.Mon;
 import com.example.foodorderapp.activity.ListviewMon.MonAdapter;
 import com.example.foodorderapp.activity.ListviewMon.Sanphamadapter;
@@ -22,33 +22,30 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class BanhsinhNhatActivity extends AppCompatActivity {
-    ListView lvmonts;
-    ArrayList<Mon> arraymon;
+public class DexuatActivity extends AppCompatActivity {
+    ListView view;
+    ArrayList<Mon> dexuat;
+    List<Mon> mon=new ArrayList<>();
+    MonAdapter arr;
     APIService apiService;
-    List<Mon> monslist=new ArrayList<Mon>();
-    MonAdapter monAdapter;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.banhsinhnhat);
-        Button buton11= (Button) findViewById(R.id.btnGioHang);
-
-
-        lvmonts=(ListView) findViewById(R.id.Lvbsn);
+        setContentView(R.layout.activity_main);
+        view=(ListView) findViewById(R.id.lvdx);
         apiService= Client.getAPIService();
         listar();
 
-
     }
     public void listar(){
-        Call<List<Mon>> call=apiService.getcake();
+        Call<List<Mon>> call=apiService.dexuat();
         call.enqueue(new Callback<List<Mon>>() {
             @Override
             public void onResponse(Call<List<Mon>> call, Response<List<Mon>> response) {
                 if(response.isSuccessful()){
-                    monslist=response.body();
-                    lvmonts.setAdapter(new Sanphamadapter(BanhsinhNhatActivity.this,R.layout.bm1,monslist));
+                    mon=response.body();
+                    view.setAdapter(new Sanphamadapter(DexuatActivity.this,R.layout.bm1,mon));
                 }
             }
             @Override

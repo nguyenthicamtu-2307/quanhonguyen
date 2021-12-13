@@ -13,6 +13,9 @@ import androidx.fragment.app.Fragment;
 
 import com.example.foodorderapp.activity.LSDQ;
 import com.example.foodorderapp.R;
+import com.example.foodorderapp.activity.LSDoiQuaActivity;
+import com.example.foodorderapp.activity.LSGDActivity;
+import com.example.foodorderapp.activity.PhieuUDActvity;
 
 public class TDfragment extends Fragment {
     Button lsdq,pud,lsudg;
@@ -26,7 +29,25 @@ public class TDfragment extends Fragment {
         butonDQ.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getActivity(), LSDQ.class);
+                Intent intent=new Intent(getActivity(), LSDoiQuaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button phieuud=(Button)view.findViewById(R.id.PUDhinh15);
+        phieuud.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), PhieuUDActvity.class);
+                startActivity(intent);
+            }
+        });
+        Button GD=view.findViewById(R.id.btnLSGD);
+        GD.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getActivity(), LSGDActivity.class);
+
                 startActivity(intent);
             }
         });

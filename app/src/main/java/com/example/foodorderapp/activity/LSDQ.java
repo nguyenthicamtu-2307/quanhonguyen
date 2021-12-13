@@ -34,7 +34,7 @@ public class LSDQ extends AppCompatActivity {
     private void Anhxa (){
         lvContact = (ListView) findViewById(R.id.lv1);
         list = new ArrayList<>();
-        list.add(new modeltt("Trà sữa khoai môn","25000",R.drawable.ts1));
+        list.add(new modeltt("Trà sữa khoai môn","25000",R.drawable.ts));
         list.add(new modeltt("Bánh mì bơ tỏi","25000",R.drawable.banhmibotoi));
         list.add(new modeltt("Bánh mì bơ tỏi","25000",R.drawable.banhmibotoi));
         list.add(new modeltt("Bánh mì bơ tỏi","25000",R.drawable.banhmibotoi));
@@ -42,7 +42,8 @@ public class LSDQ extends AppCompatActivity {
     private void Anhxa1 (){
         lv2 = (ListView) findViewById(R.id.lv2);
         list = new ArrayList<>();
-        list.add(new modeltt("Trà sữa khoai môn","25000",R.drawable.ts1));
+        list.add(new modeltt("Trà sữa khoai môn","25000",R.drawable.ts));
+
         list.add(new modeltt("Bánh mì bơ tỏi","25000",R.drawable.banhmibotoi));
         list.add(new modeltt("Bánh mì bơ tỏi","25000",R.drawable.banhmibotoi));
         list.add(new modeltt("Bánh mì bơ tỏi","25000",R.drawable.banhmibotoi));

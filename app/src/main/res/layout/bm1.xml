@@ -30,7 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="Bánh Sinh Nhật"
+                android:text="Bánh Mì"
                 android:textSize="25dp"
                 android:textStyle="bold" />
         </RelativeLayout>
@@ -49,7 +49,7 @@
                 android:orientation="vertical">
 
                 <ListView
-                    android:id="@+id/Lvbsn"
+                    android:id="@+id/LvTraSua"
                     android:layout_width="match_parent"
                     android:layout_height="610dp"
                     tools:layout_editor_absoluteX="1dp"

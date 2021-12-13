@@ -16,7 +16,8 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodorderapp.R;
 import com.example.foodorderapp.activity.ThongTinActivity;
-import com.example.foodorderapp.activity.homeactivity;
+
+
 
 import com.example.foodorderapp.adapter.navbaradapter;
 
@@ -44,6 +45,7 @@ public class Cartfragment extends Fragment {
                 startActivity(intent);
             }
         });
+
         return view;
     }
 
