@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.view.View;
 import android.widget.Button;
-
 import android.widget.ListView;
 
 import androidx.annotation.Nullable;
@@ -37,7 +36,6 @@ public class ThongTinActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
         Anhxa();
         ttadapter= new MonGHAdapter(this,R.layout.mon_thongtin,MonList);
         lvContact.setAdapter(ttadapter);
@@ -47,7 +45,6 @@ public class ThongTinActivity extends AppCompatActivity {
         lvContact = (ListView) findViewById(R.id.ttgh);
         MonList = new ArrayList<>();
         MonList.add(new MonGH("Trà sữa khoai môn","25000","2",R.drawable.ts));
-
         MonList.add(new MonGH("Bánh mì bơ tỏi","25000","2",R.drawable.banhmibotoi));
 
     }

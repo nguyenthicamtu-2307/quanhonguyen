@@ -11,7 +11,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.foodorderapp.activity.LSDQ;
 import com.example.foodorderapp.R;
 import com.example.foodorderapp.activity.LSDoiQuaActivity;
 import com.example.foodorderapp.activity.LSGDActivity;
@@ -47,7 +46,6 @@ public class TDfragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getActivity(), LSGDActivity.class);
-
                 startActivity(intent);
             }
         });

@@ -70,7 +70,6 @@
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/dongmon.xml" value="0.12952898550724637" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/dongmon_giohang.xml" value="0.15942028985507245" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/giohang.xml" value="0.1" />
-
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/history.xml" value="0.1" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/home.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/khung_nd.xml" value="0.1796875" />
@@ -87,10 +86,17 @@
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/phieuuudai.xml" value="0.1" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/row_lichsudonhang.xml" value="0.15625" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/row_lsgd.xml" value="0.1" />
+<<<<<<< HEAD
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/row_phieuudai.xml" value="0.1" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/signin.xml" value="0.1" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/slide.xml" value="0.15625" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/tdfragment.xml" value="0.1" />
+=======
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/row_phieuudai.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/signin.xml" value="0.1" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/slide.xml" value="0.15625" />
+        <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/tdfragment.xml" value="0.3333333333333333" />
+>>>>>>> 3cdaea8 (pull)
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/thongtin.xml" value="0.15942028985507245" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/wishlist.xml" value="0.1" />
         <entry key="..\:/Users/FPTSHOP/Desktop/quanhonguyen/app/src/main/res/layout/xacnhan.xml" value="0.1" />

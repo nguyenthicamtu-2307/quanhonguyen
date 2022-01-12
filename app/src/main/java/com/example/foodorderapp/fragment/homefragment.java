@@ -10,7 +10,6 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-
 import android.widget.RelativeLayout;
 
 import androidx.annotation.NonNull;
@@ -28,14 +27,12 @@ import com.example.foodorderapp.activity.ListviewMon.Mon;
 import com.example.foodorderapp.activity.ListviewMon.Sanphamadapter;
 import com.example.foodorderapp.activity.MainActivity;
 import com.example.foodorderapp.activity.SearchActivity;
-
 import com.example.foodorderapp.activity.TraSuaActivity;
 import com.example.foodorderapp.adapter.menuadapter;
 import com.example.foodorderapp.adapter.slide;
 import com.example.foodorderapp.model.listmenu;
 import com.example.foodorderapp.service.APIService;
 import com.example.foodorderapp.service.Client;
-
 import com.google.android.material.slider.Slider;
 import com.smarteist.autoimageslider.IndicatorView.animation.type.IndicatorAnimationType;
 import com.smarteist.autoimageslider.SliderAnimations;
@@ -57,7 +54,6 @@ public class homefragment extends Fragment {
    int[] imageview={R.drawable.banh2,
            R.drawable.banhmibotoi,
            R.drawable.banhmithit,
-
            R.drawable.banhpanta};
     menuadapter adapter;
     @Nullable
@@ -83,7 +79,6 @@ public class homefragment extends Fragment {
                 startActivity(intent);
             }
         });
-
         LinearLayout cf = view.findViewById(R.id.coffee);
         cf.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,6 +96,7 @@ public class homefragment extends Fragment {
                 startActivity(intent);
             }
         });
+
         LinearLayout bm = view.findViewById(R.id.banhmi);
         bm.setOnClickListener(new View.OnClickListener() {
             @Override

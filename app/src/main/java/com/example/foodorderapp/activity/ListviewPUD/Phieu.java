@@ -1,39 +1,55 @@
 
 package com.example.foodorderapp.activity.ListviewPUD;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Phieu {
-    private String uudai;
-    private String hanSD;
-    private int hinh;
+    @SerializedName("tenkm") // trường tên KM có trong json
+    private String tenkm;
+    @SerializedName("chitietkm")
+    private String chitietkm;
+    @SerializedName("thoigianketthuc")
+    private String thoigianketthuc;
+    @SerializedName("giatrikm")
+    private String giatrikm;
 
-    public Phieu(String uudai, String hanSD, int hinh) {
-        this.uudai = uudai;
-        this.hanSD = hanSD;
-        this.hinh = hinh;
+
+    public Phieu(String tenkm, String chitietkm, String thoigianketthuc, String giatrikm) {
+        this.tenkm = tenkm;
+        this.chitietkm = chitietkm;
+        this.thoigianketthuc = thoigianketthuc;
+        this.giatrikm = giatrikm;
     }
 
-    public String getUudai() {
-        return uudai;
+    public String getTenkm() {
+        return tenkm;
     }
 
-    public void setUudai(String uudai) {
-        this.uudai = uudai;
+    public void setTenkm(String tenkm) {
+        this.tenkm = tenkm;
     }
 
-    public String getHanSD() {
-        return hanSD;
+    public String getChitietkm() {
+        return chitietkm;
     }
 
-    public void setHanSD(String hanSD) {
-        this.hanSD = hanSD;
+    public void setChitietkm(String chitietkm) {
+        this.chitietkm = chitietkm;
     }
 
-    public int getHinh() {
-        return hinh;
+    public String getThoigianketthuc() {
+        return thoigianketthuc;
     }
 
-    public void setHinh(int hinh) {
-        this.hinh = hinh;
+    public void setThoigianketthuc(String thoigianketthuc) {
+        this.thoigianketthuc = thoigianketthuc;
     }
 
+    public String getGiatrikm() {
+        return giatrikm;
+    }
+
+    public void setGiatrikm(String giatrikm) {
+        this.giatrikm = giatrikm;
+    }
 }

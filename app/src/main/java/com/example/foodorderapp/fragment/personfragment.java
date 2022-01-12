@@ -14,8 +14,8 @@ import androidx.fragment.app.Fragment;
 import com.example.foodorderapp.R;
 import com.example.foodorderapp.activity.ContactActivity;
 import com.example.foodorderapp.activity.DieuKhoanActivity;
-import com.example.foodorderapp.activity.KhuyenMaiActivity;
 import com.example.foodorderapp.activity.LichSuDonHangActivity;
+import com.example.foodorderapp.activity.PhieuUDActvity;
 import com.example.foodorderapp.activity.ThongTinCaNhanActivity;
 
 public class personfragment extends Fragment {
@@ -46,7 +46,7 @@ public class personfragment extends Fragment {
         km.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(getActivity(), KhuyenMaiActivity.class);
+                Intent intent=new Intent(getActivity(), PhieuUDActvity.class);
                 startActivity(intent);
             }
         });

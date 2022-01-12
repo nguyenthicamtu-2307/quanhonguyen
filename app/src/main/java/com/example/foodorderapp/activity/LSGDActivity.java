@@ -31,7 +31,6 @@ public class LSGDActivity extends AppCompatActivity {
 
         monLSGDS.add(new MonLSGD("Bánh Kem Panta","02/05/2021", R.drawable.banhpanta));
 
-
     }
 }
 

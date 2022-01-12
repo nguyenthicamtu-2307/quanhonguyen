@@ -1,5 +1,6 @@
 package com.example.foodorderapp.activity;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -42,7 +43,10 @@ import retrofit2.Response;
 
 
 public class Loginactivity extends AppCompatActivity {
+    SharedPreferences sharedpreferences;
+    String username, password;
     Button btndn;
+    public static String unameGlobal ="";
     Button btndk;
     EditText eduser, edpass;
     ImageView fb, gg;
@@ -52,11 +56,16 @@ public class Loginactivity extends AppCompatActivity {
     float v=0;
     KhachHang kh;
     TextView u,p,forg;
+    public static String id = "";
     LinearLayout ln1,ln2,ln3;
     CallbackManager callbackManager;
     CheckBox remember;
     APIService apiService;
-
+    public static final String SHARED_PREFS = "shared_prefs";
+    // key for storing email.
+    public static final String EMAIL_KEY = "email_key";
+    // key for storing password.
+    public static final String PASSWORD_KEY = "password_key";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -118,15 +127,15 @@ public class Loginactivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 //check tt dang nhap
-                if(TextUtils.isEmpty(eduser.getText().toString())||
-                        TextUtils.isEmpty(edpass.getText().toString())){
-                    Toast.makeText(Loginactivity.this,
-                            "Username/password in required",Toast.LENGTH_LONG).show();
-                }else {
-                    checklogin();
-                }
+                    if(TextUtils.isEmpty(eduser.getText().toString())||
+                            TextUtils.isEmpty(edpass.getText().toString())){
+                        Toast.makeText(Loginactivity.this,
+                                "Username/password in required",Toast.LENGTH_LONG).show();
+                    }else {
+                        checklogin();
+                    }
 
-            }
+                }
         });
         remember.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -189,6 +198,11 @@ public class Loginactivity extends AppCompatActivity {
         });
     }
     public void checklogin(){
+        unameGlobal = eduser.getText().toString();
+
+        sharedpreferences = getSharedPreferences(SHARED_PREFS, Context.MODE_PRIVATE);
+        username = sharedpreferences.getString(EMAIL_KEY, null);
+        password = sharedpreferences.getString(PASSWORD_KEY, null);
         String strUsername=eduser.getText().toString().trim();
         String strPassword=edpass.getText().toString().trim();
         AlertDialog.Builder alert = new AlertDialog.Builder(Loginactivity.this);
@@ -210,13 +224,34 @@ public class Loginactivity extends AppCompatActivity {
             boolean isHasUser = false;
             for(KhachHang khachHang: khachHangs){
                 if(strUsername.equals(khachHang.getTendn()) && strPassword.equals(khachHang.getMatkhau())){
-                    isHasUser = true;
-                    kh = khachHang;
-                    break;
-                }
+                }                    SharedPreferences.Editor editor = sharedpreferences.edit();
+                // below two lines will put values for
+                // email and password in shared preferences.
+                editor.putString(EMAIL_KEY, eduser.getText().toString());
+                editor.putString(PASSWORD_KEY, edpass.getText().toString());
+                isHasUser = true;
+
+                id=khachHang.getIdkh();
+                kh = khachHang;
+                editor.apply();
+                break;
+
             }
             if (isHasUser){
-                Intent intent = new Intent(getApplicationContext(), main.class);
+                SharedPreferences.Editor editor = sharedpreferences.edit();
+                // below two lines will put values for
+                // email and password in shared preferences.
+                editor.putString(EMAIL_KEY, eduser.getText().toString());
+                editor.putString(PASSWORD_KEY, edpass.getText().toString());
+                // to save our data with key and value.
+                //Toast.makeText(getApplicationContext(), "mã khách hàng là:"+id, Toast.LENGTH_SHORT).show();
+
+                editor.apply();
+
+                Intent intent = new Intent(getApplicationContext(),main.class);
+                Bundle bundle = new Bundle();
+                bundle.putSerializable("object_user",kh);
+                intent.putExtras(bundle);
                 startActivity(intent);
                 finish();
             }else {

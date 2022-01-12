@@ -34,7 +34,7 @@ public class menuadapter extends  RecyclerView.Adapter<menuadapter.menuadapterho
     @NonNull
     @Override
     public menuadapterhoder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view=LayoutInflater.from(parent.getContext()).inflate(R.layout.milktea,parent,false);
+        View view=LayoutInflater.from(parent.getContext()).inflate(R.layout.dongmon,parent,false);
         return new menuadapterhoder(view);
     }
 
@@ -58,9 +58,9 @@ public class menuadapter extends  RecyclerView.Adapter<menuadapter.menuadapterho
 
         public menuadapterhoder(@NonNull View itemView) {
             super(itemView);
-            name = itemView.findViewById(R.id.namefood);
-            gia = itemView.findViewById(R.id.price);
-            imguser = itemView.findViewById(R.id.imv);
+            name = itemView.findViewById(R.id.tenmon);
+            gia = itemView.findViewById(R.id.gia);
+            imguser = itemView.findViewById(R.id.hinhud);
         }
     }
     public void filterList(ArrayList<Mon> filteredList){

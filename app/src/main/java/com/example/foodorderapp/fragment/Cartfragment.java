@@ -18,7 +18,6 @@ import com.example.foodorderapp.R;
 import com.example.foodorderapp.activity.ThongTinActivity;
 
 
-
 import com.example.foodorderapp.adapter.navbaradapter;
 
 import com.example.foodorderapp.model.listrasua;

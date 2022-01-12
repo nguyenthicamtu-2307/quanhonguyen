@@ -47,7 +47,6 @@ public class LSGDAdapter extends BaseAdapter {
         TextView txtgia=(TextView) view.findViewById(R.id.ngay);
         ImageView Imhinh=(ImageView) view.findViewById(R.id.hinhud);
 
-
         // Gán Giá trị
         MonLSGD mon= MonList.get(i);
         txttenmon.setText(mon.getTenmon());

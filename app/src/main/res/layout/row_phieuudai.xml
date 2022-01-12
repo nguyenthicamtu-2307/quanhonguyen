@@ -15,14 +15,13 @@
 
         <ImageView
             android:id="@+id/hinhud"
-
             android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_height="130dp"
             android:padding="10dp"
             android:src="@drawable/sale" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="288dp"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
@@ -30,32 +29,83 @@
                 android:id="@+id/Uudai"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Giảm 10% cho đơn"
                 android:layout_marginLeft="5dp"
+                android:text="Giảm 10% cho đơn"
                 android:textColor="#000000"
-                android:textSize="22sp"
+                android:textSize="15dp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/hanSD"
+                android:id="@+id/chitietkm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="HSD:30/04/2021"
-                android:textColor="#793825"
-                android:textSize="18dp" />
-
-            <Button
-                android:id="@+id/button_ud4"
-
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:backgroundTint="#f6e0bf"
-                android:minHeight="48dp"
                 android:layout_marginLeft="5dp"
-                android:text="Dùng ngay"
+                android:layout_marginTop="10dp"
+                android:text="Giảm 10% cho đơn"
                 android:textColor="#000000"
-                android:textSize="13sp"
-                android:textStyle="bold"/>
+                android:textSize="12dp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Giảm "
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/giatrikm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="%"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#000000"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/hanSD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="10dp"
+                    android:text="HSD:30/04/2021"
+                    android:textColor="#793825"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/button_ud4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="#f6e0bf"
+                    android:minHeight="48dp"
+                    android:text="Dùng ngay"
+                    android:textColor="#000000"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
 
         </LinearLayout>
 

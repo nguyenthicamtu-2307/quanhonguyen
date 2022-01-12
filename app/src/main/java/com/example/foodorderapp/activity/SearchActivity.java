@@ -48,7 +48,7 @@ public class SearchActivity extends AppCompatActivity {
             Mon mon = (Mon) bundleRecevie.get("object_user");
         }
 
-        txtSearch = findViewById(R.id.txtSearch);
+        txtSearch =(EditText) findViewById(R.id.txtSearch);
         rec=findViewById(R.id.lv_search);
         apiService= Client.getAPIService();
         listar();

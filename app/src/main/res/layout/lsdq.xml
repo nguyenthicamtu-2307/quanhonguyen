@@ -75,22 +75,22 @@
             android:src="@drawable/hinhtron" />
 
         <TextView
-            android:id="@+id/textview_diem"
+            android:id="@+id/textview_diema"
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/image_vongtron"
+            android:layout_alignLeft="@+id/image_vongtron"
             android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="35dp"
+
+            android:gravity="center_horizontal"
             android:padding="10dp"
             android:text="50"
-
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="30sp"
-            android:textStyle="bold"
-            android:layout_alignLeft="@+id/image_vongtron"
-            android:layout_marginLeft="10dp"
-            android:gravity="center_horizontal" />
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <androidx.core.widget.NestedScrollView

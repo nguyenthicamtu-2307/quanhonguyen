@@ -2,11 +2,13 @@ package com.example.foodorderapp.model;
 
 import com.google.gson.annotations.SerializedName;
 
-public class KhachHang {
+import java.io.Serializable;
+
+public class KhachHang implements Serializable {
     @SerializedName("idkh")
     private String idkh;
     private String tenkh;
-    private int sdt;
+    private String sdt;
     private String diachi;
     private String ngaysinh;
     private String gioitinh;
@@ -14,7 +16,7 @@ public class KhachHang {
     private String tendn;
     private String matkhau;
 
-    public KhachHang(String idkh, String tenkh, int sdt, String diachi, String ngaysinh, String gioitinh, String hinhanhkh, String tendn, String matkhau) {
+    public KhachHang(String idkh, String tenkh, String sdt, String diachi, String ngaysinh, String gioitinh, String hinhanhkh, String tendn, String matkhau) {
         this.idkh = idkh;
         this.tenkh = tenkh;
         this.sdt = sdt;
@@ -28,6 +30,12 @@ public class KhachHang {
 
     public KhachHang() {
 
+    }
+
+    public KhachHang(String sdt, String tendn, String matkhau) {
+        this.sdt = sdt;
+        this.tendn = tendn;
+        this.matkhau = matkhau;
     }
 
     public String getIdkh() {
@@ -46,11 +54,11 @@ public class KhachHang {
         this.tenkh = tenkh;
     }
 
-    public int getSdt() {
+    public String getSdt() {
         return sdt;
     }
 
-    public void setSdt(int sdt) {
+    public void setSdt(String sdt) {
         this.sdt = sdt;
     }
 

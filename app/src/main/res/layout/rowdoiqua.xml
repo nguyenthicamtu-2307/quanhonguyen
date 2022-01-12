@@ -19,9 +19,7 @@
             <ImageView
                 android:id="@+id/hinhud"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/ts" />
-
+                android:layout_height="wrap_content" />
         </RelativeLayout>
 
         <LinearLayout

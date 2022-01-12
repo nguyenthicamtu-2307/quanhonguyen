@@ -6,6 +6,9 @@ import android.widget.Button;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 
 import com.example.foodorderapp.R;
@@ -13,6 +16,7 @@ import com.example.foodorderapp.activity.ListviewMon.Mon;
 import com.example.foodorderapp.activity.ListviewMon.MonAdapter;
 import com.example.foodorderapp.activity.ListviewMon.Sanphamadapter;
 
+import com.example.foodorderapp.adapter.menuadapter;
 import com.example.foodorderapp.model.database;
 import com.example.foodorderapp.service.APIService;
 import com.example.foodorderapp.service.Client;
@@ -25,9 +29,9 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class BanhMiActivity extends AppCompatActivity {
-    ListView lvmonts;
+    RecyclerView lvmonts;
 
-    MonAdapter monAdapter;
+    Sanphamadapter monAdapter;
     Button btnadd,btngetuser;
     List<Mon> list=new ArrayList<Mon>();
     APIService apiService;
@@ -37,18 +41,28 @@ public class BanhMiActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.banhmi);
         Button buton11= (Button) findViewById(R.id.btnGioHang);
-     lvmonts=(ListView) findViewById(R.id.LvTraSua);
+     lvmonts=(RecyclerView) findViewById(R.id.LvMi);
+
         apiService= Client.getAPIService();
         listar();
-    }public void listar(){
-        Call<List<Mon>> call=apiService.getbread();
+
+
+    }
+
+
+    public void listar(){
+        Call<List<Mon>> call=apiService.getsanpham();
         call.enqueue(new Callback<List<Mon>>() {
             @Override
             public void onResponse(Call<List<Mon>> call, Response<List<Mon>> response) {
-                if(response.isSuccessful()){
-                    list=response.body();
-                    lvmonts.setAdapter(new Sanphamadapter(BanhMiActivity.this,R.layout.bm1,list));
+                if(response.code()!=200){
+                    return;
                 }
+                List<Mon>data= response.body();
+                for (Mon mon:data){
+                    list.add(mon);
+                }
+                Putdata(data);
             }
             @Override
             public void onFailure(Call<List<Mon>> call, Throwable t) {
@@ -56,5 +70,9 @@ public class BanhMiActivity extends AppCompatActivity {
             }
         });
     }
-
+    private  void Putdata(List<Mon> monan){
+        menuadapter menuadapter=new menuadapter(BanhMiActivity.this,monan);
+        lvmonts.setLayoutManager(new LinearLayoutManager(BanhMiActivity.this));
+        lvmonts.setAdapter(menuadapter);
+    }
 }

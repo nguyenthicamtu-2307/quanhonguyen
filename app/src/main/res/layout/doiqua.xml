@@ -7,9 +7,25 @@
     tools:context=".activity.MainActivity"
     android:background="#ffbd59">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_lsdq"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffa87a"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme">
 
+        <ImageButton
 
-
+            android:id="@+id/imgbt_qlai"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:background="#ffa87a"
+            android:scaleType="fitStart"
+            android:src="@drawable/quaylai"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
             android:id="@+id/textView"
@@ -17,17 +33,16 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:text="Lịch sử đổi quà"
-            android:layout_centerHorizontal="true"
             android:textColor="#793825"
             android:textSize="30sp"
             android:textStyle="bold" />
-
+    </androidx.appcompat.widget.Toolbar>
 
     <RelativeLayout
         android:id="@+id/relativelayout"
         android:layout_width="match_parent"
         android:layout_height="110dp"
-        android:layout_below="@id/textView">
+        android:layout_below="@id/toolbar_lsdq">
 
         <ImageView
             android:id="@+id/khungvien1"
@@ -57,19 +72,21 @@
             android:src="@drawable/hinhtron" />
 
         <TextView
-            android:id="@+id/textview_diemc"
+            android:id="@+id/textview_diemb"
             android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_alignStart="@+id/image_vongtron"
-            android:layout_alignLeft="@+id/image_vongtron"
-            android:layout_marginLeft="15dp"
+            android:layout_marginStart="10dp"
             android:layout_marginTop="35dp"
-            android:gravity="center_horizontal"
             android:padding="10dp"
-            android:text="0"
+            android:text="50"
+            android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:layout_alignLeft="@+id/image_vongtron"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_horizontal" />
     </RelativeLayout>
 
 
@@ -106,7 +123,7 @@
                     <ListView
                         android:id="@+id/LvDQ100"
                         android:layout_width="match_parent"
-                        android:layout_height="100dp" />
+                        android:layout_height="200dp" />
                 </LinearLayout>
 
             </ScrollView>

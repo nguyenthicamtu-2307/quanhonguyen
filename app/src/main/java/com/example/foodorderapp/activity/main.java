@@ -18,6 +18,7 @@ package com.example.foodorderapp.activity;
         import com.example.foodorderapp.fragment.WishlistFragment;
         import com.example.foodorderapp.fragment.homefragment;
         import com.example.foodorderapp.fragment.personfragment;
+        import com.example.foodorderapp.model.KhachHang;
 
         import java.util.WeakHashMap;
 

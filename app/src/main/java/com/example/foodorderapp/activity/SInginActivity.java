@@ -7,11 +7,18 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.foodorderapp.R;
+import com.example.foodorderapp.model.KhachHang;
+import com.example.foodorderapp.service.APIService;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 
 public class SInginActivity extends AppCompatActivity {
@@ -39,8 +46,7 @@ public class SInginActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(SInginActivity.this,main.class);
-                startActivity(intent);
+              register();
             }
         });
     }
@@ -61,4 +67,21 @@ public class SInginActivity extends AppCompatActivity {
         ln2=findViewById(R.id.idsocal);
 
     }
-}
+    public void register() {
+        KhachHang account = new KhachHang(dt.getText().toString(), u.getText().toString(), p.getText().toString());
+        //Call<Account> call = apiService.regiter(account);
+        APIService.api.regiter(account).enqueue(new Callback<KhachHang>() {
+            @Override
+            public void onResponse(Call<KhachHang> call, Response<KhachHang> response) {
+                Toast.makeText(SInginActivity.this,"Đăng ký thành công",Toast.LENGTH_LONG).show();
+                Intent intent=new Intent(SInginActivity.this,Loginactivity.class);
+                startActivity(intent);
+            }
+
+            @Override
+            public void onFailure(Call<KhachHang> call, Throwable t) {
+                Toast.makeText(SInginActivity.this,"Đăng ký thành công",Toast.LENGTH_LONG).show();
+            }
+        });
+
+    }}
